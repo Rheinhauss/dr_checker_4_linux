@@ -17,17 +17,19 @@ Results for Linux 5.13.9 (current stable are in progress)
 
 Tested on `Ubuntu 20.04`
 
-Clone the repo
+Clone the repo.
 
 Make sure you have Clang/LLVM 10 installed (newer Clang/LLVM will not work)
 
-Ubuntu
+Ubuntu:
 
-`apt install clang-10`
+`apt install clang-10 sparse`
 
+Make sure all the binaries have correct patsh i.e /usr/bin/llvm-link (linked to /usr/bin/llvm-link-10 etc), /usr/bin/opt (/usr/bin/opt-10) etc
 
-No need to run `setup_drchecker.py`
+Debug when needed.
 
+No need to run `setup_drchecker.py`, you can skip it. For other instruction refer to original Dr. Checker repo.
 
 
 Sample run
@@ -57,5 +59,5 @@ python ../dr_checker/helper_scripts/runner_scripts/run_all.py -l /laptop/media/m
 
 # Triage
 
-Obviously there are many results that need to be triaged. Feel free to send me kudos and/or DR.Checker team if you will get a CVE/vuln out of it.
+Obviously, there are many results that need to be triaged. Feel free to send me kudos and/or DR.Checker team if you will get a CVE/vuln out of it.
 
