@@ -1,0 +1,7 @@
+struct.kvm_io_device_ops,0,FileRead
+struct.kvm_io_device_ops,1,FileWrite
+struct.hwmon_ops,1,FileRead
+struct.hwmon_ops,3,FileWrite
+struct.ulpi_ops,0,FileRead
+struct.ulpi_ops,1,FileWrite
+struct.snd_ak4xxx_ops,2,FileWrite
