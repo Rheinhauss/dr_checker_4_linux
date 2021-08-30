@@ -57,5 +57,5 @@ python ../dr_checker/helper_scripts/runner_scripts/run_all.py -l /laptop/media/m
 
 # Triage
 
-Obiously there are many results that need to be triaged. Feel free to send me kudos and/or DR.Checker team if you will get a CVE/vuln out of it.
+Obviously there are many results that need to be triaged. Feel free to send me kudos and/or DR.Checker team if you will get a CVE/vuln out of it.
 
