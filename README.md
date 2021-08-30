@@ -2,6 +2,12 @@
 
 Port to check Linux Kernel of "DR.CHECKER : A Soundy Vulnerability Detection Tool for Linux Kernel Drivers" (https://github.com/ucsb-seclab/dr_checker) also to newer Clang/LLVM (original was Clang/LLVM 3.8)
 
+
+> Abstract
+> 
+> While kernel drivers have long been know to poses huge security risks, due to their privileged access and lower code quality, bug-finding tools for drivers are still greatly lacking both in quantity and effectiveness. This is because the pointer-heavy code in these drivers present some of the hardest challenges to static analysis, and their tight coupling with the hardware make dynamic analysis infeasible in most cases. In this work, we present DR. CHECKER, a soundy (i.e., mostly sound) bug-finding tool for Linux kernel drivers that is based on well-known program analysis techniques. We are able to overcome many of the inherent limitations of static analysis by scoping our analysis to only the most bug-prone parts of the kernel (i.e., the drivers), and by only sacrificing soundness in very few cases to ensure that our technique is both scalable and precise. DR. CHECKER is a fully-automated static analysis tool capable of performing general bug finding using both pointer and taint analyses that are flow-sensitive, context-sensitive, and fieldsensitive on kernel drivers. To demonstrate the scalability and efficacy of DR.CHECKER, we analyzed the drivers of nine production Linux kernels (3.1 million LOC), where it correctly identified 158 critical zero-day bugs with an overall precision of 78%.
+
+
 Results for Linux 5.3.1
 
 Results for Linux 5.13.9 (current stable are in progress)
@@ -50,14 +56,4 @@ python ../dr_checker/helper_scripts/runner_scripts/run_all.py -l /laptop/media/m
 # Triage
 
 Obiously there are many results that need to be triaged. Feel free to send me kudos and/or DR.Checker team if you will get a CVE/vuln out of it.
-
-
-
-
-
-
-
-
-
-
 
