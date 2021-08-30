@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca %struct.file*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 799, "warn_str": "Trying to use a global variable without locking.", "at": "*band = bands_rf[band->index];", "inst_trace": [{"instr_func": "airspy_enum_freq_bands", "instr_loc": -1, "instr": "  %4 = alloca %struct.file*, align 8"}], "at_file": "drivers/media/usb/airspy/airspy.c", "by": "GlobalVariableRaceDetector says:", "at_func": "airspy_enum_freq_bands"}, "warn_no": 1}]}]}

@@ -1,0 +1,6 @@
+{"all_contexts":[
+{"num_warnings": 3,
+"context":[{"lineno": -1, "instr": "  %4 = alloca %struct.file*, align 8"}, {"lineno": 283, "file": "drivers/staging/greybus/authentication.c", "instr": "ret = cap_ioctl(cap, cmd, (void __user *)arg);"}],
+"warnings":[{"warn_data": {"at_line": 252, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (!ret && copy_to_user(buf, authenticate, size))", "inst_trace": [], "at_file": "drivers/staging/greybus/authentication.c", "by": "TaintedSizeDetector says:", "at_func": "cap_ioctl"}, "warn_no": 1},
+{"warn_data": {"at_line": 234, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (!ret && copy_to_user(buf, ims_cert, size))", "inst_trace": [], "at_file": "drivers/staging/greybus/authentication.c", "by": "TaintedSizeDetector says:", "at_func": "cap_ioctl"}, "warn_no": 2},
+{"warn_data": {"at_line": 219, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_to_user(buf, &endpoint_uid, sizeof(endpoint_uid)))", "inst_trace": [], "at_file": "drivers/staging/greybus/authentication.c", "by": "TaintedSizeDetector says:", "at_func": "cap_ioctl"}, "warn_no": 3}]}]}

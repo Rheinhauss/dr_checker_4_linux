@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i64, align 8"}],
+"warnings":[{"warn_data": {"at_line": 4737, "warn_str": "Trying to use a global variable without locking.", "at": "sdebug_ptype = n;", "inst_trace": [{"instr_func": "ptype_store", "instr_loc": -1, "instr": "  %4 = alloca i64, align 8"}], "at_file": "drivers/scsi/scsi_debug.c", "by": "GlobalVariableRaceDetector says:", "at_func": "ptype_store"}, "warn_no": 1}]}]}

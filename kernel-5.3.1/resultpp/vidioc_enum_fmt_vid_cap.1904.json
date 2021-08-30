@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca %struct.file*, align 8"}, {"lineno": 754, "file": "drivers/media/platform/vicodec/vicodec-core.c", "instr": "return enum_fmt(f, ctx, false);"}],
+"warnings":[{"warn_data": {"at_line": 719, "warn_str": "Trying to use a global variable without locking.", "at": "if (V4L2_TYPE_IS_MULTIPLANAR(f->type) && !multiplanar)", "inst_trace": [{"instr_func": "vidioc_enum_fmt_vid_cap.1904", "instr_loc": -1, "instr": "  %4 = alloca %struct.file*, align 8"}, {"instr_func": "vidioc_enum_fmt_vid_cap.1904", "instr_loc": 754, "instr_file": "drivers/media/platform/vicodec/vicodec-core.c", "instr": "return enum_fmt(f, ctx, false);"}], "at_file": "drivers/media/platform/vicodec/vicodec-core.c", "by": "GlobalVariableRaceDetector says:", "at_func": "enum_fmt"}, "warn_no": 1}]}]}

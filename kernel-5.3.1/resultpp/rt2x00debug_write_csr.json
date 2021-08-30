@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i8*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 515, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "RT2X00DEBUGFS_OPS(csr, \"0x%.8x\\n\", u32);", "inst_trace": [], "at_file": "drivers/net/wireless/ralink/rt2x00/rt2x00debug.c", "by": "TaintedSizeDetector says:", "at_func": "rt2x00debug_write_csr"}, "warn_no": 1}]}]}

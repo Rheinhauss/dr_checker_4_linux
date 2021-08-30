@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i8*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 2591, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "memset(mybuf, 0, sizeof(mybuf));", "inst_trace": [], "at_file": "drivers/scsi/lpfc/lpfc_debugfs.c", "by": "TaintedSizeDetector says:", "at_func": "lpfc_debugfs_nvmestat_write"}, "warn_no": 1}]}]}

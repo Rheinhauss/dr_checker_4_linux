@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}],
+"warnings":[{"warn_data": {"at_line": 2834, "warn_str": "Trying to use a global variable without locking.", "at": "b = &bttv_tvnorms[btv->tvnorm].cropcap.bounds;", "inst_trace": [{"instr_func": "bttv_s_selection", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}], "at_file": "drivers/media/pci/bt8xx/bttv-driver.c", "by": "GlobalVariableRaceDetector says:", "at_func": "bttv_s_selection"}, "warn_no": 1}]}]}

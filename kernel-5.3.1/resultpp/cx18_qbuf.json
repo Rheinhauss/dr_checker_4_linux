@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}, {"lineno": 893, "file": "drivers/media/pci/cx18/cx18-ioctl.c", "instr": "return videobuf_qbuf(cx18_vb_queue(id), b);"}],
+"warnings":[{"warn_data": {"at_line": 586, "warn_str": "Trying to use a global variable without locking.", "at": "dprintk(1, \"qbuf: buffer length is not enough\\n\");", "inst_trace": [{"instr_func": "cx18_qbuf", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}, {"instr_func": "cx18_qbuf", "instr_loc": 893, "instr_file": "drivers/media/pci/cx18/cx18-ioctl.c", "instr": "return videobuf_qbuf(cx18_vb_queue(id), b);"}], "at_file": "drivers/media/v4l2-core/videobuf-core.c", "by": "GlobalVariableRaceDetector says:", "at_func": "videobuf_qbuf"}, "warn_no": 1}]}]}

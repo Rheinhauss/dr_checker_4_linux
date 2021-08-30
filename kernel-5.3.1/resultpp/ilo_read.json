@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i8*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 481, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "err = copy_to_user(buf, pkt, len);", "inst_trace": [], "at_file": "drivers/misc/hpilo.c", "by": "TaintedSizeDetector says:", "at_func": "ilo_read"}, "warn_no": 1}]}]}

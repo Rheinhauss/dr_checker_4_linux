@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %6 = alloca i32, align 4"}, {"lineno": 206, "file": "drivers/hwmon/w83773g.c", "instr": "return set_offset(regmap, channel - 1, val);"}],
+"warnings":[{"warn_data": {"at_line": 135, "warn_str": "Trying to use a global variable without locking.", "at": "ret = regmap_write(regmap, W83773_OFFSET_MSB[index], high_byte);", "inst_trace": [{"instr_func": "w83773_write", "instr_loc": -1, "instr": "  %6 = alloca i32, align 4"}, {"instr_func": "w83773_write", "instr_loc": 206, "instr_file": "drivers/hwmon/w83773g.c", "instr": "return set_offset(regmap, channel - 1, val);"}], "at_file": "drivers/hwmon/w83773g.c", "by": "GlobalVariableRaceDetector says:", "at_func": "set_offset"}, "warn_no": 1}]}]}

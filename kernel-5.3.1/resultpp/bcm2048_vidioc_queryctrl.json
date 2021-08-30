@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}],
+"warnings":[{"warn_data": {"at_line": 2339, "warn_str": "Trying to use a global variable without locking.", "at": "if (qc->id && qc->id == bcm2048_v4l2_queryctrl[i].id) {", "inst_trace": [{"instr_func": "bcm2048_vidioc_queryctrl", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}], "at_file": "drivers/staging/media/bcm2048/radio-bcm2048.c", "by": "GlobalVariableRaceDetector says:", "at_func": "bcm2048_vidioc_queryctrl"}, "warn_no": 1}]}]}

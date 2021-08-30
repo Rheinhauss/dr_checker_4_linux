@@ -1,0 +1,7 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca %struct.spinlock*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 4877, "warn_str": "Trying to use a global variable without locking.", "at": "changed = (sdebug_max_luns != n);", "inst_trace": [{"instr_func": "max_luns_store", "instr_loc": -1, "instr": "  %4 = alloca %struct.spinlock*, align 8"}], "at_file": "drivers/scsi/scsi_debug.c", "by": "GlobalVariableRaceDetector says:", "at_func": "max_luns_store"}, "warn_no": 1}]},
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca %struct.spinlock*, align 8"}, {"lineno": 4879, "file": "drivers/scsi/scsi_debug.c", "instr": "sdebug_max_tgts_luns();"}],
+"warnings":[{"warn_data": {"at_line": 745, "warn_str": "Trying to use a global variable without locking.", "at": "{", "inst_trace": [{"instr_func": "max_luns_store", "instr_loc": -1, "instr": "  %4 = alloca %struct.spinlock*, align 8"}, {"instr_func": "max_luns_store", "instr_loc": 4879, "instr_file": "drivers/scsi/scsi_debug.c", "instr": "sdebug_max_tgts_luns();"}], "at_file": "drivers/scsi/scsi_debug.c", "by": "GlobalVariableRaceDetector says:", "at_func": "sdebug_max_tgts_luns"}, "warn_no": 1}]}]}

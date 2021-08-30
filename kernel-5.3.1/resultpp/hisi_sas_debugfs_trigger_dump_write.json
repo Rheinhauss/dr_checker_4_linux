@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i8*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 3149, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_from_user(buf, user_buf, count))", "inst_trace": [], "at_file": "drivers/scsi/hisi_sas/hisi_sas_main.c", "by": "TaintedSizeDetector says:", "at_func": "hisi_sas_debugfs_trigger_dump_write"}, "warn_no": 1}]}]}

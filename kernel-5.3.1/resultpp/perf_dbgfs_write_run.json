@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}, {"lineno": 1268, "file": "drivers/ntb/test/ntb_perf.c", "instr": "ret = perf_submit_test(peer);"}],
+"warnings":[{"warn_data": {"at_line": 1070, "warn_str": "Trying to use a global variable without locking.", "at": "(void)queue_work(perf_wq, &pthr->work);", "inst_trace": [{"instr_func": "perf_dbgfs_write_run", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}, {"instr_func": "perf_dbgfs_write_run", "instr_loc": 1268, "instr_file": "drivers/ntb/test/ntb_perf.c", "instr": "ret = perf_submit_test(peer);"}], "at_file": "drivers/ntb/test/ntb_perf.c", "by": "GlobalVariableRaceDetector says:", "at_func": "perf_submit_test"}, "warn_no": 1}]}]}

@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}],
+"warnings":[{"warn_data": {"at_line": 1794, "warn_str": "Trying to use a global variable without locking.", "at": "if (saa7134_no_overlay > 0) {", "inst_trace": [{"instr_func": "saa7134_enum_fmt_vid_overlay", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}], "at_file": "drivers/media/pci/saa7134/saa7134-video.c", "by": "GlobalVariableRaceDetector says:", "at_func": "saa7134_enum_fmt_vid_overlay"}, "warn_no": 1}]}]}

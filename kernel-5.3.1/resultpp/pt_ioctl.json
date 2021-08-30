@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i8*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 713, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_from_user(&mtop, p, sizeof(struct mtop)))", "inst_trace": [], "at_file": "drivers/block/paride/pt.c", "by": "TaintedSizeDetector says:", "at_func": "pt_ioctl"}, "warn_no": 1}]}]}

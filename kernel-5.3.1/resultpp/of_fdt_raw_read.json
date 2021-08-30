@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %7 = alloca %struct.file*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 1259, "warn_str": "Trying to use a global variable without locking.", "at": "memcpy(buf, initial_boot_params + off, count);", "inst_trace": [{"instr_func": "of_fdt_raw_read", "instr_loc": -1, "instr": "  %7 = alloca %struct.file*, align 8"}], "at_file": "drivers/of/fdt.c", "by": "GlobalVariableRaceDetector says:", "at_func": "of_fdt_raw_read"}, "warn_no": 1}]}]}

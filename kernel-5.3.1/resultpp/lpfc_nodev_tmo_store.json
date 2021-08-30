@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}, {"lineno": 3736, "file": "drivers/scsi/lpfc/lpfc_attr.c", "instr": "lpfc_vport_param_store(nodev_tmo)"}],
+"warnings":[{"warn_data": {"at_line": 3712, "warn_str": "Trying to use a global variable without locking.", "at": "(lpfc_devloss_tmo != LPFC_DEF_DEVLOSS_TMO)) {", "inst_trace": [{"instr_func": "lpfc_nodev_tmo_store", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}, {"instr_func": "lpfc_nodev_tmo_store", "instr_loc": 3736, "instr_file": "drivers/scsi/lpfc/lpfc_attr.c", "instr": "lpfc_vport_param_store(nodev_tmo)"}], "at_file": "drivers/scsi/lpfc/lpfc_attr.c", "by": "GlobalVariableRaceDetector says:", "at_func": "lpfc_nodev_tmo_set"}, "warn_no": 1}]}]}

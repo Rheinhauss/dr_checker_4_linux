@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}],
+"warnings":[{"warn_data": {"at_line": 271, "warn_str": "Trying to use a global variable without locking.", "at": "if (sysfs_streq(trigger_types[i].name, buf))", "inst_trace": [{"instr_func": "edge_store", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}], "at_file": "drivers/gpio/gpiolib-sysfs.c", "by": "GlobalVariableRaceDetector says:", "at_func": "edge_store"}, "warn_no": 1}]}]}

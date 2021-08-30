@@ -1,0 +1,7 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}, {"lineno": 1191, "file": "drivers/hwtracing/stm/core.c", "instr": "stm_source_link_drop(src);"}],
+"warnings":[{"warn_data": {"at_line": 1150, "warn_str": "Trying to use a global variable without locking.", "at": "stm = srcu_dereference(src->link, &stm_source_srcu);", "inst_trace": [{"instr_func": "stm_source_link_store", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}, {"instr_func": "stm_source_link_store", "instr_loc": 1191, "instr_file": "drivers/hwtracing/stm/core.c", "instr": "stm_source_link_drop(src);"}], "at_file": "drivers/hwtracing/stm/core.c", "by": "GlobalVariableRaceDetector says:", "at_func": "stm_source_link_drop"}, "warn_no": 1}]},
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}, {"lineno": 1193, "file": "drivers/hwtracing/stm/core.c", "instr": "link = stm_find_device(buf);"}],
+"warnings":[{"warn_data": {"at_line": 116, "warn_str": "Trying to use a global variable without locking.", "at": "if (!stm_core_up)", "inst_trace": [{"instr_func": "stm_source_link_store", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}, {"instr_func": "stm_source_link_store", "instr_loc": 1193, "instr_file": "drivers/hwtracing/stm/core.c", "instr": "link = stm_find_device(buf);"}], "at_file": "drivers/hwtracing/stm/core.c", "by": "GlobalVariableRaceDetector says:", "at_func": "stm_find_device"}, "warn_no": 1}]}]}

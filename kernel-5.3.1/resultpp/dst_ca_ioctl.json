@@ -1,0 +1,15 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}, {"lineno": 583, "file": "drivers/media/pci/bt8xx/dst_ca.c", "instr": "result = ca_get_slot_caps(state, p_ca_caps, arg);"}],
+"warnings":[{"warn_data": {"at_line": 231, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "p_ca_caps->slot_num = 1;", "inst_trace": [], "at_file": "drivers/media/pci/bt8xx/dst_ca.c", "by": "TaintedSizeDetector says:", "at_func": "ca_get_slot_caps"}, "warn_no": 1}]},
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}, {"lineno": 573, "file": "drivers/media/pci/bt8xx/dst_ca.c", "instr": "result = ca_get_slot_info(state, p_ca_slot_info, arg);"}],
+"warnings":[{"warn_data": {"at_line": 282, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_to_user(arg, p_ca_slot_info, sizeof (struct ca_slot_info)))", "inst_trace": [], "at_file": "drivers/media/pci/bt8xx/dst_ca.c", "by": "TaintedSizeDetector says:", "at_func": "ca_get_slot_info"}, "warn_no": 1}]},
+{"num_warnings": 3,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}, {"lineno": 559, "file": "drivers/media/pci/bt8xx/dst_ca.c", "instr": "result = ca_get_message(state, p_ca_message, arg);"}],
+"warnings":[{"warn_data": {"at_line": 290, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "{", "inst_trace": [], "at_file": "drivers/media/pci/bt8xx/dst_ca.c", "by": "TaintedSizeDetector says:", "at_func": "ca_get_message"}, "warn_no": 1},
+{"warn_data": {"at_line": 314, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "memcpy(p_ca_message->msg, state->messages, 128);", "inst_trace": [], "at_file": "drivers/media/pci/bt8xx/dst_ca.c", "by": "TaintedSizeDetector says:", "at_func": "ca_get_message"}, "warn_no": 2},
+{"warn_data": {"at_line": 309, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "memcpy(p_ca_message->msg, state->messages, 128);", "inst_trace": [], "at_file": "drivers/media/pci/bt8xx/dst_ca.c", "by": "TaintedSizeDetector says:", "at_func": "ca_get_message"}, "warn_no": 3}]},
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}, {"lineno": 550, "file": "drivers/media/pci/bt8xx/dst_ca.c", "instr": "result = ca_send_message(state, p_ca_message, arg);"}],
+"warnings":[{"warn_data": {"at_line": 462, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_from_user(p_ca_message, arg, sizeof (struct ca_msg))) {", "inst_trace": [], "at_file": "drivers/media/pci/bt8xx/dst_ca.c", "by": "TaintedSizeDetector says:", "at_func": "ca_send_message"}, "warn_no": 1}]}]}

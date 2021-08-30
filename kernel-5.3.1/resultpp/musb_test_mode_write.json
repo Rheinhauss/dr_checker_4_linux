@@ -1,0 +1,8 @@
+{"all_contexts":[
+{"num_warnings": 2,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i8*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 172, "warn_str": "Trying to use a global variable without locking.", "at": "test = musb_readb(musb->mregs, MUSB_TESTMODE);", "inst_trace": [{"instr_func": "musb_test_mode_write", "instr_loc": -1, "instr": "  %5 = alloca i8*, align 8"}], "at_file": "drivers/usb/musb/musb_debugfs.c", "by": "GlobalVariableRaceDetector says:", "at_func": "musb_test_mode_write"}, "warn_no": 1},
+{"warn_data": {"at_line": 181, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_from_user(buf, ubuf, min_t(size_t, sizeof(buf) - 1, count)))", "inst_trace": [], "at_file": "drivers/usb/musb/musb_debugfs.c", "by": "TaintedSizeDetector says:", "at_func": "musb_test_mode_write"}, "warn_no": 2}]},
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i8*, align 8"}, {"lineno": 204, "file": "drivers/usb/musb/musb_debugfs.c", "instr": "musb_load_testpacket(musb);"}],
+"warnings":[{"warn_data": {"at_line": 446, "warn_str": "Trying to use a global variable without locking.", "at": "musb_writew(regs, MUSB_CSR0, MUSB_CSR0_TXPKTRDY);", "inst_trace": [{"instr_func": "musb_test_mode_write", "instr_loc": -1, "instr": "  %5 = alloca i8*, align 8"}, {"instr_func": "musb_test_mode_write", "instr_loc": 204, "instr_file": "drivers/usb/musb/musb_debugfs.c", "instr": "musb_load_testpacket(musb);"}], "at_file": "drivers/usb/musb/musb_core.c", "by": "GlobalVariableRaceDetector says:", "at_func": "musb_load_testpacket"}, "warn_no": 1}]}]}

@@ -1,0 +1,7 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i32, align 4"}],
+"warnings":[{"warn_data": {"at_line": 2569, "warn_str": "Trying to use a global variable without locking.", "at": "{", "inst_trace": [{"instr_func": "il4965_rs_sta_dbgfs_scale_table_read", "instr_loc": -1, "instr": "  %5 = alloca i32, align 4"}], "at_file": "drivers/net/wireless/intel/iwlegacy/4965-rs.c", "by": "GlobalVariableRaceDetector says:", "at_func": "il4965_rs_sta_dbgfs_scale_table_read"}, "warn_no": 1}]},
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i32, align 4"}, {"lineno": 2642, "file": "drivers/net/wireless/intel/iwlegacy/4965-rs.c", "instr": "il4965_hwrate_to_plcp_idx(le32_to_cpu"}],
+"warnings":[{"warn_data": {"at_line": 119, "warn_str": "Trying to use a global variable without locking.", "at": "if (il_rates[idx].plcp == (rate_n_flags & 0xFF))", "inst_trace": [{"instr_func": "il4965_rs_sta_dbgfs_scale_table_read", "instr_loc": -1, "instr": "  %5 = alloca i32, align 4"}, {"instr_func": "il4965_rs_sta_dbgfs_scale_table_read", "instr_loc": 2642, "instr_file": "drivers/net/wireless/intel/iwlegacy/4965-rs.c", "instr": "il4965_hwrate_to_plcp_idx(le32_to_cpu"}], "at_file": "drivers/net/wireless/intel/iwlegacy/4965-rs.c", "by": "GlobalVariableRaceDetector says:", "at_func": "il4965_hwrate_to_plcp_idx"}, "warn_no": 1}]}]}

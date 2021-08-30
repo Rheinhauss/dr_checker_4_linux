@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %7 = alloca i64, align 8"}, {"lineno": 538, "file": "drivers/power/supply/olpc_battery.c", "instr": "ret = olpc_ec_cmd(EC_BAT_EEPROM, &ec_byte, 1, &buf[i], 1);"}],
+"warnings":[{"warn_data": {"at_line": 129, "warn_str": "Trying to use a global variable without locking.", "at": "struct olpc_ec_priv *ec = ec_priv;", "inst_trace": [{"instr_func": "olpc_bat_eeprom_read", "instr_loc": -1, "instr": "  %7 = alloca i64, align 8"}, {"instr_func": "olpc_bat_eeprom_read", "instr_loc": 538, "instr_file": "drivers/power/supply/olpc_battery.c", "instr": "ret = olpc_ec_cmd(EC_BAT_EEPROM, &ec_byte, 1, &buf[i], 1);"}], "at_file": "drivers/platform/olpc/olpc-ec.c", "by": "GlobalVariableRaceDetector says:", "at_func": "olpc_ec_cmd"}, "warn_no": 1}]}]}

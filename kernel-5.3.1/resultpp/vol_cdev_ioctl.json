@@ -1,0 +1,7 @@
+{"all_contexts":[
+{"num_warnings": 4,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i8*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 538, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "struct ubi_set_vol_prop_req req;", "inst_trace": [], "at_file": "drivers/mtd/ubi/cdev.c", "by": "TaintedSizeDetector says:", "at_func": "vol_cdev_ioctl"}, "warn_no": 1},
+{"warn_data": {"at_line": 431, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "struct ubi_leb_change_req req;", "inst_trace": [], "at_file": "drivers/mtd/ubi/cdev.c", "by": "TaintedSizeDetector says:", "at_func": "vol_cdev_ioctl"}, "warn_no": 2},
+{"warn_data": {"at_line": 496, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "struct ubi_map_req req;", "inst_trace": [], "at_file": "drivers/mtd/ubi/cdev.c", "by": "TaintedSizeDetector says:", "at_func": "vol_cdev_ioctl"}, "warn_no": 3},
+{"warn_data": {"at_line": 398, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "err = copy_from_user(&bytes, argp, sizeof(int64_t));", "inst_trace": [], "at_file": "drivers/mtd/ubi/cdev.c", "by": "TaintedSizeDetector says:", "at_func": "vol_cdev_ioctl"}, "warn_no": 4}]}]}

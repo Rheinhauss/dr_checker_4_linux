@@ -1,0 +1,7 @@
+{"all_contexts":[
+{"num_warnings": 4,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i8*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 533, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "strcpy(hi->data.modename, \"ser12,ser3,ser24\");", "inst_trace": [], "at_file": "drivers/net/hamradio/baycom_ser_fdx.c", "by": "TaintedSizeDetector says:", "at_func": "baycom_ioctl.43"}, "warn_no": 1},
+{"warn_data": {"at_line": 522, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_to_user(ifr->ifr_data, hi, sizeof(struct hdlcdrv_ioctl)))", "inst_trace": [], "at_file": "drivers/net/hamradio/baycom_ser_fdx.c", "by": "TaintedSizeDetector says:", "at_func": "baycom_ioctl.43"}, "warn_no": 2},
+{"warn_data": {"at_line": 543, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_from_user(&bi, ifr->ifr_data, sizeof(bi)))", "inst_trace": [], "at_file": "drivers/net/hamradio/baycom_ser_fdx.c", "by": "TaintedSizeDetector says:", "at_func": "baycom_ioctl.43"}, "warn_no": 3},
+{"warn_data": {"at_line": 558, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_to_user(ifr->ifr_data, &bi, sizeof(bi)))", "inst_trace": [], "at_file": "drivers/net/hamradio/baycom_ser_fdx.c", "by": "TaintedSizeDetector says:", "at_func": "baycom_ioctl.43"}, "warn_no": 4}]}]}

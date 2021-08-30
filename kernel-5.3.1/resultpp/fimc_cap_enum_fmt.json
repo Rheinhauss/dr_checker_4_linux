@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}, {"lineno": 737, "file": "drivers/media/platform/exynos4-is/fimc-capture.c", "instr": "fmt = fimc_find_format(NULL, NULL, FMT_FLAGS_CAM | FMT_FLAGS_M2M,"}],
+"warnings":[{"warn_data": {"at_line": 787, "warn_str": "Trying to use a global variable without locking.", "at": "fmt = &fimc_formats[i];", "inst_trace": [{"instr_func": "fimc_cap_enum_fmt", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}, {"instr_func": "fimc_cap_enum_fmt", "instr_loc": 737, "instr_file": "drivers/media/platform/exynos4-is/fimc-capture.c", "instr": "fmt = fimc_find_format(NULL, NULL, FMT_FLAGS_CAM | FMT_FLAGS_M2M,"}], "at_file": "drivers/media/platform/exynos4-is/fimc-core.c", "by": "GlobalVariableRaceDetector says:", "at_func": "fimc_find_format"}, "warn_no": 1}]}]}

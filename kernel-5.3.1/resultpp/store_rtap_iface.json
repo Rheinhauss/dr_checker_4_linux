@@ -1,0 +1,7 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}],
+"warnings":[{"warn_data": {"at_line": 1397, "warn_str": "Trying to use a global variable without locking.", "at": "if (rtap_iface)", "inst_trace": [{"instr_func": "store_rtap_iface", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}], "at_file": "drivers/net/wireless/intel/ipw2x00/ipw2200.c", "by": "GlobalVariableRaceDetector says:", "at_func": "store_rtap_iface"}, "warn_no": 1}]},
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}, {"lineno": 1400, "file": "drivers/net/wireless/intel/ipw2x00/ipw2200.c", "instr": "rc = ipw_prom_alloc(priv);"}],
+"warnings":[{"warn_data": {"at_line": 11559, "warn_str": "Trying to use a global variable without locking.", "at": "priv->prom_net_dev->netdev_ops = &ipw_prom_netdev_ops;", "inst_trace": [{"instr_func": "store_rtap_iface", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}, {"instr_func": "store_rtap_iface", "instr_loc": 1400, "instr_file": "drivers/net/wireless/intel/ipw2x00/ipw2200.c", "instr": "rc = ipw_prom_alloc(priv);"}], "at_file": "drivers/net/wireless/intel/ipw2x00/ipw2200.c", "by": "GlobalVariableRaceDetector says:", "at_func": "ipw_prom_alloc"}, "warn_no": 1}]}]}

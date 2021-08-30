@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %3 = alloca %struct.usb_phy*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 140, "warn_str": "Trying to use a global variable without locking.", "at": "power = musb_readb(addr, MUSB_POWER);", "inst_trace": [{"instr_func": "musb_ulpi_read", "instr_loc": -1, "instr": "  %3 = alloca %struct.usb_phy*, align 8"}], "at_file": "drivers/usb/musb/musb_core.c", "by": "GlobalVariableRaceDetector says:", "at_func": "musb_ulpi_read"}, "warn_no": 1}]}]}

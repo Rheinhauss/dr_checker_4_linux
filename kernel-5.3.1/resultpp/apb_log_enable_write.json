@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}, {"lineno": 1195, "file": "drivers/staging/greybus/es2.c", "instr": "usb_log_enable(es2);"}, {"lineno": 1156, "file": "drivers/staging/greybus/es2.c", "instr": "gb_debugfs_get(), es2,"}],
+"warnings":[{"warn_data": {"at_line": 28, "warn_str": "Trying to use a global variable without locking.", "at": "return gb_debug_root;", "inst_trace": [{"instr_func": "apb_log_enable_write", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}, {"instr_func": "apb_log_enable_write", "instr_loc": 1195, "instr_file": "drivers/staging/greybus/es2.c", "instr": "usb_log_enable(es2);"}, {"instr_func": "usb_log_enable", "instr_loc": 1156, "instr_file": "drivers/staging/greybus/es2.c", "instr": "gb_debugfs_get(), es2,"}], "at_file": "drivers/staging/greybus/debugfs.c", "by": "GlobalVariableRaceDetector says:", "at_func": "gb_debugfs_get"}, "warn_no": 1}]}]}

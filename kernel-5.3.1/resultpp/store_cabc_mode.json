@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}],
+"warnings":[{"warn_data": {"at_line": 445, "warn_str": "Trying to use a global variable without locking.", "at": "const char *mode_str = cabc_modes[i];", "inst_trace": [{"instr_func": "store_cabc_mode", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}], "at_file": "drivers/video/fbdev/omap2/omapfb/displays/panel-sony-acx565akm.c", "by": "GlobalVariableRaceDetector says:", "at_func": "store_cabc_mode"}, "warn_no": 1}]}]}

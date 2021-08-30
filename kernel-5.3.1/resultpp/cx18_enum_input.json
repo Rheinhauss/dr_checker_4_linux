@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca %struct.file*, align 8"}, {"lineno": 429, "file": "drivers/media/pci/cx18/cx18-ioctl.c", "instr": "return cx18_get_input(cx, vin->index, vin);"}],
+"warnings":[{"warn_data": {"at_line": 596, "warn_str": "Trying to use a global variable without locking.", "at": "strscpy(input->name, input_strs[card_input->video_type - 1],", "inst_trace": [{"instr_func": "cx18_enum_input", "instr_loc": -1, "instr": "  %4 = alloca %struct.file*, align 8"}, {"instr_func": "cx18_enum_input", "instr_loc": 429, "instr_file": "drivers/media/pci/cx18/cx18-ioctl.c", "instr": "return cx18_get_input(cx, vin->index, vin);"}], "at_file": "drivers/media/pci/cx18/cx18-cards.c", "by": "GlobalVariableRaceDetector says:", "at_func": "cx18_get_input"}, "warn_no": 1}]}]}

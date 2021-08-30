@@ -1,0 +1,5 @@
+{"all_contexts":[
+{"num_warnings": 2,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i32, align 4"}],
+"warnings":[{"warn_data": {"at_line": 59, "warn_str": "Trying to use a global variable without locking.", "at": "struct cros_ec_dev *ec = to_cros_ec_dev(dev);", "inst_trace": [{"instr_func": "reboot_store", "instr_loc": -1, "instr": "  %5 = alloca i32, align 4"}], "at_file": "drivers/platform/chrome/cros_ec_sysfs.c", "by": "GlobalVariableRaceDetector says:", "at_func": "reboot_store"}, "warn_no": 1},
+{"warn_data": {"at_line": 72, "warn_str": "Loop is bounded by a tainted value.", "at": "if (!buf[offset])", "inst_trace": [{"instr_func": "reboot_store", "instr_loc": -1, "instr": "  %5 = alloca i32, align 4"}, {"instr_func": "reboot_store", "instr_loc": 72, "instr_file": "drivers/platform/chrome/cros_ec_sysfs.c", "instr": "if (!buf[offset])"}, {"instr_func": "reboot_store", "instr_loc": 72, "instr_file": "drivers/platform/chrome/cros_ec_sysfs.c", "instr": "if (!buf[offset])"}], "at_file": "drivers/platform/chrome/cros_ec_sysfs.c", "by": "TaintedLoopBoundDetector says:", "at_func": "reboot_store"}, "warn_no": 2}]}]}

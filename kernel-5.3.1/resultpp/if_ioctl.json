@@ -1,0 +1,7 @@
+{"all_contexts":[
+{"num_warnings": 4,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i8*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 175, "warn_str": "Trying to use a global variable without locking.", "at": "gig_dbg(DEBUG_IF, \"%u: %s(0x%x)\", cs->minor_index, __func__, cmd);", "inst_trace": [{"instr_func": "if_ioctl", "instr_loc": -1, "instr": "  %4 = alloca i8*, align 8"}], "at_file": "drivers/staging/isdn/gigaset/interface.c", "by": "GlobalVariableRaceDetector says:", "at_func": "if_ioctl"}, "warn_no": 1},
+{"warn_data": {"at_line": 211, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "retval = copy_from_user(version,", "inst_trace": [], "at_file": "drivers/staging/isdn/gigaset/interface.c", "by": "TaintedSizeDetector says:", "at_func": "if_ioctl"}, "warn_no": 2},
+{"warn_data": {"at_line": 201, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "retval = copy_from_user(&buf,", "inst_trace": [], "at_file": "drivers/staging/isdn/gigaset/interface.c", "by": "TaintedSizeDetector says:", "at_func": "if_ioctl"}, "warn_no": 3},
+{"warn_data": {"at_line": 217, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "retval = copy_to_user((unsigned __user *) arg,", "inst_trace": [], "at_file": "drivers/staging/isdn/gigaset/interface.c", "by": "TaintedSizeDetector says:", "at_func": "if_ioctl"}, "warn_no": 4}]}]}

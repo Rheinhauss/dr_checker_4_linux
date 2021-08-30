@@ -1,0 +1,7 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}],
+"warnings":[{"warn_data": {"at_line": 330, "warn_str": "Trying to use a global variable without locking.", "at": "lna_conf_str[div_ant_conf.main_lna_conf]);", "inst_trace": [{"instr_func": "read_file_antenna_diversity", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}], "at_file": "drivers/net/wireless/ath/ath9k/debug.c", "by": "GlobalVariableRaceDetector says:", "at_func": "read_file_antenna_diversity"}, "warn_no": 1}]},
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}, {"lineno": 317, "file": "drivers/net/wireless/ath/ath9k/debug.c", "instr": "buf = kzalloc(size, GFP_KERNEL);"}],
+"warnings":[{"warn_data": {"at_line": 553, "warn_str": "Trying to use a global variable without locking.", "at": "  %183 = getelementptr [3 x [14 x %struct.kmem_cache*]], [3 x [14 x %struct.kmem_cache*]]* @kmalloc_caches, i64 0, i64 %182, !dbg !808311", "inst_trace": [{"instr_func": "read_file_antenna_diversity", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}, {"instr_func": "read_file_antenna_diversity", "instr_loc": 317, "instr_file": "drivers/net/wireless/ath/ath9k/debug.c", "instr": "buf = kzalloc(size, GFP_KERNEL);"}], "at_file": "./include/linux/slab.h", "by": "GlobalVariableRaceDetector says:", "at_func": "kzalloc.1017"}, "warn_no": 1}]}]}

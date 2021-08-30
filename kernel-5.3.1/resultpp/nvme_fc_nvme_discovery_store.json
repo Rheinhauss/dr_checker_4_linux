@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca %struct.spinlock*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 3338, "warn_str": "Trying to use a global variable without locking.", "at": "spin_lock_irqsave(&nvme_fc_lock, flags);", "inst_trace": [{"instr_func": "nvme_fc_nvme_discovery_store", "instr_loc": -1, "instr": "  %5 = alloca %struct.spinlock*, align 8"}], "at_file": "drivers/nvme/host/fc.c", "by": "GlobalVariableRaceDetector says:", "at_func": "nvme_fc_nvme_discovery_store"}, "warn_no": 1}]}]}

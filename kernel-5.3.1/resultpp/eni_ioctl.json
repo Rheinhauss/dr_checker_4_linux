@@ -1,0 +1,5 @@
+{"all_contexts":[
+{"num_warnings": 2,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i8*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 2023, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "struct atm_cirange ci;", "inst_trace": [], "at_file": "drivers/atm/eni.c", "by": "TaintedSizeDetector says:", "at_func": "eni_ioctl"}, "warn_no": 1},
+{"warn_data": {"at_line": 2012, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_from_user(&mult, arg,", "inst_trace": [], "at_file": "drivers/atm/eni.c", "by": "TaintedSizeDetector says:", "at_func": "eni_ioctl"}, "warn_no": 2}]}]}

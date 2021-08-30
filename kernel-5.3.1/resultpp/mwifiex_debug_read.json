@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}, {"lineno": 404, "file": "drivers/net/wireless/marvell/mwifiex/debugfs.c", "instr": "p += mwifiex_debug_info_to_buffer(priv, p, &info);"}],
+"warnings":[{"warn_data": {"at_line": 268, "warn_str": "Trying to use a global variable without locking.", "at": "if (i < (num_of_items - 3))", "inst_trace": [{"instr_func": "mwifiex_debug_read", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}, {"instr_func": "mwifiex_debug_read", "instr_loc": 404, "instr_file": "drivers/net/wireless/marvell/mwifiex/debugfs.c", "instr": "p += mwifiex_debug_info_to_buffer(priv, p, &info);"}], "at_file": "drivers/net/wireless/marvell/mwifiex/util.c", "by": "GlobalVariableRaceDetector says:", "at_func": "mwifiex_debug_info_to_buffer"}, "warn_no": 1}]}]}

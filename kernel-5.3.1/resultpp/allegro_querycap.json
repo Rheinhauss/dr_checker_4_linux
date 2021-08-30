@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca %struct.file*, align 8"}, {"lineno": 2368, "file": "drivers/staging/media/allegro-dvt/allegro-core.c", "instr": "struct video_device *vdev = video_devdata(file);"}],
+"warnings":[{"warn_data": {"at_line": 236, "warn_str": "Trying to use a global variable without locking.", "at": "return video_devices[iminor(file_inode(file))];", "inst_trace": [{"instr_func": "allegro_querycap", "instr_loc": -1, "instr": "  %4 = alloca %struct.file*, align 8"}, {"instr_func": "allegro_querycap", "instr_loc": 2368, "instr_file": "drivers/staging/media/allegro-dvt/allegro-core.c", "instr": "struct video_device *vdev = video_devdata(file);"}], "at_file": "drivers/media/v4l2-core/v4l2-dev.c", "by": "GlobalVariableRaceDetector says:", "at_func": "video_devdata"}, "warn_no": 1}]}]}

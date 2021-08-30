@@ -1,0 +1,10 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i64, align 8"}],
+"warnings":[{"warn_data": {"at_line": 4719, "warn_str": "Trying to use a global variable without locking.", "at": "sdebug_opts = opts;", "inst_trace": [{"instr_func": "opts_store", "instr_loc": -1, "instr": "  %4 = alloca i64, align 8"}], "at_file": "drivers/scsi/scsi_debug.c", "by": "GlobalVariableRaceDetector says:", "at_func": "opts_store"}, "warn_no": 1}]},
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i64, align 8"}, {"lineno": 4722, "file": "drivers/scsi/scsi_debug.c", "instr": "tweak_cmnd_count();"}],
+"warnings":[{"warn_data": {"at_line": 4212, "warn_str": "Trying to use a global variable without locking.", "at": "modulo = abs(sdebug_every_nth);", "inst_trace": [{"instr_func": "opts_store", "instr_loc": -1, "instr": "  %4 = alloca i64, align 8"}, {"instr_func": "opts_store", "instr_loc": 4722, "instr_file": "drivers/scsi/scsi_debug.c", "instr": "tweak_cmnd_count();"}], "at_file": "drivers/scsi/scsi_debug.c", "by": "GlobalVariableRaceDetector says:", "at_func": "tweak_cmnd_count"}, "warn_no": 1}]},
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i64, align 8"}, {"lineno": 4722, "file": "drivers/scsi/scsi_debug.c", "instr": "tweak_cmnd_count();"}, {"lineno": 4215, "file": "drivers/scsi/scsi_debug.c", "instr": "block_unblock_all_queues(true);"}],
+"warnings":[{"warn_data": {"at_line": 4201, "warn_str": "Trying to use a global variable without locking.", "at": "for (j = 0, sqp = sdebug_q_arr; j < submit_queues; ++j, ++sqp)", "inst_trace": [{"instr_func": "opts_store", "instr_loc": -1, "instr": "  %4 = alloca i64, align 8"}, {"instr_func": "opts_store", "instr_loc": 4722, "instr_file": "drivers/scsi/scsi_debug.c", "instr": "tweak_cmnd_count();"}, {"instr_func": "tweak_cmnd_count", "instr_loc": 4215, "instr_file": "drivers/scsi/scsi_debug.c", "instr": "block_unblock_all_queues(true);"}], "at_file": "drivers/scsi/scsi_debug.c", "by": "GlobalVariableRaceDetector says:", "at_func": "block_unblock_all_queues"}, "warn_no": 1}]}]}

@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %6 = alloca i32, align 4"}, {"lineno": 273, "file": "drivers/hwmon/lochnagar-hwmon.c", "instr": "return read_power(dev, chan, val);"}],
+"warnings":[{"warn_data": {"at_line": 212, "warn_str": "Trying to use a global variable without locking.", "at": "if (!strcmp(\"SYSVDD\", lochnagar_chan_names[chan])) {", "inst_trace": [{"instr_func": "lochnagar_read", "instr_loc": -1, "instr": "  %6 = alloca i32, align 4"}, {"instr_func": "lochnagar_read", "instr_loc": 273, "instr_file": "drivers/hwmon/lochnagar-hwmon.c", "instr": "return read_power(dev, chan, val);"}], "at_file": "drivers/hwmon/lochnagar-hwmon.c", "by": "GlobalVariableRaceDetector says:", "at_func": "read_power"}, "warn_no": 1}]}]}

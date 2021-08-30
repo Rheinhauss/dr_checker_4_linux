@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}, {"lineno": 2351, "file": "drivers/staging/media/bcm2048/radio-bcm2048.c", "instr": "struct bcm2048_device *bdev = video_get_drvdata(video_devdata(file));"}],
+"warnings":[{"warn_data": {"at_line": 236, "warn_str": "Trying to use a global variable without locking.", "at": "return video_devices[iminor(file_inode(file))];", "inst_trace": [{"instr_func": "bcm2048_vidioc_g_ctrl", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}, {"instr_func": "bcm2048_vidioc_g_ctrl", "instr_loc": 2351, "instr_file": "drivers/staging/media/bcm2048/radio-bcm2048.c", "instr": "struct bcm2048_device *bdev = video_get_drvdata(video_devdata(file));"}], "at_file": "drivers/media/v4l2-core/v4l2-dev.c", "by": "GlobalVariableRaceDetector says:", "at_func": "video_devdata"}, "warn_no": 1}]}]}

@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}],
+"warnings":[{"warn_data": {"at_line": 482, "warn_str": "Trying to use a global variable without locking.", "at": "*fmt = formats[fmt->index];", "inst_trace": [{"instr_func": "cx18_enum_fmt_vid_cap", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}], "at_file": "drivers/media/pci/cx18/cx18-ioctl.c", "by": "GlobalVariableRaceDetector says:", "at_func": "cx18_enum_fmt_vid_cap"}, "warn_no": 1}]}]}

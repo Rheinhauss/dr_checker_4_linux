@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca %struct.file*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 36, "warn_str": "Trying to use a global variable without locking.", "at": "if (xen_initial_domain())", "inst_trace": [{"instr_func": "capabilities_read", "instr_loc": -1, "instr": "  %5 = alloca %struct.file*, align 8"}], "at_file": "drivers/xen/xenfs/super.c", "by": "GlobalVariableRaceDetector says:", "at_func": "capabilities_read"}, "warn_no": 1}]}]}

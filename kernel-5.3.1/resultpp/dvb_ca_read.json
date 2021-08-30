@@ -1,0 +1,8 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca %struct.file*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 337, "warn_str": "Trying to use a global variable without locking.", "at": "dprintk(8, \"av7110:%p\\n\",av7110);", "inst_trace": [{"instr_func": "dvb_ca_read", "instr_loc": -1, "instr": "  %5 = alloca %struct.file*, align 8"}], "at_file": "drivers/media/pci/ttpci/av7110_ca.c", "by": "GlobalVariableRaceDetector says:", "at_func": "dvb_ca_read"}, "warn_no": 1}]},
+{"num_warnings": 2,
+"context":[{"lineno": -1, "instr": "  %5 = alloca %struct.file*, align 8"}, {"lineno": 338, "file": "drivers/media/pci/ttpci/av7110_ca.c", "instr": "return ci_ll_read(&av7110->ci_rbuffer, file, buf, count, ppos);"}, {"lineno": 195, "file": "drivers/media/pci/ttpci/av7110_ca.c", "instr": "return dvb_ringbuffer_read_user(cibuf, buf, len);"}],
+"warnings":[{"warn_data": {"at_line": 140, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_to_user(buf, rbuf->data+rbuf->pread, split))", "inst_trace": [], "at_file": "drivers/media/dvb-core/dvb_ringbuffer.c", "by": "TaintedSizeDetector says:", "at_func": "dvb_ringbuffer_read_user"}, "warn_no": 1},
+{"warn_data": {"at_line": 150, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_to_user(buf, rbuf->data+rbuf->pread, todo))", "inst_trace": [], "at_file": "drivers/media/dvb-core/dvb_ringbuffer.c", "by": "TaintedSizeDetector says:", "at_func": "dvb_ringbuffer_read_user"}, "warn_no": 2}]}]}

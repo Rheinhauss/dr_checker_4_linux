@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}],
+"warnings":[{"warn_data": {"at_line": 83, "warn_str": "Trying to use a global variable without locking.", "at": "ixgbe_dbg_reg_ops_buf[len] = '\\0';", "inst_trace": [{"instr_func": "ixgbe_dbg_reg_ops_write", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}], "at_file": "drivers/net/ethernet/intel/ixgbe/ixgbe_debugfs.c", "by": "GlobalVariableRaceDetector says:", "at_func": "ixgbe_dbg_reg_ops_write"}, "warn_no": 1}]}]}

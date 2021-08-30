@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i1, align 1"}],
+"warnings":[{"warn_data": {"at_line": 374, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "rc = copy_to_user(buf, &val, len);", "inst_trace": [], "at_file": "drivers/fsi/fsi-scom.c", "by": "TaintedSizeDetector says:", "at_func": "scom_read"}, "warn_no": 1}]}]}

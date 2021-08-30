@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}],
+"warnings":[{"warn_data": {"at_line": 566, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "return simple_write_to_buffer(inmw->mm_base, inmw->size, offp,", "inst_trace": [], "at_file": "drivers/ntb/test/ntb_tool.c", "by": "TaintedSizeDetector says:", "at_func": "tool_mw_write"}, "warn_no": 1}]}]}

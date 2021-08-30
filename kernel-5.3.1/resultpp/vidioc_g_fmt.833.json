@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}],
+"warnings":[{"warn_data": {"at_line": 1363, "warn_str": "Trying to use a global variable without locking.", "at": "mfc_debug(2, \"f->type = %d ctx->state = %d\\n\", f->type, ctx->state);", "inst_trace": [{"instr_func": "vidioc_g_fmt.833", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}], "at_file": "drivers/media/platform/s5p-mfc/s5p_mfc_enc.c", "by": "GlobalVariableRaceDetector says:", "at_func": "vidioc_g_fmt.833"}, "warn_no": 1}]}]}

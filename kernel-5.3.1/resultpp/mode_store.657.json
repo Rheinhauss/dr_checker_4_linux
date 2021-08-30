@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}, {"lineno": 68, "file": "drivers/hwtracing/intel_th/pti.c", "instr": "ret = pti_width_mode(val);"}],
+"warnings":[{"warn_data": {"at_line": 43, "warn_str": "Trying to use a global variable without locking.", "at": "if (pti_mode[i] == width)", "inst_trace": [{"instr_func": "mode_store.657", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}, {"instr_func": "mode_store.657", "instr_loc": 68, "instr_file": "drivers/hwtracing/intel_th/pti.c", "instr": "ret = pti_width_mode(val);"}], "at_file": "drivers/hwtracing/intel_th/pti.c", "by": "GlobalVariableRaceDetector says:", "at_func": "pti_width_mode"}, "warn_no": 1}]}]}

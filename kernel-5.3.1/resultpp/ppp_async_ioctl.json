@@ -1,0 +1,5 @@
+{"all_contexts":[
+{"num_warnings": 2,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i8*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 457, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_from_user(accm, argp, sizeof(accm)))", "inst_trace": [], "at_file": "drivers/net/ppp/ppp_async.c", "by": "TaintedSizeDetector says:", "at_func": "ppp_async_ioctl"}, "warn_no": 1},
+{"warn_data": {"at_line": 452, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_to_user(argp, ap->xaccm, sizeof(ap->xaccm)))", "inst_trace": [], "at_file": "drivers/net/ppp/ppp_async.c", "by": "TaintedSizeDetector says:", "at_func": "ppp_async_ioctl"}, "warn_no": 2}]}]}

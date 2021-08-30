@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}],
+"warnings":[{"warn_data": {"at_line": 828, "warn_str": "Potential overflow, using tainted value in binary operation.", "at": "rc = len - iov_iter_count(&resp_iter);", "inst_trace": [{"instr_func": "sbefifo_user_read", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}, {"instr_func": "sbefifo_user_read", "instr_loc": 788, "instr_file": "drivers/fsi/fsi-sbefifo.c", "instr": "{"}, {"instr_func": "sbefifo_user_read", "instr_loc": 828, "instr_file": "drivers/fsi/fsi-sbefifo.c", "instr": "rc = len - iov_iter_count(&resp_iter);"}], "at_file": "drivers/fsi/fsi-sbefifo.c", "by": "IntegerOverflowDetector says:", "at_func": "sbefifo_user_read"}, "warn_no": 1}]}]}

@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca %struct.device*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 237, "warn_str": "Trying to use a global variable without locking.", "at": "queue_delayed_work(system_long_wq, &rport->reconnect_work,", "inst_trace": [{"instr_func": "store_reconnect_delay", "instr_loc": -1, "instr": "  %5 = alloca %struct.device*, align 8"}], "at_file": "drivers/scsi/scsi_transport_srp.c", "by": "GlobalVariableRaceDetector says:", "at_func": "store_reconnect_delay"}, "warn_no": 1}]}]}

@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}, {"lineno": 1105, "file": "drivers/tty/sysrq.c", "instr": "__handle_sysrq(c, false);"}],
+"warnings":[{"warn_data": {"at_line": 533, "warn_str": "Trying to use a global variable without locking.", "at": "orig_suppress_printk = suppress_printk;", "inst_trace": [{"instr_func": "write_sysrq_trigger", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}, {"instr_func": "write_sysrq_trigger", "instr_loc": 1105, "instr_file": "drivers/tty/sysrq.c", "instr": "__handle_sysrq(c, false);"}], "at_file": "drivers/tty/sysrq.c", "by": "GlobalVariableRaceDetector says:", "at_func": "__handle_sysrq"}, "warn_no": 1}]}]}
