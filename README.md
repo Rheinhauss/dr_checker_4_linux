@@ -15,6 +15,8 @@ Results for Linux 5.13.9 (current stable are in progress)
 
 # Setup
 
+Tested on `Ubuntu 20.04`
+
 Clone the repo
 
 Make sure you have Clang/LLVM 10 installed (newer Clang/LLVM will not work)
