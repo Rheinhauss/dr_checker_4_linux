@@ -1,0 +1,7 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}],
+"warnings":[{"warn_data": {"at_line": 1521, "warn_str": "Trying to use a global variable without locking.", "at": "IPW_DEBUG_INFO(\"enter\\n\");", "inst_trace": [{"instr_func": "store_led", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}], "at_file": "drivers/net/wireless/intel/ipw2x00/ipw2200.c", "by": "GlobalVariableRaceDetector says:", "at_func": "store_led"}, "warn_no": 1}]},
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}, {"lineno": 1533, "file": "drivers/net/wireless/intel/ipw2x00/ipw2200.c", "instr": "ipw_led_init(priv);"}],
+"warnings":[{"warn_data": {"at_line": 1153, "warn_str": "Trying to use a global variable without locking.", "at": "IPW_DEBUG_INFO(\"Unknown NIC type from EEPROM: %d\\n\",", "inst_trace": [{"instr_func": "store_led", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}, {"instr_func": "store_led", "instr_loc": 1533, "instr_file": "drivers/net/wireless/intel/ipw2x00/ipw2200.c", "instr": "ipw_led_init(priv);"}], "at_file": "drivers/net/wireless/intel/ipw2x00/ipw2200.c", "by": "GlobalVariableRaceDetector says:", "at_func": "ipw_led_init"}, "warn_no": 1}]}]}

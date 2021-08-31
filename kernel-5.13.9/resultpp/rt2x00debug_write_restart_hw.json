@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}],
+"warnings":[{"warn_data": {"at_line": 563, "warn_str": "Trying to use a global variable without locking.", "at": "if (time_before(jiffies, last_reset + msecs_to_jiffies(2000)))", "inst_trace": [{"instr_func": "rt2x00debug_write_restart_hw", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}], "at_file": "drivers/net/wireless/ralink/rt2x00/rt2x00debug.c", "by": "GlobalVariableRaceDetector says:", "at_func": "rt2x00debug_write_restart_hw"}, "warn_no": 1}]}]}

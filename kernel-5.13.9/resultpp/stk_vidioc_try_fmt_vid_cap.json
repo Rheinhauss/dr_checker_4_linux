@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca %struct.file*, align 8"}, {"lineno": 964, "file": "drivers/media/usb/stkwebcam/stk-webcam.c", "instr": "return stk_try_fmt_vid_cap(filp, fmtd, NULL);"}],
+"warnings":[{"warn_data": {"at_line": 933, "warn_str": "Trying to use a global variable without locking.", "at": "if (fmtd->fmt.pix.width > stk_sizes[i].w)", "inst_trace": [{"instr_func": "stk_vidioc_try_fmt_vid_cap", "instr_loc": -1, "instr": "  %4 = alloca %struct.file*, align 8"}, {"instr_func": "stk_vidioc_try_fmt_vid_cap", "instr_loc": 964, "instr_file": "drivers/media/usb/stkwebcam/stk-webcam.c", "instr": "return stk_try_fmt_vid_cap(filp, fmtd, NULL);"}], "at_file": "drivers/media/usb/stkwebcam/stk-webcam.c", "by": "GlobalVariableRaceDetector says:", "at_func": "stk_try_fmt_vid_cap"}, "warn_no": 1}]}]}

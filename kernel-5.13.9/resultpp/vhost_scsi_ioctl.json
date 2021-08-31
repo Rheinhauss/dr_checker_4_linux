@@ -1,0 +1,8 @@
+{"all_contexts":[
+{"num_warnings": 5,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i8*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 1905, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "features = VHOST_SCSI_FEATURES;", "inst_trace": [], "at_file": "drivers/vhost/scsi.c", "by": "TaintedSizeDetector says:", "at_func": "vhost_scsi_ioctl"}, "warn_no": 1},
+{"warn_data": {"at_line": 1910, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_from_user(&features, featurep, sizeof features))", "inst_trace": [], "at_file": "drivers/vhost/scsi.c", "by": "TaintedSizeDetector says:", "at_func": "vhost_scsi_ioctl"}, "warn_no": 2},
+{"warn_data": {"at_line": 1887, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_to_user(argp, &abi_version, sizeof abi_version))", "inst_trace": [], "at_file": "drivers/vhost/scsi.c", "by": "TaintedSizeDetector says:", "at_func": "vhost_scsi_ioctl"}, "warn_no": 3},
+{"warn_data": {"at_line": 1880, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_from_user(&backend, argp, sizeof backend))", "inst_trace": [], "at_file": "drivers/vhost/scsi.c", "by": "TaintedSizeDetector says:", "at_func": "vhost_scsi_ioctl"}, "warn_no": 4},
+{"warn_data": {"at_line": 1873, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_from_user(&backend, argp, sizeof backend))", "inst_trace": [], "at_file": "drivers/vhost/scsi.c", "by": "TaintedSizeDetector says:", "at_func": "vhost_scsi_ioctl"}, "warn_no": 5}]}]}

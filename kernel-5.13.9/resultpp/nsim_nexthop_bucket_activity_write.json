@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i64*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 1367, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_from_user(buf, user_buf, size))", "inst_trace": [], "at_file": "drivers/net/netdevsim/fib.c", "by": "TaintedSizeDetector says:", "at_func": "nsim_nexthop_bucket_activity_write"}, "warn_no": 1}]}]}

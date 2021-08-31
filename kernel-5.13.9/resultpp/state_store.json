@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}, {"lineno": 322, "file": "drivers/base/memory.c", "instr": "const int online_type = mhp_online_type_from_str(buf);"}],
+"warnings":[{"warn_data": {"at_line": 43, "warn_str": "Trying to use a global variable without locking.", "at": "if (sysfs_streq(str, online_type_to_str[i]))", "inst_trace": [{"instr_func": "state_store", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}, {"instr_func": "state_store", "instr_loc": 322, "instr_file": "drivers/base/memory.c", "instr": "const int online_type = mhp_online_type_from_str(buf);"}], "at_file": "drivers/base/memory.c", "by": "GlobalVariableRaceDetector says:", "at_func": "mhp_online_type_from_str"}, "warn_no": 1}]}]}

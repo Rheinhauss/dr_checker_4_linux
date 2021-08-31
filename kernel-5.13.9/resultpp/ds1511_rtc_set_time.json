@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %3 = alloca %struct.spinlock*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 217, "warn_str": "Trying to use a global variable without locking.", "at": "spin_lock_irqsave(&ds1511_lock, flags);", "inst_trace": [{"instr_func": "ds1511_rtc_set_time", "instr_loc": -1, "instr": "  %3 = alloca %struct.spinlock*, align 8"}], "at_file": "drivers/rtc/rtc-ds1511.c", "by": "GlobalVariableRaceDetector says:", "at_func": "ds1511_rtc_set_time"}, "warn_no": 1}]}]}

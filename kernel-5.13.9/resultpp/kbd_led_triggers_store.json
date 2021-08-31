@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}],
+"warnings":[{"warn_data": {"at_line": 1732, "warn_str": "Tainted Data used in risky function", "at": "if (strcmp(trigger+1, kbd_led_triggers[i]) != 0)", "inst_trace": [{"instr_func": "kbd_led_triggers_store", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}, {"instr_func": "kbd_led_triggers_store", "instr_loc": 1710, "instr_file": "drivers/platform/x86/dell/dell-laptop.c", "instr": "ret = sscanf(buf, \"%20s\", trigger);"}], "at_file": "drivers/platform/x86/dell/dell-laptop.c", "by": "ImproperTaintedDataUseDetector says:", "tainted_obj": "  %14 = alloca [21 x i8], align 16", "at_func": "kbd_led_triggers_store"}, "warn_no": 1}]}]}

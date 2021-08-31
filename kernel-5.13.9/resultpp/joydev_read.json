@@ -1,0 +1,8 @@
+{"all_contexts":[
+{"num_warnings": 2,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i8*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 415, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_to_user(buf + retval, &event, sizeof(struct js_event)))", "inst_trace": [], "at_file": "drivers/input/joydev.c", "by": "TaintedSizeDetector says:", "at_func": "joydev_read"}, "warn_no": 1},
+{"warn_data": {"at_line": 424, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_to_user(buf + retval, &event, sizeof(struct js_event)))", "inst_trace": [], "at_file": "drivers/input/joydev.c", "by": "TaintedSizeDetector says:", "at_func": "joydev_read"}, "warn_no": 2}]},
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i8*, align 8"}, {"lineno": 399, "file": "drivers/input/joydev.c", "instr": "return joydev_0x_read(client, input, buf);"}],
+"warnings":[{"warn_data": {"at_line": 357, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "data.y = (joydev->abs[1] / 256 + 128) >> joydev->glue.JS_CORR.y;", "inst_trace": [], "at_file": "drivers/input/joydev.c", "by": "TaintedSizeDetector says:", "at_func": "joydev_0x_read"}, "warn_no": 1}]}]}

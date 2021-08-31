@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i1, align 1"}, {"lineno": 152, "file": "drivers/spi/spi-tle62x0.c", "instr": "int gpio_num = to_gpio_num(attr);"}],
+"warnings":[{"warn_data": {"at_line": 232, "warn_str": "Trying to use a global variable without locking.", "at": "if (gpio_attrs[ptr] == attr)", "inst_trace": [{"instr_func": "tle62x0_gpio_store", "instr_loc": -1, "instr": "  %5 = alloca i1, align 1"}, {"instr_func": "tle62x0_gpio_store", "instr_loc": 152, "instr_file": "drivers/spi/spi-tle62x0.c", "instr": "int gpio_num = to_gpio_num(attr);"}], "at_file": "drivers/spi/spi-tle62x0.c", "by": "GlobalVariableRaceDetector says:", "at_func": "to_gpio_num"}, "warn_no": 1}]}]}

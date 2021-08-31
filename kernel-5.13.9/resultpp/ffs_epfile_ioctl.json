@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca %struct.spinlock*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 1343, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "desc = epfile->ep->descs[desc_idx];", "inst_trace": [], "at_file": "drivers/usb/gadget/function/f_fs.c", "by": "TaintedSizeDetector says:", "at_func": "ffs_epfile_ioctl"}, "warn_no": 1}]}]}

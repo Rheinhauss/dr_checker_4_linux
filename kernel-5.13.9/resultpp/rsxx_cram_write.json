@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}],
+"warnings":[{"warn_data": {"at_line": 201, "warn_str": "Potential overflow, using tainted value in binary operation.", "at": "*ppos += cnt;", "inst_trace": [{"instr_func": "rsxx_cram_write", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}, {"instr_func": "rsxx_cram_write", "instr_loc": 188, "instr_file": "drivers/block/rsxx/core.c", "instr": "{"}, {"instr_func": "rsxx_cram_write", "instr_loc": 201, "instr_file": "drivers/block/rsxx/core.c", "instr": "*ppos += cnt;"}], "at_file": "drivers/block/rsxx/core.c", "by": "IntegerOverflowDetector says:", "at_func": "rsxx_cram_write"}, "warn_no": 1}]}]}

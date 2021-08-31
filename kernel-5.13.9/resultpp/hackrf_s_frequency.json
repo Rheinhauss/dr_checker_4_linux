@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i1, align 1"}, {"lineno": 1125, "file": "drivers/media/usb/hackrf/hackrf.c", "instr": "ret = hackrf_set_params(dev);"}],
+"warnings":[{"warn_data": {"at_line": 321, "warn_str": "Trying to use a global variable without locking.", "at": "if (uitmp <= bandwidth_lut[i].freq) {", "inst_trace": [{"instr_func": "hackrf_s_frequency", "instr_loc": -1, "instr": "  %4 = alloca i1, align 1"}, {"instr_func": "hackrf_s_frequency", "instr_loc": 1125, "instr_file": "drivers/media/usb/hackrf/hackrf.c", "instr": "ret = hackrf_set_params(dev);"}], "at_file": "drivers/media/usb/hackrf/hackrf.c", "by": "GlobalVariableRaceDetector says:", "at_func": "hackrf_set_params"}, "warn_no": 1}]}]}

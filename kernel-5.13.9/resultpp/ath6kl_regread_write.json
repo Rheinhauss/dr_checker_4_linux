@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}, {"lineno": 922, "file": "drivers/net/wireless/ath/ath6kl/debug.c", "instr": "if (reg_addr && !ath6kl_dbg_is_diag_reg_valid(reg_addr))"}],
+"warnings":[{"warn_data": {"at_line": 885, "warn_str": "Trying to use a global variable without locking.", "at": "reg_addr <= diag_reg[i].reg_end)", "inst_trace": [{"instr_func": "ath6kl_regread_write", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}, {"instr_func": "ath6kl_regread_write", "instr_loc": 922, "instr_file": "drivers/net/wireless/ath/ath6kl/debug.c", "instr": "if (reg_addr && !ath6kl_dbg_is_diag_reg_valid(reg_addr))"}], "at_file": "drivers/net/wireless/ath/ath6kl/debug.c", "by": "GlobalVariableRaceDetector says:", "at_func": "ath6kl_dbg_is_diag_reg_valid"}, "warn_no": 1}]}]}

@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}],
+"warnings":[{"warn_data": {"at_line": 584, "warn_str": "Trying to use a global variable without locking.", "at": "fival->height == cpia2_framesizes[i].height)", "inst_trace": [{"instr_func": "cpia2_enum_frameintervals", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}], "at_file": "drivers/media/usb/cpia2/cpia2_v4l.c", "by": "GlobalVariableRaceDetector says:", "at_func": "cpia2_enum_frameintervals"}, "warn_no": 1}]}]}

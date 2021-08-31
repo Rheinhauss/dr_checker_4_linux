@@ -1,0 +1,8 @@
+{"all_contexts":[
+{"num_warnings": 2,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i8*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 1445, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_to_user((void __user *)arg, &status, minsz))", "inst_trace": [], "at_file": "drivers/vfio/vfio.c", "by": "TaintedSizeDetector says:", "at_func": "vfio_group_fops_unl_ioctl"}, "warn_no": 1},
+{"warn_data": {"at_line": 1426, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "struct vfio_group_status status;", "inst_trace": [], "at_file": "drivers/vfio/vfio.c", "by": "TaintedSizeDetector says:", "at_func": "vfio_group_fops_unl_ioctl"}, "warn_no": 2}]},
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i8*, align 8"}, {"lineno": 1461, "file": "drivers/vfio/vfio.c", "instr": "ret = vfio_group_set_container(group, fd);"}],
+"warnings":[{"warn_data": {"at_line": 1291, "warn_str": "Trying to use a global variable without locking.", "at": "if (f.file->f_op != &vfio_fops) {", "inst_trace": [{"instr_func": "vfio_group_fops_unl_ioctl", "instr_loc": -1, "instr": "  %4 = alloca i8*, align 8"}, {"instr_func": "vfio_group_fops_unl_ioctl", "instr_loc": 1461, "instr_file": "drivers/vfio/vfio.c", "instr": "ret = vfio_group_set_container(group, fd);"}], "at_file": "drivers/vfio/vfio.c", "by": "GlobalVariableRaceDetector says:", "at_func": "vfio_group_set_container"}, "warn_no": 1}]}]}

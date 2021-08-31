@@ -1,0 +1,7 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca %struct.task_struct*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 10488, "warn_str": "Trying to use a global variable without locking.", "at": "if (sysfs_streq(buf, keyboard_lang_data[i].lang_str)) {", "inst_trace": [{"instr_func": "keyboard_lang_store", "instr_loc": -1, "instr": "  %5 = alloca %struct.task_struct*, align 8"}], "at_file": "drivers/platform/x86/thinkpad_acpi.c", "by": "GlobalVariableRaceDetector says:", "at_func": "keyboard_lang_store"}, "warn_no": 1}]},
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca %struct.task_struct*, align 8"}, {"lineno": 10499, "file": "drivers/platform/x86/thinkpad_acpi.c", "instr": "err = set_keyboard_lang_command(lang_code);"}],
+"warnings":[{"warn_data": {"at_line": 10417, "warn_str": "Trying to use a global variable without locking.", "at": "if (ACPI_FAILURE(acpi_get_handle(hkey_handle, \"SSKL\", &sskl_handle))) {", "inst_trace": [{"instr_func": "keyboard_lang_store", "instr_loc": -1, "instr": "  %5 = alloca %struct.task_struct*, align 8"}, {"instr_func": "keyboard_lang_store", "instr_loc": 10499, "instr_file": "drivers/platform/x86/thinkpad_acpi.c", "instr": "err = set_keyboard_lang_command(lang_code);"}], "at_file": "drivers/platform/x86/thinkpad_acpi.c", "by": "GlobalVariableRaceDetector says:", "at_func": "set_keyboard_lang_command"}, "warn_no": 1}]}]}

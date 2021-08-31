@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %7 = alloca i64, align 8"}],
+"warnings":[{"warn_data": {"at_line": 22, "warn_str": "Trying to read from a user pointer.", "at": "memconsole_read_func = bin_attr->private;", "inst_trace": [{"instr_func": "memconsole_read", "instr_loc": -1, "instr": "  %7 = alloca i64, align 8"}, {"instr_func": "memconsole_read", "instr_loc": 19, "instr_file": "drivers/firmware/google/memconsole.c", "instr": "{"}, {"instr_func": "memconsole_read", "instr_loc": 22, "instr_file": "drivers/firmware/google/memconsole.c", "instr": "memconsole_read_func = bin_attr->private;"}, {"instr_func": "memconsole_read", "instr_loc": 22, "instr_file": "drivers/firmware/google/memconsole.c", "instr": "memconsole_read_func = bin_attr->private;"}], "at_file": "drivers/firmware/google/memconsole.c", "by": "TaintedPointerDereferenceChecker says:", "at_func": "memconsole_read"}, "warn_no": 1}]}]}

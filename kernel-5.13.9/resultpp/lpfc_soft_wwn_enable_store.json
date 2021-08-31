@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}],
+"warnings":[{"warn_data": {"at_line": 2734, "warn_str": "Trying to use a global variable without locking.", "at": "if ((cnt != strlen(lpfc_soft_wwn_key)) ||", "inst_trace": [{"instr_func": "lpfc_soft_wwn_enable_store", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}], "at_file": "drivers/scsi/lpfc/lpfc_attr.c", "by": "GlobalVariableRaceDetector says:", "at_func": "lpfc_soft_wwn_enable_store"}, "warn_no": 1}]}]}

@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca %struct.spinlock*, align 8"}, {"lineno": 2017, "file": "drivers/scsi/scsi_transport_fc.c", "instr": "if (get_fc_tgtid_bind_type_match(buf, &val))"}],
+"warnings":[{"warn_data": {"at_line": 207, "warn_str": "Trying to use a global variable without locking.", "at": "fc_enum_name_match(tgtid_bind_type, fc_tgtid_binding_type,", "inst_trace": [{"instr_func": "store_fc_private_host_tgtid_bind_type", "instr_loc": -1, "instr": "  %5 = alloca %struct.spinlock*, align 8"}, {"instr_func": "store_fc_private_host_tgtid_bind_type", "instr_loc": 2017, "instr_file": "drivers/scsi/scsi_transport_fc.c", "instr": "if (get_fc_tgtid_bind_type_match(buf, &val))"}], "at_file": "drivers/scsi/scsi_transport_fc.c", "by": "GlobalVariableRaceDetector says:", "at_func": "get_fc_tgtid_bind_type_match"}, "warn_no": 1}]}]}

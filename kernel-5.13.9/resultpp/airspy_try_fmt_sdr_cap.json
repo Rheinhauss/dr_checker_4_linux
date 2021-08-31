@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}],
+"warnings":[{"warn_data": {"at_line": 675, "warn_str": "Trying to use a global variable without locking.", "at": "if (formats[i].pixelformat == f->fmt.sdr.pixelformat) {", "inst_trace": [{"instr_func": "airspy_try_fmt_sdr_cap", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}], "at_file": "drivers/media/usb/airspy/airspy.c", "by": "GlobalVariableRaceDetector says:", "at_func": "airspy_try_fmt_sdr_cap"}, "warn_no": 1}]}]}

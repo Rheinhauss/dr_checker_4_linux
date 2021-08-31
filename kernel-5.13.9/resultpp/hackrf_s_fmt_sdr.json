@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i1, align 1"}],
+"warnings":[{"warn_data": {"at_line": 934, "warn_str": "Trying to use a global variable without locking.", "at": "if (f->fmt.sdr.pixelformat == formats[i].pixelformat) {", "inst_trace": [{"instr_func": "hackrf_s_fmt_sdr", "instr_loc": -1, "instr": "  %4 = alloca i1, align 1"}], "at_file": "drivers/media/usb/hackrf/hackrf.c", "by": "GlobalVariableRaceDetector says:", "at_func": "hackrf_s_fmt_sdr"}, "warn_no": 1}]}]}

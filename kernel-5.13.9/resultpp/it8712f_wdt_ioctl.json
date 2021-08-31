@@ -1,0 +1,11 @@
+{"all_contexts":[
+{"num_warnings": 2,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i8*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 293, "warn_str": "Trying to use a global variable without locking.", "at": "if (value > (max_units * 60))", "inst_trace": [{"instr_func": "it8712f_wdt_ioctl", "instr_loc": -1, "instr": "  %4 = alloca i8*, align 8"}], "at_file": "drivers/watchdog/it8712f_wdt.c", "by": "GlobalVariableRaceDetector says:", "at_func": "it8712f_wdt_ioctl"}, "warn_no": 1},
+{"warn_data": {"at_line": 269, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_to_user(argp, &ident, sizeof(ident)))", "inst_trace": [], "at_file": "drivers/watchdog/it8712f_wdt.c", "by": "TaintedSizeDetector says:", "at_func": "it8712f_wdt_ioctl"}, "warn_no": 2}]},
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i8*, align 8"}, {"lineno": 301, "file": "drivers/watchdog/it8712f_wdt.c", "instr": "it8712f_wdt_update_margin();"}],
+"warnings":[{"warn_data": {"at_line": 151, "warn_str": "Trying to use a global variable without locking.", "at": "int units = margin;", "inst_trace": [{"instr_func": "it8712f_wdt_ioctl", "instr_loc": -1, "instr": "  %4 = alloca i8*, align 8"}, {"instr_func": "it8712f_wdt_ioctl", "instr_loc": 301, "instr_file": "drivers/watchdog/it8712f_wdt.c", "instr": "it8712f_wdt_update_margin();"}], "at_file": "drivers/watchdog/it8712f_wdt.c", "by": "GlobalVariableRaceDetector says:", "at_func": "it8712f_wdt_update_margin"}, "warn_no": 1}]},
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i8*, align 8"}, {"lineno": 304, "file": "drivers/watchdog/it8712f_wdt.c", "instr": "it8712f_wdt_ping();"}],
+"warnings":[{"warn_data": {"at_line": 144, "warn_str": "Trying to use a global variable without locking.", "at": "if (wdt_control_reg & WDT_RESET_GAME)", "inst_trace": [{"instr_func": "it8712f_wdt_ioctl", "instr_loc": -1, "instr": "  %4 = alloca i8*, align 8"}, {"instr_func": "it8712f_wdt_ioctl", "instr_loc": 304, "instr_file": "drivers/watchdog/it8712f_wdt.c", "instr": "it8712f_wdt_ping();"}], "at_file": "drivers/watchdog/it8712f_wdt.c", "by": "GlobalVariableRaceDetector says:", "at_func": "it8712f_wdt_ping"}, "warn_no": 1}]}]}

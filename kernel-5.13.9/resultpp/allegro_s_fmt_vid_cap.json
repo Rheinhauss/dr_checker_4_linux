@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}, {"lineno": 3187, "file": "drivers/media/platform/allegro-dvt/allegro-core.c", "instr": "allegro_channel_adjust(channel);"}],
+"warnings":[{"warn_data": {"at_line": 2500, "warn_str": "Trying to use a global variable without locking.", "at": "v4l2_dbg(1, debug, &dev->v4l2_dev,", "inst_trace": [{"instr_func": "allegro_s_fmt_vid_cap", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}, {"instr_func": "allegro_s_fmt_vid_cap", "instr_loc": 3187, "instr_file": "drivers/media/platform/allegro-dvt/allegro-core.c", "instr": "allegro_channel_adjust(channel);"}], "at_file": "drivers/media/platform/allegro-dvt/allegro-core.c", "by": "GlobalVariableRaceDetector says:", "at_func": "allegro_channel_adjust"}, "warn_no": 1}]}]}

@@ -1,0 +1,8 @@
+{"all_contexts":[
+{"num_warnings": 2,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i8*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 92, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_to_user(argp, &data, sizeof(struct scu_ipc_data)))", "inst_trace": [], "at_file": "drivers/platform/x86/intel_scu_ipcutil.c", "by": "TaintedSizeDetector says:", "at_func": "scu_ipc_ioctl"}, "warn_no": 1},
+{"warn_data": {"at_line": 87, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_from_user(&data, argp, sizeof(struct scu_ipc_data)))", "inst_trace": [], "at_file": "drivers/platform/x86/intel_scu_ipcutil.c", "by": "TaintedSizeDetector says:", "at_func": "scu_ipc_ioctl"}, "warn_no": 2}]},
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i8*, align 8"}, {"lineno": 89, "file": "drivers/platform/x86/intel_scu_ipcutil.c", "instr": "ret = scu_reg_access(cmd, &data);"}],
+"warnings":[{"warn_data": {"at_line": 62, "warn_str": "Trying to use a global variable without locking.", "at": "return intel_scu_ipc_dev_update(scu, data->addr[0], data->data[0],", "inst_trace": [{"instr_func": "scu_ipc_ioctl", "instr_loc": -1, "instr": "  %4 = alloca i8*, align 8"}, {"instr_func": "scu_ipc_ioctl", "instr_loc": 89, "instr_file": "drivers/platform/x86/intel_scu_ipcutil.c", "instr": "ret = scu_reg_access(cmd, &data);"}], "at_file": "drivers/platform/x86/intel_scu_ipcutil.c", "by": "GlobalVariableRaceDetector says:", "at_func": "scu_reg_access"}, "warn_no": 1}]}]}

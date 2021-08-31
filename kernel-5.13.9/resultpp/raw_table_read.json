@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %7 = alloca %struct.file*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 747, "warn_str": "Trying to read from a user pointer.", "at": "memcpy(buf, attr->private + pos, count);", "inst_trace": [{"instr_func": "raw_table_read", "instr_loc": -1, "instr": "  %7 = alloca %struct.file*, align 8"}, {"instr_func": "raw_table_read", "instr_loc": 746, "instr_file": "drivers/firmware/dmi_scan.c", "instr": "{"}, {"instr_func": "raw_table_read", "instr_loc": 747, "instr_file": "drivers/firmware/dmi_scan.c", "instr": "memcpy(buf, attr->private + pos, count);"}, {"instr_func": "raw_table_read", "instr_loc": 747, "instr_file": "drivers/firmware/dmi_scan.c", "instr": "memcpy(buf, attr->private + pos, count);"}], "at_file": "drivers/firmware/dmi_scan.c", "by": "TaintedPointerDereferenceChecker says:", "at_func": "raw_table_read"}, "warn_no": 1}]}]}

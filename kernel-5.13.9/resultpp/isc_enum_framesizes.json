@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}],
+"warnings":[{"warn_data": {"at_line": 1500, "warn_str": "Trying to use a global variable without locking.", "at": "if (controller_formats[i].fourcc == fsize->pixel_format)", "inst_trace": [{"instr_func": "isc_enum_framesizes", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}], "at_file": "drivers/media/platform/atmel/atmel-isc-base.c", "by": "GlobalVariableRaceDetector says:", "at_func": "isc_enum_framesizes"}, "warn_no": 1}]}]}

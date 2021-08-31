@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}, {"lineno": 415, "file": "drivers/crypto/marvell/octeontx2/otx2_cptpf_main.c", "instr": "if (lfs_num < 1 || lfs_num > num_online_cpus()) {"}],
+"warnings":[{"warn_data": {"at_line": 886, "warn_str": "Trying to use a global variable without locking.", "at": "  store %struct.atomic_t* @__num_online_cpus, %struct.atomic_t** %4, align 8", "inst_trace": [{"instr_func": "kvf_limits_store", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}, {"instr_func": "kvf_limits_store", "instr_loc": 415, "instr_file": "drivers/crypto/marvell/octeontx2/otx2_cptpf_main.c", "instr": "if (lfs_num < 1 || lfs_num > num_online_cpus()) {"}], "at_file": "./include/linux/cpumask.h", "by": "GlobalVariableRaceDetector says:", "at_func": "num_online_cpus"}, "warn_no": 1}]}]}

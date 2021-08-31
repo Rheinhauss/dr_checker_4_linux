@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}],
+"warnings":[{"warn_data": {"at_line": 730, "warn_str": "Trying to use a global variable without locking.", "at": "interrupt_coalescing = val;", "inst_trace": [{"instr_func": "mvs_store_interrupt_coalescing", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}], "at_file": "drivers/scsi/mvsas/mv_init.c", "by": "GlobalVariableRaceDetector says:", "at_func": "mvs_store_interrupt_coalescing"}, "warn_no": 1}]}]}

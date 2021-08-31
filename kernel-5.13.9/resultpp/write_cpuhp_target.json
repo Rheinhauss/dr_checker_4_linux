@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}],
+"warnings":[{"warn_data": {"at_line": 2248, "warn_str": "Trying to use a global variable without locking.", "at": "struct cpuhp_cpu_state *st = per_cpu_ptr(&cpuhp_state, dev->id);", "inst_trace": [{"instr_func": "write_cpuhp_target", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}], "at_file": "kernel/cpu.c", "by": "GlobalVariableRaceDetector says:", "at_func": "write_cpuhp_target"}, "warn_no": 1}]}]}

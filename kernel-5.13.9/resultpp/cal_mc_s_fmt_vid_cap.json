@@ -1,0 +1,7 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}],
+"warnings":[{"warn_data": {"at_line": 503, "warn_str": "Trying to use a global variable without locking.", "at": "ctx_dbg(3, ctx, \"%s device busy\\n\", __func__);", "inst_trace": [{"instr_func": "cal_mc_s_fmt_vid_cap", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}], "at_file": "drivers/media/platform/ti-vpe/cal-video.c", "by": "GlobalVariableRaceDetector says:", "at_func": "cal_mc_s_fmt_vid_cap"}, "warn_no": 1}]},
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}, {"lineno": 507, "file": "drivers/media/platform/ti-vpe/cal-video.c", "instr": "cal_mc_try_fmt(ctx, f, &fmtinfo);"}],
+"warnings":[{"warn_data": {"at_line": 481, "warn_str": "Trying to use a global variable without locking.", "at": "ctx_dbg(3, ctx, \"%s: %s %ux%u (bytesperline %u sizeimage %u)\\n\",", "inst_trace": [{"instr_func": "cal_mc_s_fmt_vid_cap", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}, {"instr_func": "cal_mc_s_fmt_vid_cap", "instr_loc": 507, "instr_file": "drivers/media/platform/ti-vpe/cal-video.c", "instr": "cal_mc_try_fmt(ctx, f, &fmtinfo);"}], "at_file": "drivers/media/platform/ti-vpe/cal-video.c", "by": "GlobalVariableRaceDetector says:", "at_func": "cal_mc_try_fmt"}, "warn_no": 1}]}]}

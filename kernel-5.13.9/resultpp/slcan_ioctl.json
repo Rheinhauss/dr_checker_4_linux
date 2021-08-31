@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i8*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 685, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "tmp = strlen(sl->dev->name) + 1;", "inst_trace": [], "at_file": "drivers/net/can/slcan.c", "by": "TaintedSizeDetector says:", "at_func": "slcan_ioctl"}, "warn_no": 1}]}]}

@@ -1,0 +1,7 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i64, align 8"}, {"lineno": 949, "file": "drivers/infiniband/core/user_mad.c", "instr": "return ib_umad_reg_agent2(filp->private_data, (void __user *) arg);"}],
+"warnings":[{"warn_data": {"at_line": 797, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_from_user(&ureq, arg, sizeof(ureq))) {", "inst_trace": [], "at_file": "drivers/infiniband/core/user_mad.c", "by": "TaintedSizeDetector says:", "at_func": "ib_umad_reg_agent2"}, "warn_no": 1}]},
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i64, align 8"}, {"lineno": 943, "file": "drivers/infiniband/core/user_mad.c", "instr": "return ib_umad_reg_agent(filp->private_data, (void __user *) arg, 0);"}],
+"warnings":[{"warn_data": {"at_line": 696, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_from_user(&ureq, arg, sizeof ureq)) {", "inst_trace": [], "at_file": "drivers/infiniband/core/user_mad.c", "by": "TaintedSizeDetector says:", "at_func": "ib_umad_reg_agent"}, "warn_no": 1}]}]}

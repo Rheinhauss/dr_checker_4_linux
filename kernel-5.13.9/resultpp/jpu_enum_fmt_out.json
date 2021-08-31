@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca %struct.file*, align 8"}, {"lineno": 736, "file": "drivers/media/platform/rcar_jpu.c", "instr": "return jpu_enum_fmt(f, ctx->encoder ? JPU_ENC_OUTPUT : JPU_DEC_OUTPUT);"}],
+"warnings":[{"warn_data": {"at_line": 707, "warn_str": "Trying to use a global variable without locking.", "at": "if (jpu_formats[i].types & type) {", "inst_trace": [{"instr_func": "jpu_enum_fmt_out", "instr_loc": -1, "instr": "  %4 = alloca %struct.file*, align 8"}, {"instr_func": "jpu_enum_fmt_out", "instr_loc": 736, "instr_file": "drivers/media/platform/rcar_jpu.c", "instr": "return jpu_enum_fmt(f, ctx->encoder ? JPU_ENC_OUTPUT : JPU_DEC_OUTPUT);"}], "at_file": "drivers/media/platform/rcar_jpu.c", "by": "GlobalVariableRaceDetector says:", "at_func": "jpu_enum_fmt"}, "warn_no": 1}]}]}

@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}, {"lineno": 182, "file": "drivers/watchdog/cpu5wdt.c", "instr": "cpu5wdt_reset();"}],
+"warnings":[{"warn_data": {"at_line": 83, "warn_str": "Trying to use a global variable without locking.", "at": "ticks = cpu5wdt_device.default_ticks;", "inst_trace": [{"instr_func": "cpu5wdt_write", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}, {"instr_func": "cpu5wdt_write", "instr_loc": 182, "instr_file": "drivers/watchdog/cpu5wdt.c", "instr": "cpu5wdt_reset();"}], "at_file": "drivers/watchdog/cpu5wdt.c", "by": "GlobalVariableRaceDetector says:", "at_func": "cpu5wdt_reset"}, "warn_no": 1}]}]}

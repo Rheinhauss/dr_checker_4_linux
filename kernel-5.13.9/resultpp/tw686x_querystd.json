@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i64, align 8"}],
+"warnings":[{"warn_data": {"at_line": 850, "warn_str": "Trying to use a global variable without locking.", "at": "end = jiffies + msecs_to_jiffies(500);", "inst_trace": [{"instr_func": "tw686x_querystd", "instr_loc": -1, "instr": "  %4 = alloca i64, align 8"}], "at_file": "drivers/media/pci/tw686x/tw686x-video.c", "by": "GlobalVariableRaceDetector says:", "at_func": "tw686x_querystd"}, "warn_no": 1}]}]}

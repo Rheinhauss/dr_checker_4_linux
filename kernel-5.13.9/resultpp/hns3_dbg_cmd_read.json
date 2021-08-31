@@ -1,0 +1,7 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i8*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 419, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "len = scnprintf(buf, HNS3_DBG_READ_LEN, \"%s\\n\",", "inst_trace": [], "at_file": "drivers/net/ethernet/hisilicon/hns3/hns3_debugfs.c", "by": "TaintedSizeDetector says:", "at_func": "hns3_dbg_cmd_read"}, "warn_no": 1}]},
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i8*, align 8"}, {"lineno": 415, "file": "drivers/net/ethernet/hisilicon/hns3/hns3_debugfs.c", "instr": "buf = kzalloc(HNS3_DBG_READ_LEN, GFP_KERNEL);"}],
+"warnings":[{"warn_data": {"at_line": 557, "warn_str": "Trying to use a global variable without locking.", "at": "  %234 = getelementptr [3 x [14 x %struct.kmem_cache*]], [3 x [14 x %struct.kmem_cache*]]* @kmalloc_caches, i64 0, i64 %233, !dbg !10556", "inst_trace": [{"instr_func": "hns3_dbg_cmd_read", "instr_loc": -1, "instr": "  %5 = alloca i8*, align 8"}, {"instr_func": "hns3_dbg_cmd_read", "instr_loc": 415, "instr_file": "drivers/net/ethernet/hisilicon/hns3/hns3_debugfs.c", "instr": "buf = kzalloc(HNS3_DBG_READ_LEN, GFP_KERNEL);"}], "at_file": "./include/linux/slab.h", "by": "GlobalVariableRaceDetector says:", "at_func": "kzalloc"}, "warn_no": 1}]}]}

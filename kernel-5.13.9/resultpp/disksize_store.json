@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}, {"lineno": 1739, "file": "drivers/block/zram/zram_drv.c", "instr": "if (!zram_meta_alloc(zram, disksize)) {"}],
+"warnings":[{"warn_data": {"at_line": 1170, "warn_str": "Trying to use a global variable without locking.", "at": "if (!huge_class_size)", "inst_trace": [{"instr_func": "disksize_store", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}, {"instr_func": "disksize_store", "instr_loc": 1739, "instr_file": "drivers/block/zram/zram_drv.c", "instr": "if (!zram_meta_alloc(zram, disksize)) {"}], "at_file": "drivers/block/zram/zram_drv.c", "by": "GlobalVariableRaceDetector says:", "at_func": "zram_meta_alloc"}, "warn_no": 1}]}]}

@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca %struct.file*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 931, "warn_str": "Trying to use a global variable without locking.", "at": "v4l2_dump_pix_format(1, bcm2835_v4l2_debug, &dev->v4l2_dev, &f->fmt.pix,", "inst_trace": [{"instr_func": "vidioc_g_fmt_vid_cap", "instr_loc": -1, "instr": "  %4 = alloca %struct.file*, align 8"}], "at_file": "drivers/staging/vc04_services/bcm2835-camera/bcm2835-camera.c", "by": "GlobalVariableRaceDetector says:", "at_func": "vidioc_g_fmt_vid_cap"}, "warn_no": 1}]}]}

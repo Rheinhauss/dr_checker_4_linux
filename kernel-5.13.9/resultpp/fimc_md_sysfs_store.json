@@ -1,0 +1,5 @@
+{"all_contexts":[
+{"num_warnings": 2,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}],
+"warnings":[{"warn_data": {"at_line": 1262, "warn_str": "Tainted Data used in risky function", "at": "else if (!strcmp(buf, \"sub-dev\\n\"))", "inst_trace": [{"instr_func": "fimc_md_sysfs_store", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}], "at_file": "drivers/media/platform/exynos4-is/media-dev.c", "by": "ImproperTaintedDataUseDetector says:", "tainted_obj": "i8* %2", "at_func": "fimc_md_sysfs_store"}, "warn_no": 1},
+{"warn_data": {"at_line": 1260, "warn_str": "Tainted Data used in risky function", "at": "if (!strcmp(buf, \"vid-dev\\n\"))", "inst_trace": [{"instr_func": "fimc_md_sysfs_store", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}], "at_file": "drivers/media/platform/exynos4-is/media-dev.c", "by": "ImproperTaintedDataUseDetector says:", "tainted_obj": "i8* %2", "at_func": "fimc_md_sysfs_store"}, "warn_no": 2}]}]}

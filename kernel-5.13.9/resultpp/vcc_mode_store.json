@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i1, align 1"}, {"lineno": 1134, "file": "drivers/usb/serial/iuu_phoenix.c", "instr": "iuu_vcc_set(port, v);"}],
+"warnings":[{"warn_data": {"at_line": 1078, "warn_str": "Trying to use a global variable without locking.", "at": "{", "inst_trace": [{"instr_func": "vcc_mode_store", "instr_loc": -1, "instr": "  %5 = alloca i1, align 1"}, {"instr_func": "vcc_mode_store", "instr_loc": 1134, "instr_file": "drivers/usb/serial/iuu_phoenix.c", "instr": "iuu_vcc_set(port, v);"}], "at_file": "drivers/usb/serial/iuu_phoenix.c", "by": "GlobalVariableRaceDetector says:", "at_func": "iuu_vcc_set"}, "warn_no": 1}]}]}

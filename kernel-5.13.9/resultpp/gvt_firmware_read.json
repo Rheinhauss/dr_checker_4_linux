@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %7 = alloca %struct.file*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 58, "warn_str": "Trying to read from a user pointer.", "at": "memcpy(buf, attr->private + offset, count);", "inst_trace": [{"instr_func": "gvt_firmware_read", "instr_loc": -1, "instr": "  %7 = alloca %struct.file*, align 8"}, {"instr_func": "gvt_firmware_read", "instr_loc": 57, "instr_file": "drivers/gpu/drm/i915/gvt/firmware.c", "instr": "{"}, {"instr_func": "gvt_firmware_read", "instr_loc": 58, "instr_file": "drivers/gpu/drm/i915/gvt/firmware.c", "instr": "memcpy(buf, attr->private + offset, count);"}, {"instr_func": "gvt_firmware_read", "instr_loc": 58, "instr_file": "drivers/gpu/drm/i915/gvt/firmware.c", "instr": "memcpy(buf, attr->private + offset, count);"}], "at_file": "drivers/gpu/drm/i915/gvt/firmware.c", "by": "TaintedPointerDereferenceChecker says:", "at_func": "gvt_firmware_read"}, "warn_no": 1}]}]}

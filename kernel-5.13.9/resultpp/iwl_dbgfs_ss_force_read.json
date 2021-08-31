@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca %struct.file*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 4064, "warn_str": "Trying to use a global variable without locking.", "at": "ss_force_name[lq_sta->pers.ss_force]);", "inst_trace": [{"instr_func": "iwl_dbgfs_ss_force_read", "instr_loc": -1, "instr": "  %5 = alloca %struct.file*, align 8"}], "at_file": "drivers/net/wireless/intel/iwlwifi/mvm/rs.c", "by": "GlobalVariableRaceDetector says:", "at_func": "iwl_dbgfs_ss_force_read"}, "warn_no": 1}]}]}

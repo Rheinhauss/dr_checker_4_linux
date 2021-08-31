@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i1, align 1"}],
+"warnings":[{"warn_data": {"at_line": 1744, "warn_str": "Trying to use a global variable without locking.", "at": "DBG1(\"ERR: 0x%08X, %d\", cmd, cmd);", "inst_trace": [{"instr_func": "ntty_ioctl", "instr_loc": -1, "instr": "  %4 = alloca i1, align 1"}], "at_file": "drivers/tty/nozomi.c", "by": "GlobalVariableRaceDetector says:", "at_func": "ntty_ioctl"}, "warn_no": 1}]}]}

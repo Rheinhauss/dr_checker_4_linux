@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca %struct.task_struct*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 1020, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "err = copy_from_user(&req, argp, sizeof(struct ubi_attach_req));", "inst_trace": [], "at_file": "drivers/mtd/ubi/cdev.c", "by": "TaintedSizeDetector says:", "at_func": "ctrl_cdev_ioctl"}, "warn_no": 1}]}]}

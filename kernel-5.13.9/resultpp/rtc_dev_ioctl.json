@@ -1,0 +1,9 @@
+{"all_contexts":[
+{"num_warnings": 6,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i8*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 330, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "mutex_unlock(&rtc->ops_lock);", "inst_trace": [], "at_file": "drivers/rtc/dev.c", "by": "TaintedSizeDetector says:", "at_func": "rtc_dev_ioctl"}, "warn_no": 1},
+{"warn_data": {"at_line": 381, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_to_user(uarg, &alarm, sizeof(alarm)))", "inst_trace": [], "at_file": "drivers/rtc/dev.c", "by": "TaintedSizeDetector says:", "at_func": "rtc_dev_ioctl"}, "warn_no": 2},
+{"warn_data": {"at_line": 369, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "mutex_unlock(&rtc->ops_lock);", "inst_trace": [], "at_file": "drivers/rtc/dev.c", "by": "TaintedSizeDetector says:", "at_func": "rtc_dev_ioctl"}, "warn_no": 3},
+{"warn_data": {"at_line": 325, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_to_user(uarg, &tm, sizeof(tm)))", "inst_trace": [], "at_file": "drivers/rtc/dev.c", "by": "TaintedSizeDetector says:", "at_func": "rtc_dev_ioctl"}, "warn_no": 4},
+{"warn_data": {"at_line": 267, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "mutex_unlock(&rtc->ops_lock);", "inst_trace": [], "at_file": "drivers/rtc/dev.c", "by": "TaintedSizeDetector says:", "at_func": "rtc_dev_ioctl"}, "warn_no": 5},
+{"warn_data": {"at_line": 262, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_to_user(uarg, &alarm.time, sizeof(tm)))", "inst_trace": [], "at_file": "drivers/rtc/dev.c", "by": "TaintedSizeDetector says:", "at_func": "rtc_dev_ioctl"}, "warn_no": 6}]}]}

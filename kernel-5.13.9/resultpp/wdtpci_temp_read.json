@@ -1,0 +1,7 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i8*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 507, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_to_user(buf, &temperature, 1))", "inst_trace": [], "at_file": "drivers/watchdog/wdt_pci.c", "by": "TaintedSizeDetector says:", "at_func": "wdtpci_temp_read"}, "warn_no": 1}]},
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i8*, align 8"}, {"lineno": 504, "file": "drivers/watchdog/wdt_pci.c", "instr": "if (wdtpci_get_temperature(&temperature))"}],
+"warnings":[{"warn_data": {"at_line": 278, "warn_str": "Trying to use a global variable without locking.", "at": "spin_lock_irqsave(&wdtpci_lock, flags);", "inst_trace": [{"instr_func": "wdtpci_temp_read", "instr_loc": -1, "instr": "  %5 = alloca i8*, align 8"}, {"instr_func": "wdtpci_temp_read", "instr_loc": 504, "instr_file": "drivers/watchdog/wdt_pci.c", "instr": "if (wdtpci_get_temperature(&temperature))"}], "at_file": "drivers/watchdog/wdt_pci.c", "by": "GlobalVariableRaceDetector says:", "at_func": "wdtpci_get_temperature"}, "warn_no": 1}]}]}

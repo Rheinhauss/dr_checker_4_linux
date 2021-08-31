@@ -1,0 +1,7 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}],
+"warnings":[{"warn_data": {"at_line": 468, "warn_str": "Trying to use a global variable without locking.", "at": "mhp_default_online_type = online_type;", "inst_trace": [{"instr_func": "auto_online_blocks_store", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}], "at_file": "drivers/base/memory.c", "by": "GlobalVariableRaceDetector says:", "at_func": "auto_online_blocks_store"}, "warn_no": 1}]},
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}, {"lineno": 463, "file": "drivers/base/memory.c", "instr": "const int online_type = mhp_online_type_from_str(buf);"}],
+"warnings":[{"warn_data": {"at_line": 43, "warn_str": "Trying to use a global variable without locking.", "at": "if (sysfs_streq(str, online_type_to_str[i]))", "inst_trace": [{"instr_func": "auto_online_blocks_store", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}, {"instr_func": "auto_online_blocks_store", "instr_loc": 463, "instr_file": "drivers/base/memory.c", "instr": "const int online_type = mhp_online_type_from_str(buf);"}], "at_file": "drivers/base/memory.c", "by": "GlobalVariableRaceDetector says:", "at_func": "mhp_online_type_from_str"}, "warn_no": 1}]}]}

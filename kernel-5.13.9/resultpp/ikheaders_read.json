@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %7 = alloca %struct.file*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 37, "warn_str": "Trying to use a global variable without locking.", "at": "memcpy(buf, &kernel_headers_data + off, len);", "inst_trace": [{"instr_func": "ikheaders_read", "instr_loc": -1, "instr": "  %7 = alloca %struct.file*, align 8"}], "at_file": "kernel/kheaders.c", "by": "GlobalVariableRaceDetector says:", "at_func": "ikheaders_read"}, "warn_no": 1}]}]}

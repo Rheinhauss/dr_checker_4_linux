@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca %struct.device*, align 8"}, {"lineno": 1746, "file": "drivers/w1/slaves/w1_therm.c", "instr": "ret = copy_scratchpad(sl);"}],
+"warnings":[{"warn_data": {"at_line": 1317, "warn_str": "Trying to use a global variable without locking.", "at": "strong_pullup = (w1_strong_pullup == 2 ||", "inst_trace": [{"instr_func": "eeprom_cmd_store", "instr_loc": -1, "instr": "  %5 = alloca %struct.device*, align 8"}, {"instr_func": "eeprom_cmd_store", "instr_loc": 1746, "instr_file": "drivers/w1/slaves/w1_therm.c", "instr": "ret = copy_scratchpad(sl);"}], "at_file": "drivers/w1/slaves/w1_therm.c", "by": "GlobalVariableRaceDetector says:", "at_func": "copy_scratchpad"}, "warn_no": 1}]}]}

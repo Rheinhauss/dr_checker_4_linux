@@ -1,0 +1,5 @@
+{"all_contexts":[
+{"num_warnings": 2,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i8*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 155, "warn_str": "Trying to use a global variable without locking.", "at": "margin = time;", "inst_trace": [{"instr_func": "fitpc2_wdt_ioctl", "instr_loc": -1, "instr": "  %4 = alloca i8*, align 8"}], "at_file": "drivers/watchdog/sbc_fitpc2_wdt.c", "by": "GlobalVariableRaceDetector says:", "at_func": "fitpc2_wdt_ioctl"}, "warn_no": 1},
+{"warn_data": {"at_line": 128, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "ret = copy_to_user((struct watchdog_info __user *)arg, &ident,", "inst_trace": [], "at_file": "drivers/watchdog/sbc_fitpc2_wdt.c", "by": "TaintedSizeDetector says:", "at_func": "fitpc2_wdt_ioctl"}, "warn_no": 2}]}]}

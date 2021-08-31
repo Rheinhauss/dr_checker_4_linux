@@ -1,0 +1,7 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca %struct.spinlock*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 6296, "warn_str": "Trying to use a global variable without locking.", "at": "if (sdeb_zbc_in_use)", "inst_trace": [{"instr_func": "virtual_gb_store", "instr_loc": -1, "instr": "  %4 = alloca %struct.spinlock*, align 8"}], "at_file": "drivers/scsi/scsi_debug.c", "by": "GlobalVariableRaceDetector says:", "at_func": "virtual_gb_store"}, "warn_no": 1}]},
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca %struct.spinlock*, align 8"}, {"lineno": 6302, "file": "drivers/scsi/scsi_debug.c", "instr": "sdebug_capacity = get_sdebug_capacity();"}],
+"warnings":[{"warn_data": {"at_line": 1830, "warn_str": "Trying to use a global variable without locking.", "at": "if (sdebug_virtual_gb > 0)", "inst_trace": [{"instr_func": "virtual_gb_store", "instr_loc": -1, "instr": "  %4 = alloca %struct.spinlock*, align 8"}, {"instr_func": "virtual_gb_store", "instr_loc": 6302, "instr_file": "drivers/scsi/scsi_debug.c", "instr": "sdebug_capacity = get_sdebug_capacity();"}], "at_file": "drivers/scsi/scsi_debug.c", "by": "GlobalVariableRaceDetector says:", "at_func": "get_sdebug_capacity"}, "warn_no": 1}]}]}

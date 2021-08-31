@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca %struct.file*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 1471, "warn_str": "Trying to use a global variable without locking.", "at": "a->parm.capture.readbuffers = n_dma_bufs;", "inst_trace": [{"instr_func": "mcam_vidioc_g_parm", "instr_loc": -1, "instr": "  %4 = alloca %struct.file*, align 8"}], "at_file": "drivers/media/platform/marvell-ccic/mcam-core.c", "by": "GlobalVariableRaceDetector says:", "at_func": "mcam_vidioc_g_parm"}, "warn_no": 1}]}]}

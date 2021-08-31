@@ -1,0 +1,7 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i8*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 309, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_to_user(argp, &zf_info, sizeof(zf_info)))", "inst_trace": [], "at_file": "drivers/watchdog/machzwd.c", "by": "TaintedSizeDetector says:", "at_func": "zf_ioctl"}, "warn_no": 1}]},
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i8*, align 8"}, {"lineno": 316, "file": "drivers/watchdog/machzwd.c", "instr": "zf_ping(NULL);"}],
+"warnings":[{"warn_data": {"at_line": 242, "warn_str": "Trying to use a global variable without locking.", "at": "if (time_before(jiffies, next_heartbeat)) {", "inst_trace": [{"instr_func": "zf_ioctl", "instr_loc": -1, "instr": "  %4 = alloca i8*, align 8"}, {"instr_func": "zf_ioctl", "instr_loc": 316, "instr_file": "drivers/watchdog/machzwd.c", "instr": "zf_ping(NULL);"}], "at_file": "drivers/watchdog/machzwd.c", "by": "GlobalVariableRaceDetector says:", "at_func": "zf_ping"}, "warn_no": 1}]}]}

@@ -1,0 +1,5 @@
+{"all_contexts":[
+{"num_warnings": 2,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i8*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 3714, "warn_str": "Trying to use a global variable without locking.", "at": "if (hisi_hba->debugfs_dump_index >= hisi_sas_debugfs_dump_count)", "inst_trace": [{"instr_func": "debugfs_trigger_dump_v3_hw_write", "instr_loc": -1, "instr": "  %5 = alloca i8*, align 8"}], "at_file": "drivers/scsi/hisi_sas/hisi_sas_v3_hw.c", "by": "GlobalVariableRaceDetector says:", "at_func": "debugfs_trigger_dump_v3_hw_write"}, "warn_no": 1},
+{"warn_data": {"at_line": 3720, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_from_user(buf, user_buf, count))", "inst_trace": [], "at_file": "drivers/scsi/hisi_sas/hisi_sas_v3_hw.c", "by": "TaintedSizeDetector says:", "at_func": "debugfs_trigger_dump_v3_hw_write"}, "warn_no": 2}]}]}

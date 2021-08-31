@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}, {"lineno": 693, "file": "drivers/rtc/rtc-m41t80.c", "instr": "wdt_ping();"}],
+"warnings":[{"warn_data": {"at_line": 612, "warn_str": "Trying to use a global variable without locking.", "at": ".addr\t= save_client->addr,", "inst_trace": [{"instr_func": "wdt_write", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}, {"instr_func": "wdt_write", "instr_loc": 693, "instr_file": "drivers/rtc/rtc-m41t80.c", "instr": "wdt_ping();"}], "at_file": "drivers/rtc/rtc-m41t80.c", "by": "GlobalVariableRaceDetector says:", "at_func": "wdt_ping"}, "warn_no": 1}]}]}

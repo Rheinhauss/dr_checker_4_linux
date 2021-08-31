@@ -1,0 +1,9 @@
+{"all_contexts":[
+{"num_warnings": 3,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i8*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 575, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "io_res = copy_to_user((struct iowarrior_info __user *)arg, &info,", "inst_trace": [], "at_file": "drivers/usb/misc/iowarrior.c", "by": "TaintedSizeDetector says:", "at_func": "iowarrior_ioctl"}, "warn_no": 1},
+{"warn_data": {"at_line": 543, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "io_res = copy_to_user(user_buffer, buffer, dev->report_size);", "inst_trace": [], "at_file": "drivers/usb/misc/iowarrior.c", "by": "TaintedSizeDetector says:", "at_func": "iowarrior_ioctl"}, "warn_no": 2},
+{"warn_data": {"at_line": 516, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "user_buffer = (__u8 __user *)arg;", "inst_trace": [], "at_file": "drivers/usb/misc/iowarrior.c", "by": "TaintedSizeDetector says:", "at_func": "iowarrior_ioctl"}, "warn_no": 3}]},
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i8*, align 8"}, {"lineno": 492, "file": "drivers/usb/misc/iowarrior.c", "instr": "buffer = kzalloc(dev->report_size, GFP_KERNEL);"}],
+"warnings":[{"warn_data": {"at_line": 557, "warn_str": "Trying to use a global variable without locking.", "at": "  %234 = getelementptr [3 x [14 x %struct.kmem_cache*]], [3 x [14 x %struct.kmem_cache*]]* @kmalloc_caches, i64 0, i64 %233, !dbg !5521", "inst_trace": [{"instr_func": "iowarrior_ioctl", "instr_loc": -1, "instr": "  %4 = alloca i8*, align 8"}, {"instr_func": "iowarrior_ioctl", "instr_loc": 492, "instr_file": "drivers/usb/misc/iowarrior.c", "instr": "buffer = kzalloc(dev->report_size, GFP_KERNEL);"}], "at_file": "./include/linux/slab.h", "by": "GlobalVariableRaceDetector says:", "at_func": "kzalloc"}, "warn_no": 1}]}]}

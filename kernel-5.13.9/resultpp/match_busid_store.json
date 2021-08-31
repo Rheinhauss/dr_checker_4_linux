@@ -1,0 +1,7 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i1, align 1"}, {"lineno": 182, "file": "drivers/usb/usbip/stub_main.c", "instr": "if (add_match_busid(busid) < 0)"}],
+"warnings":[{"warn_data": {"at_line": 89, "warn_str": "Trying to use a global variable without locking.", "at": "{", "inst_trace": [{"instr_func": "match_busid_store", "instr_loc": -1, "instr": "  %4 = alloca i1, align 1"}, {"instr_func": "match_busid_store", "instr_loc": 182, "instr_file": "drivers/usb/usbip/stub_main.c", "instr": "if (add_match_busid(busid) < 0)"}], "at_file": "drivers/usb/usbip/stub_main.c", "by": "GlobalVariableRaceDetector says:", "at_func": "add_match_busid"}, "warn_no": 1}]},
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i1, align 1"}, {"lineno": 190, "file": "drivers/usb/usbip/stub_main.c", "instr": "if (del_match_busid(busid) < 0)"}],
+"warnings":[{"warn_data": {"at_line": 121, "warn_str": "Trying to use a global variable without locking.", "at": "{", "inst_trace": [{"instr_func": "match_busid_store", "instr_loc": -1, "instr": "  %4 = alloca i1, align 1"}, {"instr_func": "match_busid_store", "instr_loc": 190, "instr_file": "drivers/usb/usbip/stub_main.c", "instr": "if (del_match_busid(busid) < 0)"}], "at_file": "drivers/usb/usbip/stub_main.c", "by": "GlobalVariableRaceDetector says:", "at_func": "del_match_busid"}, "warn_no": 1}]}]}

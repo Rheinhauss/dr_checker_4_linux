@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca %struct.file*, align 8"}, {"lineno": 646, "file": "drivers/media/pci/tw686x/tw686x-video.c", "instr": "format = format_by_fourcc(f->fmt.pix.pixelformat);"}],
+"warnings":[{"warn_data": {"at_line": 416, "warn_str": "Trying to use a global variable without locking.", "at": "if (formats[cnt].fourcc == fourcc)", "inst_trace": [{"instr_func": "tw686x_try_fmt_vid_cap", "instr_loc": -1, "instr": "  %4 = alloca %struct.file*, align 8"}, {"instr_func": "tw686x_try_fmt_vid_cap", "instr_loc": 646, "instr_file": "drivers/media/pci/tw686x/tw686x-video.c", "instr": "format = format_by_fourcc(f->fmt.pix.pixelformat);"}], "at_file": "drivers/media/pci/tw686x/tw686x-video.c", "by": "GlobalVariableRaceDetector says:", "at_func": "format_by_fourcc"}, "warn_no": 1}]}]}

@@ -1,0 +1,5 @@
+{"all_contexts":[
+{"num_warnings": 2,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i1, align 1"}],
+"warnings":[{"warn_data": {"at_line": 880, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_from_user(buf, input, wblock->req_buf_size)) {", "inst_trace": [], "at_file": "drivers/platform/x86/wmi.c", "by": "TaintedSizeDetector says:", "at_func": "wmi_ioctl"}, "warn_no": 1},
+{"warn_data": {"at_line": 900, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_to_user(input, buf, wblock->req_buf_size)) {", "inst_trace": [], "at_file": "drivers/platform/x86/wmi.c", "by": "TaintedSizeDetector says:", "at_func": "wmi_ioctl"}, "warn_no": 2}]}]}

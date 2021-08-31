@@ -1,0 +1,8 @@
+{"all_contexts":[
+{"num_warnings": 5,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i8*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 662, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "twoints[0] = le16_to_cpu(usblp->dev->descriptor.idVendor);", "inst_trace": [], "at_file": "drivers/usb/class/usblp.c", "by": "TaintedSizeDetector says:", "at_func": "usblp_ioctl"}, "warn_no": 1},
+{"warn_data": {"at_line": 698, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "status = *usblp->statusbuf;", "inst_trace": [], "at_file": "drivers/usb/class/usblp.c", "by": "TaintedSizeDetector says:", "at_func": "usblp_ioctl"}, "warn_no": 2},
+{"warn_data": {"at_line": 641, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "twoints[0] = usblp->dev->bus->busnum;", "inst_trace": [], "at_file": "drivers/usb/class/usblp.c", "by": "TaintedSizeDetector says:", "at_func": "usblp_ioctl"}, "warn_no": 3},
+{"warn_data": {"at_line": 580, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_to_user((void __user *)arg,", "inst_trace": [], "at_file": "drivers/usb/class/usblp.c", "by": "TaintedSizeDetector says:", "at_func": "usblp_ioctl"}, "warn_no": 4},
+{"warn_data": {"at_line": 556, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_to_user((void __user *) arg,", "inst_trace": [], "at_file": "drivers/usb/class/usblp.c", "by": "TaintedSizeDetector says:", "at_func": "usblp_ioctl"}, "warn_no": 5}]}]}

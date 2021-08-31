@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}, {"lineno": 480, "file": "drivers/usb/core/sysfs.c", "instr": "warn_level();"}],
+"warnings":[{"warn_data": {"at_line": 452, "warn_str": "Trying to use a global variable without locking.", "at": "if (!level_warned) {", "inst_trace": [{"instr_func": "level_store", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}, {"instr_func": "level_store", "instr_loc": 480, "instr_file": "drivers/usb/core/sysfs.c", "instr": "warn_level();"}], "at_file": "drivers/usb/core/sysfs.c", "by": "GlobalVariableRaceDetector says:", "at_func": "warn_level"}, "warn_no": 1}]}]}

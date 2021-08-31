@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}],
+"warnings":[{"warn_data": {"at_line": 887, "warn_str": "Potential overflow, using tainted value in binary operation.", "at": "size -= 4;", "inst_trace": [{"instr_func": "amdgpu_debugfs_wave_read", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}, {"instr_func": "amdgpu_debugfs_wave_read", "instr_loc": 826, "instr_file": "drivers/gpu/drm/amd/amdgpu/amdgpu_debugfs.c", "instr": "{"}, {"instr_func": "amdgpu_debugfs_wave_read", "instr_loc": 887, "instr_file": "drivers/gpu/drm/amd/amdgpu/amdgpu_debugfs.c", "instr": "size -= 4;"}], "at_file": "drivers/gpu/drm/amd/amdgpu/amdgpu_debugfs.c", "by": "IntegerOverflowDetector says:", "at_func": "amdgpu_debugfs_wave_read"}, "warn_no": 1}]}]}

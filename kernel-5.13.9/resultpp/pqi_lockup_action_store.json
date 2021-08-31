@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}],
+"warnings":[{"warn_data": {"at_line": 6526, "warn_str": "Trying to use a global variable without locking.", "at": "if (strcmp(action_name, pqi_lockup_actions[i].name) == 0) {", "inst_trace": [{"instr_func": "pqi_lockup_action_store", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}], "at_file": "drivers/scsi/smartpqi/smartpqi_init.c", "by": "GlobalVariableRaceDetector says:", "at_func": "pqi_lockup_action_store"}, "warn_no": 1}]}]}

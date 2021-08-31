@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}],
+"warnings":[{"warn_data": {"at_line": 272, "warn_str": "Trying to use a global variable without locking.", "at": "err = visorchannel_write(chipset_dev->controlvm_channel,", "inst_trace": [{"instr_func": "remaining_steps_store", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}], "at_file": "drivers/visorbus/visorchipset.c", "by": "GlobalVariableRaceDetector says:", "at_func": "remaining_steps_store"}, "warn_no": 1}]}]}

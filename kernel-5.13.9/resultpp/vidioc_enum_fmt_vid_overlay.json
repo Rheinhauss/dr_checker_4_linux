@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}],
+"warnings":[{"warn_data": {"at_line": 706, "warn_str": "Trying to use a global variable without locking.", "at": "fmt = &formats[f->index];", "inst_trace": [{"instr_func": "vidioc_enum_fmt_vid_overlay", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}], "at_file": "drivers/staging/vc04_services/bcm2835-camera/bcm2835-camera.c", "by": "GlobalVariableRaceDetector says:", "at_func": "vidioc_enum_fmt_vid_overlay"}, "warn_no": 1}]}]}

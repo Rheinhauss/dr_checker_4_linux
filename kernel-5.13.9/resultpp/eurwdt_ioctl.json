@@ -1,0 +1,6 @@
+{"all_contexts":[
+{"num_warnings": 3,
+"context":[{"lineno": -1, "instr": "  %4 = alloca %struct.spinlock*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 282, "warn_str": "Trying to use a global variable without locking.", "at": "if (time < 0 || time > 255)", "inst_trace": [{"instr_func": "eurwdt_ioctl", "instr_loc": -1, "instr": "  %4 = alloca %struct.spinlock*, align 8"}], "at_file": "drivers/watchdog/eurotechwdt.c", "by": "GlobalVariableRaceDetector says:", "at_func": "eurwdt_ioctl"}, "warn_no": 1},
+{"warn_data": {"at_line": 278, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_from_user(&time, p, sizeof(int)))", "inst_trace": [], "at_file": "drivers/watchdog/eurotechwdt.c", "by": "TaintedSizeDetector says:", "at_func": "eurwdt_ioctl"}, "warn_no": 2},
+{"warn_data": {"at_line": 249, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "return copy_to_user(argp, &ident, sizeof(ident)) ? -EFAULT : 0;", "inst_trace": [], "at_file": "drivers/watchdog/eurotechwdt.c", "by": "TaintedSizeDetector says:", "at_func": "eurwdt_ioctl"}, "warn_no": 3}]}]}

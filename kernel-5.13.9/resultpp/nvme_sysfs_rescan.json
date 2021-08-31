@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca %struct.device*, align 8"}, {"lineno": 3037, "file": "drivers/nvme/host/core.c", "instr": "nvme_queue_scan(ctrl);"}],
+"warnings":[{"warn_data": {"at_line": 125, "warn_str": "Trying to use a global variable without locking.", "at": "queue_work(nvme_wq, &ctrl->scan_work);", "inst_trace": [{"instr_func": "nvme_sysfs_rescan", "instr_loc": -1, "instr": "  %5 = alloca %struct.device*, align 8"}, {"instr_func": "nvme_sysfs_rescan", "instr_loc": 3037, "instr_file": "drivers/nvme/host/core.c", "instr": "nvme_queue_scan(ctrl);"}], "at_file": "drivers/nvme/host/core.c", "by": "GlobalVariableRaceDetector says:", "at_func": "nvme_queue_scan"}, "warn_no": 1}]}]}

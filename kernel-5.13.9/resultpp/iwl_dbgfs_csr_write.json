@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca %struct.file*, align 8"}, {"lineno": 2658, "file": "drivers/net/wireless/intel/iwlwifi/pcie/trans.c", "instr": "iwl_pcie_dump_csr(trans);"}],
+"warnings":[{"warn_data": {"at_line": 2398, "warn_str": "Trying to use a global variable without locking.", "at": "IWL_ERR(trans, \"  %25s: 0X%08x\\n\",", "inst_trace": [{"instr_func": "iwl_dbgfs_csr_write", "instr_loc": -1, "instr": "  %5 = alloca %struct.file*, align 8"}, {"instr_func": "iwl_dbgfs_csr_write", "instr_loc": 2658, "instr_file": "drivers/net/wireless/intel/iwlwifi/pcie/trans.c", "instr": "iwl_pcie_dump_csr(trans);"}], "at_file": "drivers/net/wireless/intel/iwlwifi/pcie/trans.c", "by": "GlobalVariableRaceDetector says:", "at_func": "iwl_pcie_dump_csr"}, "warn_no": 1}]}]}

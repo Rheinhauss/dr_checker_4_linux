@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca %struct.file*, align 8"}, {"lineno": 564, "file": "drivers/media/platform/m2m-deinterlace.c", "instr": "fmt = find_format(f);"}],
+"warnings":[{"warn_data": {"at_line": 109, "warn_str": "Trying to use a global variable without locking.", "at": "fmt = &formats[k];", "inst_trace": [{"instr_func": "vidioc_try_fmt_vid_out", "instr_loc": -1, "instr": "  %4 = alloca %struct.file*, align 8"}, {"instr_func": "vidioc_try_fmt_vid_out", "instr_loc": 564, "instr_file": "drivers/media/platform/m2m-deinterlace.c", "instr": "fmt = find_format(f);"}], "at_file": "drivers/media/platform/m2m-deinterlace.c", "by": "GlobalVariableRaceDetector says:", "at_func": "find_format"}, "warn_no": 1}]}]}

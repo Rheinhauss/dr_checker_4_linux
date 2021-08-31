@@ -1,0 +1,5 @@
+{"all_contexts":[
+{"num_warnings": 2,
+"context":[{"lineno": -1, "instr": "  %4 = alloca %struct.spinlock*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 1485, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "pool = array_index_nospec(pool,", "inst_trace": [], "at_file": "drivers/atm/zatm.c", "by": "TaintedSizeDetector says:", "at_func": "zatm_ioctl"}, "warn_no": 1},
+{"warn_data": {"at_line": 1469, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "spin_unlock_irqrestore(&zatm_dev->lock, flags);", "inst_trace": [], "at_file": "drivers/atm/zatm.c", "by": "TaintedSizeDetector says:", "at_func": "zatm_ioctl"}, "warn_no": 2}]}]}

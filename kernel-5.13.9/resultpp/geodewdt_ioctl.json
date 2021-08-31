@@ -1,0 +1,14 @@
+{"all_contexts":[
+{"num_warnings": 2,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i8*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 151, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "return copy_to_user(argp, &ident,", "inst_trace": [], "at_file": "drivers/watchdog/geodewdt.c", "by": "TaintedSizeDetector says:", "at_func": "geodewdt_ioctl"}, "warn_no": 1},
+{"warn_data": {"at_line": 188, "warn_str": "Trying to use a global variable without locking.", "at": "return put_user(timeout, p);", "inst_trace": [{"instr_func": "geodewdt_ioctl", "instr_loc": -1, "instr": "  %4 = alloca i8*, align 8"}], "at_file": "drivers/watchdog/geodewdt.c", "by": "GlobalVariableRaceDetector says:", "at_func": "geodewdt_ioctl"}, "warn_no": 2}]},
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i8*, align 8"}, {"lineno": 184, "file": "drivers/watchdog/geodewdt.c", "instr": "if (geodewdt_set_heartbeat(interval))"}],
+"warnings":[{"warn_data": {"at_line": 73, "warn_str": "Trying to use a global variable without locking.", "at": "cs5535_mfgpt_write(wdt_timer, MFGPT_REG_SETUP, 0);", "inst_trace": [{"instr_func": "geodewdt_ioctl", "instr_loc": -1, "instr": "  %4 = alloca i8*, align 8"}, {"instr_func": "geodewdt_ioctl", "instr_loc": 184, "instr_file": "drivers/watchdog/geodewdt.c", "instr": "if (geodewdt_set_heartbeat(interval))"}], "at_file": "drivers/watchdog/geodewdt.c", "by": "GlobalVariableRaceDetector says:", "at_func": "geodewdt_set_heartbeat"}, "warn_no": 1}]},
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i8*, align 8"}, {"lineno": 177, "file": "drivers/watchdog/geodewdt.c", "instr": "geodewdt_ping();"}],
+"warnings":[{"warn_data": {"at_line": 53, "warn_str": "Trying to use a global variable without locking.", "at": "cs5535_mfgpt_write(wdt_timer, MFGPT_REG_SETUP, 0);", "inst_trace": [{"instr_func": "geodewdt_ioctl", "instr_loc": -1, "instr": "  %4 = alloca i8*, align 8"}, {"instr_func": "geodewdt_ioctl", "instr_loc": 177, "instr_file": "drivers/watchdog/geodewdt.c", "instr": "geodewdt_ping();"}], "at_file": "drivers/watchdog/geodewdt.c", "by": "GlobalVariableRaceDetector says:", "at_func": "geodewdt_ping"}, "warn_no": 1}]},
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i8*, align 8"}, {"lineno": 165, "file": "drivers/watchdog/geodewdt.c", "instr": "geodewdt_disable();"}],
+"warnings":[{"warn_data": {"at_line": 64, "warn_str": "Trying to use a global variable without locking.", "at": "cs5535_mfgpt_write(wdt_timer, MFGPT_REG_SETUP, 0);", "inst_trace": [{"instr_func": "geodewdt_ioctl", "instr_loc": -1, "instr": "  %4 = alloca i8*, align 8"}, {"instr_func": "geodewdt_ioctl", "instr_loc": 165, "instr_file": "drivers/watchdog/geodewdt.c", "instr": "geodewdt_disable();"}], "at_file": "drivers/watchdog/geodewdt.c", "by": "GlobalVariableRaceDetector says:", "at_func": "geodewdt_disable"}, "warn_no": 1}]}]}

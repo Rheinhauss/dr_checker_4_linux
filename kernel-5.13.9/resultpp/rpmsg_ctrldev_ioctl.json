@@ -1,0 +1,7 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i8*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 439, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_from_user(&eptinfo, argp, sizeof(eptinfo)))", "inst_trace": [], "at_file": "drivers/rpmsg/rpmsg_char.c", "by": "TaintedSizeDetector says:", "at_func": "rpmsg_ctrldev_ioctl"}, "warn_no": 1}]},
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i8*, align 8"}, {"lineno": 447, "file": "drivers/rpmsg/rpmsg_char.c", "instr": "return rpmsg_eptdev_create(ctrldev, chinfo);"}, {"lineno": 350, "file": "drivers/rpmsg/rpmsg_char.c", "instr": "eptdev = kzalloc(sizeof(*eptdev), GFP_KERNEL);"}],
+"warnings":[{"warn_data": {"at_line": 557, "warn_str": "Trying to use a global variable without locking.", "at": "  %234 = getelementptr [3 x [14 x %struct.kmem_cache*]], [3 x [14 x %struct.kmem_cache*]]* @kmalloc_caches, i64 0, i64 %233, !dbg !5658", "inst_trace": [{"instr_func": "rpmsg_ctrldev_ioctl", "instr_loc": -1, "instr": "  %4 = alloca i8*, align 8"}, {"instr_func": "rpmsg_ctrldev_ioctl", "instr_loc": 447, "instr_file": "drivers/rpmsg/rpmsg_char.c", "instr": "return rpmsg_eptdev_create(ctrldev, chinfo);"}, {"instr_func": "rpmsg_eptdev_create", "instr_loc": 350, "instr_file": "drivers/rpmsg/rpmsg_char.c", "instr": "eptdev = kzalloc(sizeof(*eptdev), GFP_KERNEL);"}], "at_file": "./include/linux/slab.h", "by": "GlobalVariableRaceDetector says:", "at_func": "kzalloc"}, "warn_no": 1}]}]}

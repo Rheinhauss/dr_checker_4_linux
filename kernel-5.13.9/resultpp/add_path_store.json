@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}],
+"warnings":[{"warn_data": {"at_line": 179, "warn_str": "Tainted Data used in risky function", "at": "nl = strchr(buf, '\\n');", "inst_trace": [{"instr_func": "add_path_store", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}], "at_file": "drivers/infiniband/ulp/rtrs/rtrs-clt-sysfs.c", "by": "ImproperTaintedDataUseDetector says:", "tainted_obj": "i8* %2", "at_func": "add_path_store"}, "warn_no": 1}]}]}

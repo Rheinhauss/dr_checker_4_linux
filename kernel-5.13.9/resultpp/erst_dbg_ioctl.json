@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i8*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 63, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "rc = copy_from_user(&record_id, (void __user *)arg,", "inst_trace": [], "at_file": "drivers/acpi/apei/erst-dbg.c", "by": "TaintedSizeDetector says:", "at_func": "erst_dbg_ioctl"}, "warn_no": 1}]}]}

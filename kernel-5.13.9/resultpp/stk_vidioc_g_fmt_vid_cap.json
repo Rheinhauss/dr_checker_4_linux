@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}],
+"warnings":[{"warn_data": {"at_line": 0, "warn_str": "Trying to use a global variable without locking.", "at": "", "inst_trace": [{"instr_func": "stk_vidioc_g_fmt_vid_cap", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}], "at_file": "drivers/media/usb/stkwebcam/stk-webcam.c", "by": "GlobalVariableRaceDetector says:", "at_func": "stk_vidioc_g_fmt_vid_cap"}, "warn_no": 1}]}]}

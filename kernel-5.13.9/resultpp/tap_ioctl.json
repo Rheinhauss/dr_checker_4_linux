@@ -1,0 +1,7 @@
+{"all_contexts":[
+{"num_warnings": 4,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i8*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 1102, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_from_user(&sa, &ifr->ifr_hwaddr, sizeof(sa)))", "inst_trace": [], "at_file": "drivers/net/tap.c", "by": "TaintedSizeDetector says:", "at_func": "tap_ioctl"}, "warn_no": 1},
+{"warn_data": {"at_line": 1092, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "ret = 0;", "inst_trace": [], "at_file": "drivers/net/tap.c", "by": "TaintedSizeDetector says:", "at_func": "tap_ioctl"}, "warn_no": 2},
+{"warn_data": {"at_line": 1095, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "copy_to_user(&ifr->ifr_hwaddr, &sa, sizeof(sa)))", "inst_trace": [], "at_file": "drivers/net/tap.c", "by": "TaintedSizeDetector says:", "at_func": "tap_ioctl"}, "warn_no": 3},
+{"warn_data": {"at_line": 1007, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "ret = 0;", "inst_trace": [], "at_file": "drivers/net/tap.c", "by": "TaintedSizeDetector says:", "at_func": "tap_ioctl"}, "warn_no": 4}]}]}

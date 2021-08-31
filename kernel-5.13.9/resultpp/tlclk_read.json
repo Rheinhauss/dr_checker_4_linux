@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i8*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 252, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "wait_event_interruptible(wq, got_event);", "inst_trace": [], "at_file": "drivers/char/tlclk.c", "by": "TaintedSizeDetector says:", "at_func": "tlclk_read"}, "warn_no": 1}]}]}

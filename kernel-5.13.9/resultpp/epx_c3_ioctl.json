@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i8*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 114, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_to_user(argp, &ident, sizeof(ident)))", "inst_trace": [], "at_file": "drivers/watchdog/sbc_epx_c3.c", "by": "TaintedSizeDetector says:", "at_func": "epx_c3_ioctl"}, "warn_no": 1}]}]}

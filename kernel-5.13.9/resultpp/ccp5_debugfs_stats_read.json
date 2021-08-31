@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i32, align 4"}],
+"warnings":[{"warn_data": {"at_line": 114, "warn_str": "Trying to use a global variable without locking.", "at": "for (i = 0; i < ccp->cmd_q_count; i++) {", "inst_trace": [{"instr_func": "ccp5_debugfs_stats_read", "instr_loc": -1, "instr": "  %5 = alloca i32, align 4"}], "at_file": "drivers/crypto/ccp/ccp-debugfs.c", "by": "GlobalVariableRaceDetector says:", "at_func": "ccp5_debugfs_stats_read"}, "warn_no": 1}]}]}

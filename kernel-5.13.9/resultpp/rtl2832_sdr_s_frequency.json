@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i1, align 1"}],
+"warnings":[{"warn_data": {"at_line": 1084, "warn_str": "Trying to use a global variable without locking.", "at": "dev->f_adc = clamp_t(unsigned int, f->frequency,", "inst_trace": [{"instr_func": "rtl2832_sdr_s_frequency", "instr_loc": -1, "instr": "  %4 = alloca i1, align 1"}], "at_file": "drivers/media/dvb-frontends/rtl2832_sdr.c", "by": "GlobalVariableRaceDetector says:", "at_func": "rtl2832_sdr_s_frequency"}, "warn_no": 1}]}]}

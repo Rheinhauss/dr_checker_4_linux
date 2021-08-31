@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}],
+"warnings":[{"warn_data": {"at_line": 884, "warn_str": "Trying to use a global variable without locking.", "at": "const u16 mode_product_id = lg4ff_alternate_modes[i].product_id;", "inst_trace": [{"instr_func": "lg4ff_alternate_modes_store", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}], "at_file": "drivers/hid/hid-lg4ff.c", "by": "GlobalVariableRaceDetector says:", "at_func": "lg4ff_alternate_modes_store"}, "warn_no": 1}]}]}

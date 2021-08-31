@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}, {"lineno": 1559, "file": "drivers/media/platform/ti-vpe/vpe.c", "instr": "return __enum_fmt(f, VPE_FMT_TYPE_CAPTURE);"}],
+"warnings":[{"warn_data": {"at_line": 1537, "warn_str": "Trying to use a global variable without locking.", "at": "if (vpe_formats[i].types & type) {", "inst_trace": [{"instr_func": "vpe_enum_fmt", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}, {"instr_func": "vpe_enum_fmt", "instr_loc": 1559, "instr_file": "drivers/media/platform/ti-vpe/vpe.c", "instr": "return __enum_fmt(f, VPE_FMT_TYPE_CAPTURE);"}], "at_file": "drivers/media/platform/ti-vpe/vpe.c", "by": "GlobalVariableRaceDetector says:", "at_func": "__enum_fmt"}, "warn_no": 1}]}]}

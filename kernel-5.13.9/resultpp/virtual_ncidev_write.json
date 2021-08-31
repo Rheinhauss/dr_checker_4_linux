@@ -1,0 +1,5 @@
+{"all_contexts":[
+{"num_warnings": 2,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i8*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 117, "warn_str": "Trying to use a global variable without locking.", "at": "nci_recv_frame(ndev, skb);", "inst_trace": [{"instr_func": "virtual_ncidev_write", "instr_loc": -1, "instr": "  %5 = alloca i8*, align 8"}], "at_file": "drivers/nfc/virtual_ncidev.c", "by": "GlobalVariableRaceDetector says:", "at_func": "virtual_ncidev_write"}, "warn_no": 1},
+{"warn_data": {"at_line": 112, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_from_user(skb_put(skb, count), buf, count)) {", "inst_trace": [], "at_file": "drivers/nfc/virtual_ncidev.c", "by": "TaintedSizeDetector says:", "at_func": "virtual_ncidev_write"}, "warn_no": 2}]}]}

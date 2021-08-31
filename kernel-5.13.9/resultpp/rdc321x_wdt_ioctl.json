@@ -1,0 +1,9 @@
+{"all_contexts":[
+{"num_warnings": 3,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i8*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 169, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_from_user(&value, argp, sizeof(int)))", "inst_trace": [], "at_file": "drivers/watchdog/rdc321x_wdt.c", "by": "TaintedSizeDetector says:", "at_func": "rdc321x_wdt_ioctl"}, "warn_no": 1},
+{"warn_data": {"at_line": 165, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_to_user(argp, &ident, sizeof(ident)))", "inst_trace": [], "at_file": "drivers/watchdog/rdc321x_wdt.c", "by": "TaintedSizeDetector says:", "at_func": "rdc321x_wdt_ioctl"}, "warn_no": 2},
+{"warn_data": {"at_line": 158, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "pci_read_config_dword(rdc321x_wdt_device.sb_pdev,", "inst_trace": [], "at_file": "drivers/watchdog/rdc321x_wdt.c", "by": "TaintedSizeDetector says:", "at_func": "rdc321x_wdt_ioctl"}, "warn_no": 3}]},
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i8*, align 8"}, {"lineno": 176, "file": "drivers/watchdog/rdc321x_wdt.c", "instr": "return rdc321x_wdt_stop();"}],
+"warnings":[{"warn_data": {"at_line": 120, "warn_str": "Trying to use a global variable without locking.", "at": "ticks = rdc321x_wdt_device.default_ticks;", "inst_trace": [{"instr_func": "rdc321x_wdt_ioctl", "instr_loc": -1, "instr": "  %4 = alloca i8*, align 8"}, {"instr_func": "rdc321x_wdt_ioctl", "instr_loc": 176, "instr_file": "drivers/watchdog/rdc321x_wdt.c", "instr": "return rdc321x_wdt_stop();"}], "at_file": "drivers/watchdog/rdc321x_wdt.c", "by": "GlobalVariableRaceDetector says:", "at_func": "rdc321x_wdt_stop"}, "warn_no": 1}]}]}

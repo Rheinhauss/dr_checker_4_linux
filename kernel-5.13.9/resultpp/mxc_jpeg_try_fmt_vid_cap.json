@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}, {"lineno": 1626, "file": "drivers/media/platform/imx-jpeg/mxc-jpeg.c", "instr": "fmt = mxc_jpeg_find_format(ctx, fourcc);"}],
+"warnings":[{"warn_data": {"at_line": 377, "warn_str": "Trying to use a global variable without locking.", "at": "struct mxc_jpeg_fmt *fmt = &mxc_formats[k];", "inst_trace": [{"instr_func": "mxc_jpeg_try_fmt_vid_cap", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}, {"instr_func": "mxc_jpeg_try_fmt_vid_cap", "instr_loc": 1626, "instr_file": "drivers/media/platform/imx-jpeg/mxc-jpeg.c", "instr": "fmt = mxc_jpeg_find_format(ctx, fourcc);"}], "at_file": "drivers/media/platform/imx-jpeg/mxc-jpeg.c", "by": "GlobalVariableRaceDetector says:", "at_func": "mxc_jpeg_find_format"}, "warn_no": 1}]}]}

@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca %struct.device*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 140, "warn_str": "Potential overflow, using tainted value in binary operation.", "at": "value = buf[0] - '0';", "inst_trace": [{"instr_func": "value_store", "instr_loc": -1, "instr": "  %5 = alloca %struct.device*, align 8"}, {"instr_func": "value_store", "instr_loc": 140, "instr_file": "drivers/gpio/gpiolib-sysfs.c", "instr": "value = buf[0] - '0';"}], "at_file": "drivers/gpio/gpiolib-sysfs.c", "by": "IntegerOverflowDetector says:", "at_func": "value_store"}, "warn_no": 1}]}]}

@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca %struct.atomic_t*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 956, "warn_str": "Trying to use a global variable without locking.", "at": "CX18_DEBUG_IOCTL(\"V4L2_ENC_CMD_RESUME\\n\");", "inst_trace": [{"instr_func": "cx18_encoder_cmd", "instr_loc": -1, "instr": "  %4 = alloca %struct.atomic_t*, align 8"}], "at_file": "drivers/media/pci/cx18/cx18-ioctl.c", "by": "GlobalVariableRaceDetector says:", "at_func": "cx18_encoder_cmd"}, "warn_no": 1}]}]}

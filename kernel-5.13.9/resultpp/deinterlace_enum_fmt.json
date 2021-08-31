@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}],
+"warnings":[{"warn_data": {"at_line": 365, "warn_str": "Trying to use a global variable without locking.", "at": "f->pixelformat = deinterlace_formats[f->index];", "inst_trace": [{"instr_func": "deinterlace_enum_fmt", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}], "at_file": "drivers/media/platform/sunxi/sun8i-di/sun8i-di.c", "by": "GlobalVariableRaceDetector says:", "at_func": "deinterlace_enum_fmt"}, "warn_no": 1}]}]}

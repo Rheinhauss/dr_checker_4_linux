@@ -1,0 +1,7 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}],
+"warnings":[{"warn_data": {"at_line": 1007, "warn_str": "Trying to use a global variable without locking.", "at": "edac_dbg(0, \"Error inject addr match 0x%016llx, ecc 0x%08x, inject 0x%08x\\n\",", "inst_trace": [{"instr_func": "i7core_inject_enable_store", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}], "at_file": "drivers/edac/i7core_edac.c", "by": "GlobalVariableRaceDetector says:", "at_func": "i7core_inject_enable_store"}, "warn_no": 1}]},
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}, {"lineno": 988, "file": "drivers/edac/i7core_edac.c", "instr": "write_and_test(pvt->pci_ch[pvt->inject.channel][0],"}],
+"warnings":[{"warn_data": {"at_line": 870, "warn_str": "Trying to use a global variable without locking.", "at": "edac_dbg(0, \"setting pci %02x:%02x.%x reg=%02x value=%08x\\n\",", "inst_trace": [{"instr_func": "i7core_inject_enable_store", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}, {"instr_func": "i7core_inject_enable_store", "instr_loc": 988, "instr_file": "drivers/edac/i7core_edac.c", "instr": "write_and_test(pvt->pci_ch[pvt->inject.channel][0],"}], "at_file": "drivers/edac/i7core_edac.c", "by": "GlobalVariableRaceDetector says:", "at_func": "write_and_test"}, "warn_no": 1}]}]}

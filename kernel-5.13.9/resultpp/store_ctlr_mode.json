@@ -1,0 +1,7 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}],
+"warnings":[{"warn_data": {"at_line": 295, "warn_str": "Trying to use a global variable without locking.", "at": "LIBFCOE_SYSFS_DBG(ctlr,", "inst_trace": [{"instr_func": "store_ctlr_mode", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}], "at_file": "drivers/scsi/fcoe/fcoe_sysfs.c", "by": "GlobalVariableRaceDetector says:", "at_func": "store_ctlr_mode"}, "warn_no": 1}]},
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}, {"lineno": 300, "file": "drivers/scsi/fcoe/fcoe_sysfs.c", "instr": "ctlr->mode = fcoe_parse_mode(mode);"}],
+"warnings":[{"warn_data": {"at_line": 229, "warn_str": "Trying to use a global variable without locking.", "at": "if (strcasecmp(buf, fip_conn_type_names[i]) == 0)", "inst_trace": [{"instr_func": "store_ctlr_mode", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}, {"instr_func": "store_ctlr_mode", "instr_loc": 300, "instr_file": "drivers/scsi/fcoe/fcoe_sysfs.c", "instr": "ctlr->mode = fcoe_parse_mode(mode);"}], "at_file": "drivers/scsi/fcoe/fcoe_sysfs.c", "by": "GlobalVariableRaceDetector says:", "at_func": "fcoe_parse_mode"}, "warn_no": 1}]}]}

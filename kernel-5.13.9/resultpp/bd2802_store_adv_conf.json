@@ -1,0 +1,7 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}, {"lineno": 455, "file": "drivers/leds/leds-bd2802.c", "instr": "bd2802_enable_adv_conf(led);"}],
+"warnings":[{"warn_data": {"at_line": 394, "warn_str": "Trying to use a global variable without locking.", "at": "bd2802_addr_attributes[i]);", "inst_trace": [{"instr_func": "bd2802_store_adv_conf", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}, {"instr_func": "bd2802_store_adv_conf", "instr_loc": 455, "instr_file": "drivers/leds/leds-bd2802.c", "instr": "bd2802_enable_adv_conf(led);"}], "at_file": "drivers/leds/leds-bd2802.c", "by": "GlobalVariableRaceDetector says:", "at_func": "bd2802_enable_adv_conf"}, "warn_no": 1}]},
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}, {"lineno": 457, "file": "drivers/leds/leds-bd2802.c", "instr": "bd2802_disable_adv_conf(led);"}],
+"warnings":[{"warn_data": {"at_line": 421, "warn_str": "Trying to use a global variable without locking.", "at": "bd2802_addr_attributes[i]);", "inst_trace": [{"instr_func": "bd2802_store_adv_conf", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}, {"instr_func": "bd2802_store_adv_conf", "instr_loc": 457, "instr_file": "drivers/leds/leds-bd2802.c", "instr": "bd2802_disable_adv_conf(led);"}], "at_file": "drivers/leds/leds-bd2802.c", "by": "GlobalVariableRaceDetector says:", "at_func": "bd2802_disable_adv_conf"}, "warn_no": 1}]}]}

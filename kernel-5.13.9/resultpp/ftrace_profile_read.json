@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca %struct.file*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 936, "warn_str": "Trying to use a global variable without locking.", "at": "r = sprintf(buf, \"%u\\n\", ftrace_profile_enabled);", "inst_trace": [{"instr_func": "ftrace_profile_read", "instr_loc": -1, "instr": "  %5 = alloca %struct.file*, align 8"}], "at_file": "kernel/trace/ftrace.c", "by": "GlobalVariableRaceDetector says:", "at_func": "ftrace_profile_read"}, "warn_no": 1}]}]}

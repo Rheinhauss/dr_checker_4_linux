@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i32, align 4"}],
+"warnings":[{"warn_data": {"at_line": 284, "warn_str": "Trying to use a global variable without locking.", "at": "if (ret)", "inst_trace": [{"instr_func": "kb_wake_angle_store", "instr_loc": -1, "instr": "  %5 = alloca i32, align 4"}], "at_file": "drivers/platform/chrome/cros_ec_sysfs.c", "by": "GlobalVariableRaceDetector says:", "at_func": "kb_wake_angle_store"}, "warn_no": 1}]}]}

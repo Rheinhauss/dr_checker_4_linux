@@ -1,0 +1,5 @@
+{"all_contexts":[
+{"num_warnings": 2,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i8*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 1863, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "buf_size = min(count, sizeof(buf) -  1);", "inst_trace": [], "at_file": "drivers/net/wireless/intel/iwlwifi/dvm/debugfs.c", "by": "TaintedSizeDetector says:", "at_func": "iwl_dbgfs_ucode_tracing_write"}, "warn_no": 1},
+{"warn_data": {"at_line": 1873, "warn_str": "Trying to use a global variable without locking.", "at": "mod_timer(&priv->ucode_trace, jiffies);", "inst_trace": [{"instr_func": "iwl_dbgfs_ucode_tracing_write", "instr_loc": -1, "instr": "  %5 = alloca i8*, align 8"}], "at_file": "drivers/net/wireless/intel/iwlwifi/dvm/debugfs.c", "by": "GlobalVariableRaceDetector says:", "at_func": "iwl_dbgfs_ucode_tracing_write"}, "warn_no": 2}]}]}

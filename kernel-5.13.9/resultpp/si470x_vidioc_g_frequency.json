@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}, {"lineno": 695, "file": "drivers/media/radio/si470x/radio-si470x-common.c", "instr": "return si470x_get_freq(radio, &freq->frequency);"}],
+"warnings":[{"warn_data": {"at_line": 268, "warn_str": "Trying to use a global variable without locking.", "at": "*freq = chan * si470x_get_step(radio) + bands[radio->band].rangelow;", "inst_trace": [{"instr_func": "si470x_vidioc_g_frequency", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}, {"instr_func": "si470x_vidioc_g_frequency", "instr_loc": 695, "instr_file": "drivers/media/radio/si470x/radio-si470x-common.c", "instr": "return si470x_get_freq(radio, &freq->frequency);"}], "at_file": "drivers/media/radio/si470x/radio-si470x-common.c", "by": "GlobalVariableRaceDetector says:", "at_func": "si470x_get_freq"}, "warn_no": 1}]}]}

@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca %struct.file*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 1323, "warn_str": "Trying to use a global variable without locking.", "at": "n = sprintf(buf, \"%d\\n\", fgraph_max_depth);", "inst_trace": [{"instr_func": "graph_depth_read", "instr_loc": -1, "instr": "  %5 = alloca %struct.file*, align 8"}], "at_file": "kernel/trace/trace_functions_graph.c", "by": "GlobalVariableRaceDetector says:", "at_func": "graph_depth_read"}, "warn_no": 1}]}]}

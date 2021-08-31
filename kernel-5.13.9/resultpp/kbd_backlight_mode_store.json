@@ -1,0 +1,7 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}],
+"warnings":[{"warn_data": {"at_line": 1817, "warn_str": "Trying to use a global variable without locking.", "at": "toshiba_acpi->kbd_mode = mode;", "inst_trace": [{"instr_func": "kbd_backlight_mode_store", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}], "at_file": "drivers/platform/x86/toshiba_acpi.c", "by": "GlobalVariableRaceDetector says:", "at_func": "kbd_backlight_mode_store"}, "warn_no": 1}]},
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}, {"lineno": 1835, "file": "drivers/platform/x86/toshiba_acpi.c", "instr": "schedule_work(&kbd_bl_work);"}],
+"warnings":[{"warn_data": {"at_line": 568, "warn_str": "Trying to use a global variable without locking.", "at": "  %3 = load %struct.workqueue_struct*, %struct.workqueue_struct** @system_wq, align 8, !dbg !6912", "inst_trace": [{"instr_func": "kbd_backlight_mode_store", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}, {"instr_func": "kbd_backlight_mode_store", "instr_loc": 1835, "instr_file": "drivers/platform/x86/toshiba_acpi.c", "instr": "schedule_work(&kbd_bl_work);"}], "at_file": "./include/linux/workqueue.h", "by": "GlobalVariableRaceDetector says:", "at_func": "schedule_work"}, "warn_no": 1}]}]}

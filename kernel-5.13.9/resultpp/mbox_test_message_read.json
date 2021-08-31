@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca %struct.task_struct*, align 8"}, {"lineno": 173, "file": "drivers/mailbox/mailbox-test.c", "instr": "touser = kzalloc(MBOX_HEXDUMP_MAX_LEN + 1, GFP_KERNEL);"}],
+"warnings":[{"warn_data": {"at_line": 557, "warn_str": "Trying to use a global variable without locking.", "at": "  %234 = getelementptr [3 x [14 x %struct.kmem_cache*]], [3 x [14 x %struct.kmem_cache*]]* @kmalloc_caches, i64 0, i64 %233, !dbg !5212", "inst_trace": [{"instr_func": "mbox_test_message_read", "instr_loc": -1, "instr": "  %5 = alloca %struct.task_struct*, align 8"}, {"instr_func": "mbox_test_message_read", "instr_loc": 173, "instr_file": "drivers/mailbox/mailbox-test.c", "instr": "touser = kzalloc(MBOX_HEXDUMP_MAX_LEN + 1, GFP_KERNEL);"}], "at_file": "./include/linux/slab.h", "by": "GlobalVariableRaceDetector says:", "at_func": "kzalloc"}, "warn_no": 1}]}]}

@@ -1,0 +1,7 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca %struct.spinlock*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 1134, "warn_str": "Trying to use a global variable without locking.", "at": "spin_lock_irqsave(&fcloop_lock, flags);", "inst_trace": [{"instr_func": "fcloop_create_local_port", "instr_loc": -1, "instr": "  %5 = alloca %struct.spinlock*, align 8"}], "at_file": "drivers/nvme/target/fcloop.c", "by": "GlobalVariableRaceDetector says:", "at_func": "fcloop_create_local_port"}, "warn_no": 1}]},
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca %struct.spinlock*, align 8"}, {"lineno": 1101, "file": "drivers/nvme/target/fcloop.c", "instr": "lport = kzalloc(sizeof(*lport), GFP_KERNEL);"}],
+"warnings":[{"warn_data": {"at_line": 557, "warn_str": "Trying to use a global variable without locking.", "at": "  %234 = getelementptr [3 x [14 x %struct.kmem_cache*]], [3 x [14 x %struct.kmem_cache*]]* @kmalloc_caches, i64 0, i64 %233, !dbg !6979", "inst_trace": [{"instr_func": "fcloop_create_local_port", "instr_loc": -1, "instr": "  %5 = alloca %struct.spinlock*, align 8"}, {"instr_func": "fcloop_create_local_port", "instr_loc": 1101, "instr_file": "drivers/nvme/target/fcloop.c", "instr": "lport = kzalloc(sizeof(*lport), GFP_KERNEL);"}], "at_file": "./include/linux/slab.h", "by": "GlobalVariableRaceDetector says:", "at_func": "kzalloc"}, "warn_no": 1}]}]}

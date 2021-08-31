@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}],
+"warnings":[{"warn_data": {"at_line": 817, "warn_str": "Trying to use a global variable without locking.", "at": "v4l2_dbg(1, debug, &vpbe_dev->v4l2_dev,", "inst_trace": [{"instr_func": "vpbe_display_s_fmt", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}], "at_file": "drivers/media/platform/davinci/vpbe_display.c", "by": "GlobalVariableRaceDetector says:", "at_func": "vpbe_display_s_fmt"}, "warn_no": 1}]}]}

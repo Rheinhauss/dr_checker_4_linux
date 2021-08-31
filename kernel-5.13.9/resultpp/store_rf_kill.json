@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca %struct.device*, align 8"}, {"lineno": 4285, "file": "drivers/net/wireless/intel/ipw2x00/ipw2100.c", "instr": "ipw_radio_kill_sw(priv, buf[0] == '1');"}],
+"warnings":[{"warn_data": {"at_line": 4256, "warn_str": "Trying to use a global variable without locking.", "at": "IPW_DEBUG_RF_KILL(\"Manual SW RF Kill set to: RADIO  %s\\n\",", "inst_trace": [{"instr_func": "store_rf_kill", "instr_loc": -1, "instr": "  %5 = alloca %struct.device*, align 8"}, {"instr_func": "store_rf_kill", "instr_loc": 4285, "instr_file": "drivers/net/wireless/intel/ipw2x00/ipw2100.c", "instr": "ipw_radio_kill_sw(priv, buf[0] == '1');"}], "at_file": "drivers/net/wireless/intel/ipw2x00/ipw2100.c", "by": "GlobalVariableRaceDetector says:", "at_func": "ipw_radio_kill_sw"}, "warn_no": 1}]}]}

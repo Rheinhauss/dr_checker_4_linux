@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}, {"lineno": 919, "file": "drivers/media/pci/solo6x10/solo6x10-v4l2-enc.c", "instr": "solo_update_mode(solo_enc);"}],
+"warnings":[{"warn_data": {"at_line": 217, "warn_str": "Trying to use a global variable without locking.", "at": "memcpy(vop + DQT_START,", "inst_trace": [{"instr_func": "solo_enc_set_fmt_cap", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}, {"instr_func": "solo_enc_set_fmt_cap", "instr_loc": 919, "instr_file": "drivers/media/pci/solo6x10/solo6x10-v4l2-enc.c", "instr": "solo_update_mode(solo_enc);"}], "at_file": "drivers/media/pci/solo6x10/solo6x10-v4l2-enc.c", "by": "GlobalVariableRaceDetector says:", "at_func": "solo_update_mode"}, "warn_no": 1}]}]}

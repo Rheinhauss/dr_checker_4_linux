@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}],
+"warnings":[{"warn_data": {"at_line": 291, "warn_str": "Potential overflow, using tainted value in binary operation.", "at": "if ((*pos + nbytes) >= bnad->reglen) {", "inst_trace": [{"instr_func": "bnad_debugfs_read_regrd", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}, {"instr_func": "bnad_debugfs_read_regrd", "instr_loc": 280, "instr_file": "drivers/net/ethernet/brocade/bna/bnad_debugfs.c", "instr": "{"}, {"instr_func": "bnad_debugfs_read_regrd", "instr_loc": 291, "instr_file": "drivers/net/ethernet/brocade/bna/bnad_debugfs.c", "instr": "if ((*pos + nbytes) >= bnad->reglen) {"}], "at_file": "drivers/net/ethernet/brocade/bna/bnad_debugfs.c", "by": "IntegerOverflowDetector says:", "at_func": "bnad_debugfs_read_regrd"}, "warn_no": 1}]}]}

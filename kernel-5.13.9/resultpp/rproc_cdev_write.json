@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i8*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 30, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "ret = copy_from_user(cmd, buf, len);", "inst_trace": [], "at_file": "drivers/remoteproc/remoteproc_cdev.c", "by": "TaintedSizeDetector says:", "at_func": "rproc_cdev_write"}, "warn_no": 1}]}]}

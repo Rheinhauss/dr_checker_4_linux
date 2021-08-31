@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}, {"lineno": 895, "file": "drivers/media/platform/coda/coda-common.c", "instr": "ret = coda_s_fmt(ctx, f, NULL);"}],
+"warnings":[{"warn_data": {"at_line": 806, "warn_str": "Trying to use a global variable without locking.", "at": "if (!disable_tiling && ctx->use_bit &&", "inst_trace": [{"instr_func": "coda_s_fmt_vid_out", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}, {"instr_func": "coda_s_fmt_vid_out", "instr_loc": 895, "instr_file": "drivers/media/platform/coda/coda-common.c", "instr": "ret = coda_s_fmt(ctx, f, NULL);"}], "at_file": "drivers/media/platform/coda/coda-common.c", "by": "GlobalVariableRaceDetector says:", "at_func": "coda_s_fmt"}, "warn_no": 1}]}]}

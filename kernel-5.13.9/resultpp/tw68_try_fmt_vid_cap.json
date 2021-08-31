@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}, {"lineno": 596, "file": "drivers/media/pci/tw68/tw68-video.c", "instr": "fmt = format_by_fourcc(f->fmt.pix.pixelformat);"}],
+"warnings":[{"warn_data": {"at_line": 200, "warn_str": "Trying to use a global variable without locking.", "at": "if (formats[i].fourcc == fourcc)", "inst_trace": [{"instr_func": "tw68_try_fmt_vid_cap", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}, {"instr_func": "tw68_try_fmt_vid_cap", "instr_loc": 596, "instr_file": "drivers/media/pci/tw68/tw68-video.c", "instr": "fmt = format_by_fourcc(f->fmt.pix.pixelformat);"}], "at_file": "drivers/media/pci/tw68/tw68-video.c", "by": "GlobalVariableRaceDetector says:", "at_func": "format_by_fourcc"}, "warn_no": 1}]}]}

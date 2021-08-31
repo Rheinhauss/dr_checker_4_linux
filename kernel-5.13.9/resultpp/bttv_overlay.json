@@ -1,0 +1,7 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i1, align 1"}],
+"warnings":[{"warn_data": {"at_line": 2540, "warn_str": "Trying to use a global variable without locking.", "at": "dprintk(\"%d: overlay: !setup_ok\\n\", btv->c.nr);", "inst_trace": [{"instr_func": "bttv_overlay", "instr_loc": -1, "instr": "  %4 = alloca i1, align 1"}], "at_file": "drivers/media/pci/bt8xx/bttv-driver.c", "by": "GlobalVariableRaceDetector says:", "at_func": "bttv_overlay"}, "warn_no": 1}]},
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i1, align 1"}, {"lineno": 2560, "file": "drivers/media/pci/bt8xx/bttv-driver.c", "instr": "retval = bttv_switch_overlay(btv, fh, new);"}],
+"warnings":[{"warn_data": {"at_line": 1504, "warn_str": "Trying to use a global variable without locking.", "at": "dprintk(\"switch_overlay: enter [new=%p]\\n\", new);", "inst_trace": [{"instr_func": "bttv_overlay", "instr_loc": -1, "instr": "  %4 = alloca i1, align 1"}, {"instr_func": "bttv_overlay", "instr_loc": 2560, "instr_file": "drivers/media/pci/bt8xx/bttv-driver.c", "instr": "retval = bttv_switch_overlay(btv, fh, new);"}], "at_file": "drivers/media/pci/bt8xx/bttv-driver.c", "by": "GlobalVariableRaceDetector says:", "at_func": "bttv_switch_overlay"}, "warn_no": 1}]}]}

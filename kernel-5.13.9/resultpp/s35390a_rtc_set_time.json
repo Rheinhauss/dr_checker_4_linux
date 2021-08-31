@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %3 = alloca i1, align 1"}, {"lineno": 235, "file": "drivers/rtc/rtc-s35390a.c", "instr": "buf[i] = bitrev8(buf[i]);"}],
+"warnings":[{"warn_data": {"at_line": 18, "warn_str": "Trying to use a global variable without locking.", "at": "  %5 = getelementptr [256 x i8], [256 x i8]* @byte_rev_table, i64 0, i64 %4, !dbg !5265", "inst_trace": [{"instr_func": "s35390a_rtc_set_time", "instr_loc": -1, "instr": "  %3 = alloca i1, align 1"}, {"instr_func": "s35390a_rtc_set_time", "instr_loc": 235, "instr_file": "drivers/rtc/rtc-s35390a.c", "instr": "buf[i] = bitrev8(buf[i]);"}], "at_file": "./include/linux/bitrev.h", "by": "GlobalVariableRaceDetector says:", "at_func": "__bitrev8"}, "warn_no": 1}]}]}

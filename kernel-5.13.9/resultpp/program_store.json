@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}, {"lineno": 447, "file": "drivers/platform/chrome/cros_ec_lightbar.c", "instr": "msg = alloc_lightbar_cmd_msg(ec);"}],
+"warnings":[{"warn_data": {"at_line": 86, "warn_str": "Trying to use a global variable without locking.", "at": "{", "inst_trace": [{"instr_func": "program_store", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}, {"instr_func": "program_store", "instr_loc": 447, "instr_file": "drivers/platform/chrome/cros_ec_lightbar.c", "instr": "msg = alloc_lightbar_cmd_msg(ec);"}], "at_file": "drivers/platform/chrome/cros_ec_lightbar.c", "by": "GlobalVariableRaceDetector says:", "at_func": "alloc_lightbar_cmd_msg"}, "warn_no": 1}]}]}

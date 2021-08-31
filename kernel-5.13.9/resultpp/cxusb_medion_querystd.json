@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}],
+"warnings":[{"warn_data": {"at_line": 1394, "warn_str": "Trying to use a global variable without locking.", "at": "cxusb_vprintk(dvbdev, OPS, \"input %u detected standard is %lx\\n\",", "inst_trace": [{"instr_func": "cxusb_medion_querystd", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}], "at_file": "drivers/media/usb/dvb-usb/cxusb-analog.c", "by": "GlobalVariableRaceDetector says:", "at_func": "cxusb_medion_querystd"}, "warn_no": 1}]}]}

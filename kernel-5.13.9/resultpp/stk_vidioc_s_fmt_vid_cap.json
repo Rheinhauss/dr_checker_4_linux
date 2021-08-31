@@ -1,0 +1,10 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}],
+"warnings":[{"warn_data": {"at_line": 1025, "warn_str": "Trying to use a global variable without locking.", "at": "dev->vsettings.mode = stk_sizes[idx].m;", "inst_trace": [{"instr_func": "stk_vidioc_s_fmt_vid_cap", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}], "at_file": "drivers/media/usb/stkwebcam/stk-webcam.c", "by": "GlobalVariableRaceDetector says:", "at_func": "stk_vidioc_s_fmt_vid_cap"}, "warn_no": 1}]},
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}, {"lineno": 1018, "file": "drivers/media/usb/stkwebcam/stk-webcam.c", "instr": "ret = stk_try_fmt_vid_cap(filp, fmtd, &idx);"}],
+"warnings":[{"warn_data": {"at_line": 933, "warn_str": "Trying to use a global variable without locking.", "at": "if (fmtd->fmt.pix.width > stk_sizes[i].w)", "inst_trace": [{"instr_func": "stk_vidioc_s_fmt_vid_cap", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}, {"instr_func": "stk_vidioc_s_fmt_vid_cap", "instr_loc": 1018, "instr_file": "drivers/media/usb/stkwebcam/stk-webcam.c", "instr": "ret = stk_try_fmt_vid_cap(filp, fmtd, &idx);"}], "at_file": "drivers/media/usb/stkwebcam/stk-webcam.c", "by": "GlobalVariableRaceDetector says:", "at_func": "stk_try_fmt_vid_cap"}, "warn_no": 1}]},
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}, {"lineno": 1028, "file": "drivers/media/usb/stkwebcam/stk-webcam.c", "instr": "return stk_setup_format(dev);"}],
+"warnings":[{"warn_data": {"at_line": 0, "warn_str": "Trying to use a global variable without locking.", "at": "", "inst_trace": [{"instr_func": "stk_vidioc_s_fmt_vid_cap", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}, {"instr_func": "stk_vidioc_s_fmt_vid_cap", "instr_loc": 1028, "instr_file": "drivers/media/usb/stkwebcam/stk-webcam.c", "instr": "return stk_setup_format(dev);"}], "at_file": "drivers/media/usb/stkwebcam/stk-webcam.c", "by": "GlobalVariableRaceDetector says:", "at_func": "stk_setup_format"}, "warn_no": 1}]}]}

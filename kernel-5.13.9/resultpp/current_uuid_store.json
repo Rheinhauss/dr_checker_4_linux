@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}],
+"warnings":[{"warn_data": {"at_line": 159, "warn_str": "Trying to use a global variable without locking.", "at": "if (!strncmp(buf, int3400_thermal_uuids[i],", "inst_trace": [{"instr_func": "current_uuid_store", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}], "at_file": "drivers/thermal/intel/int340x_thermal/int3400_thermal.c", "by": "GlobalVariableRaceDetector says:", "at_func": "current_uuid_store"}, "warn_no": 1}]}]}

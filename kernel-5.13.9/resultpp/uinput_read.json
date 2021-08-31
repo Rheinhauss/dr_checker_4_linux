@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}],
+"warnings":[{"warn_data": {"at_line": 681, "warn_str": "Loop is bounded by a tainted value.", "at": "if (retval || count == 0)", "inst_trace": [{"instr_func": "uinput_read", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}, {"instr_func": "uinput_read", "instr_loc": 659, "instr_file": "drivers/input/misc/uinput.c", "instr": "{"}, {"instr_func": "uinput_read", "instr_loc": 681, "instr_file": "drivers/input/misc/uinput.c", "instr": "if (retval || count == 0)"}, {"instr_func": "uinput_read", "instr_loc": 681, "instr_file": "drivers/input/misc/uinput.c", "instr": "if (retval || count == 0)"}], "at_file": "drivers/input/misc/uinput.c", "by": "TaintedLoopBoundDetector says:", "at_func": "uinput_read"}, "warn_no": 1}]}]}

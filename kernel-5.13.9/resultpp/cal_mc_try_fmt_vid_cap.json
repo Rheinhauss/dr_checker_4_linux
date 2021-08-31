@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca %struct.file*, align 8"}, {"lineno": 492, "file": "drivers/media/platform/ti-vpe/cal-video.c", "instr": "cal_mc_try_fmt(ctx, f, NULL);"}],
+"warnings":[{"warn_data": {"at_line": 481, "warn_str": "Trying to use a global variable without locking.", "at": "ctx_dbg(3, ctx, \"%s: %s %ux%u (bytesperline %u sizeimage %u)\\n\",", "inst_trace": [{"instr_func": "cal_mc_try_fmt_vid_cap", "instr_loc": -1, "instr": "  %4 = alloca %struct.file*, align 8"}, {"instr_func": "cal_mc_try_fmt_vid_cap", "instr_loc": 492, "instr_file": "drivers/media/platform/ti-vpe/cal-video.c", "instr": "cal_mc_try_fmt(ctx, f, NULL);"}], "at_file": "drivers/media/platform/ti-vpe/cal-video.c", "by": "GlobalVariableRaceDetector says:", "at_func": "cal_mc_try_fmt"}, "warn_no": 1}]}]}

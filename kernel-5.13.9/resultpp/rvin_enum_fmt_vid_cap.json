@@ -1,0 +1,7 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}],
+"warnings":[{"warn_data": {"at_line": 407, "warn_str": "Trying to use a global variable without locking.", "at": "if (rvin_format_from_pixel(vin, rvin_formats[i].fourcc))", "inst_trace": [{"instr_func": "rvin_enum_fmt_vid_cap", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}], "at_file": "drivers/media/platform/rcar-vin/rcar-v4l2.c", "by": "GlobalVariableRaceDetector says:", "at_func": "rvin_enum_fmt_vid_cap"}, "warn_no": 1}]},
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}, {"lineno": 407, "file": "drivers/media/platform/rcar-vin/rcar-v4l2.c", "instr": "if (rvin_format_from_pixel(vin, rvin_formats[i].fourcc))"}],
+"warnings":[{"warn_data": {"at_line": 110, "warn_str": "Trying to use a global variable without locking.", "at": "if (rvin_formats[i].fourcc == pixelformat)", "inst_trace": [{"instr_func": "rvin_enum_fmt_vid_cap", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}, {"instr_func": "rvin_enum_fmt_vid_cap", "instr_loc": 407, "instr_file": "drivers/media/platform/rcar-vin/rcar-v4l2.c", "instr": "if (rvin_format_from_pixel(vin, rvin_formats[i].fourcc))"}], "at_file": "drivers/media/platform/rcar-vin/rcar-v4l2.c", "by": "GlobalVariableRaceDetector says:", "at_func": "rvin_format_from_pixel"}, "warn_no": 1}]}]}

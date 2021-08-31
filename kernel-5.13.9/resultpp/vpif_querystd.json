@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}],
+"warnings":[{"warn_data": {"at_line": 767, "warn_str": "Trying to use a global variable without locking.", "at": "vpif_dbg(2, debug, \"vpif_querystd\\n\");", "inst_trace": [{"instr_func": "vpif_querystd", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}], "at_file": "drivers/media/platform/davinci/vpif_capture.c", "by": "GlobalVariableRaceDetector says:", "at_func": "vpif_querystd"}, "warn_no": 1}]}]}

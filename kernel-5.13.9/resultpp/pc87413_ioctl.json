@@ -1,0 +1,14 @@
+{"all_contexts":[
+{"num_warnings": 2,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i8*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 434, "warn_str": "Trying to use a global variable without locking.", "at": "timeout = new_timeout;", "inst_trace": [{"instr_func": "pc87413_ioctl", "instr_loc": -1, "instr": "  %4 = alloca i8*, align 8"}], "at_file": "drivers/watchdog/pc87413_wdt.c", "by": "GlobalVariableRaceDetector says:", "at_func": "pc87413_ioctl"}, "warn_no": 1},
+{"warn_data": {"at_line": 400, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "return copy_to_user(uarg.ident, &ident,", "inst_trace": [], "at_file": "drivers/watchdog/pc87413_wdt.c", "by": "TaintedSizeDetector says:", "at_func": "pc87413_ioctl"}, "warn_no": 2}]},
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i8*, align 8"}, {"lineno": 435, "file": "drivers/watchdog/pc87413_wdt.c", "instr": "pc87413_refresh();"}],
+"warnings":[{"warn_data": {"at_line": 247, "warn_str": "Trying to use a global variable without locking.", "at": "{", "inst_trace": [{"instr_func": "pc87413_ioctl", "instr_loc": -1, "instr": "  %4 = alloca i8*, align 8"}, {"instr_func": "pc87413_ioctl", "instr_loc": 435, "instr_file": "drivers/watchdog/pc87413_wdt.c", "instr": "pc87413_refresh();"}], "at_file": "drivers/watchdog/pc87413_wdt.c", "by": "GlobalVariableRaceDetector says:", "at_func": "pc87413_refresh"}, "warn_no": 1}]},
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i8*, align 8"}, {"lineno": 412, "file": "drivers/watchdog/pc87413_wdt.c", "instr": "pc87413_disable();"}],
+"warnings":[{"warn_data": {"at_line": 233, "warn_str": "Trying to use a global variable without locking.", "at": "{", "inst_trace": [{"instr_func": "pc87413_ioctl", "instr_loc": -1, "instr": "  %4 = alloca i8*, align 8"}, {"instr_func": "pc87413_ioctl", "instr_loc": 412, "instr_file": "drivers/watchdog/pc87413_wdt.c", "instr": "pc87413_disable();"}], "at_file": "drivers/watchdog/pc87413_wdt.c", "by": "GlobalVariableRaceDetector says:", "at_func": "pc87413_disable"}, "warn_no": 1}]},
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i8*, align 8"}, {"lineno": 416, "file": "drivers/watchdog/pc87413_wdt.c", "instr": "pc87413_enable();"}],
+"warnings":[{"warn_data": {"at_line": 218, "warn_str": "Trying to use a global variable without locking.", "at": "{", "inst_trace": [{"instr_func": "pc87413_ioctl", "instr_loc": -1, "instr": "  %4 = alloca i8*, align 8"}, {"instr_func": "pc87413_ioctl", "instr_loc": 416, "instr_file": "drivers/watchdog/pc87413_wdt.c", "instr": "pc87413_enable();"}], "at_file": "drivers/watchdog/pc87413_wdt.c", "by": "GlobalVariableRaceDetector says:", "at_func": "pc87413_enable"}, "warn_no": 1}]}]}

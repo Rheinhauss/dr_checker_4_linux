@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}],
+"warnings":[{"warn_data": {"at_line": 1454, "warn_str": "Potential overflow, using tainted value in binary operation.", "at": "*offp += len;", "inst_trace": [{"instr_func": "i915_displayport_test_active_write", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}, {"instr_func": "i915_displayport_test_active_write", "instr_loc": 1400, "instr_file": "drivers/gpu/drm/i915/display/intel_display_debugfs.c", "instr": "{"}, {"instr_func": "i915_displayport_test_active_write", "instr_loc": 1454, "instr_file": "drivers/gpu/drm/i915/display/intel_display_debugfs.c", "instr": "*offp += len;"}], "at_file": "drivers/gpu/drm/i915/display/intel_display_debugfs.c", "by": "IntegerOverflowDetector says:", "at_func": "i915_displayport_test_active_write"}, "warn_no": 1}]}]}

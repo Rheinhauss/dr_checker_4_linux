@@ -1,0 +1,8 @@
+{"all_contexts":[
+{"num_warnings": 2,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i8*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 423, "warn_str": "Trying to use a global variable without locking.", "at": "if (len > max_data_size)", "inst_trace": [{"instr_func": "hsc_read", "instr_loc": -1, "instr": "  %5 = alloca i8*, align 8"}], "at_file": "drivers/hsi/clients/hsi_char.c", "by": "GlobalVariableRaceDetector says:", "at_func": "hsc_read"}, "warn_no": 1},
+{"warn_data": {"at_line": 454, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "ret = copy_to_user((void __user *)buf,", "inst_trace": [], "at_file": "drivers/hsi/clients/hsi_char.c", "by": "TaintedSizeDetector says:", "at_func": "hsc_read"}, "warn_no": 2}]},
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i8*, align 8"}, {"lineno": 455, "file": "drivers/hsi/clients/hsi_char.c", "instr": "sg_virt(msg->sgt.sgl), hsc_msg_len_get(msg));"}],
+"warnings":[{"warn_data": {"at_line": 251, "warn_str": "Trying to use a global variable without locking.", "at": "  %7 = load i64, i64* @vmemmap_base, align 8, !dbg !35570", "inst_trace": [{"instr_func": "hsc_read", "instr_loc": -1, "instr": "  %5 = alloca i8*, align 8"}, {"instr_func": "hsc_read", "instr_loc": 455, "instr_file": "drivers/hsi/clients/hsi_char.c", "instr": "sg_virt(msg->sgt.sgl), hsc_msg_len_get(msg));"}], "at_file": "./include/linux/scatterlist.h", "by": "GlobalVariableRaceDetector says:", "at_func": "sg_virt"}, "warn_no": 1}]}]}

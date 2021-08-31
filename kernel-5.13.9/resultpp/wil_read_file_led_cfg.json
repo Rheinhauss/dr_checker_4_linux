@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca %struct.file*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 2071, "warn_str": "Trying to use a global variable without locking.", "at": "led_id);", "inst_trace": [{"instr_func": "wil_read_file_led_cfg", "instr_loc": -1, "instr": "  %5 = alloca %struct.file*, align 8"}], "at_file": "drivers/net/wireless/ath/wil6210/debugfs.c", "by": "GlobalVariableRaceDetector says:", "at_func": "wil_read_file_led_cfg"}, "warn_no": 1}]}]}

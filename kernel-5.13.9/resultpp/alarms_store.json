@@ -1,0 +1,5 @@
+{"all_contexts":[
+{"num_warnings": 2,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i32, align 4"}],
+"warnings":[{"warn_data": {"at_line": 1782, "warn_str": "Trying to use a global variable without locking.", "at": "{", "inst_trace": [{"instr_func": "alarms_store", "instr_loc": -1, "instr": "  %5 = alloca i32, align 4"}], "at_file": "drivers/w1/slaves/w1_therm.c", "by": "GlobalVariableRaceDetector says:", "at_func": "alarms_store"}, "warn_no": 1},
+{"warn_data": {"at_line": 1799, "warn_str": "Tainted Data used in risky function", "at": "strcpy(p_args, buf);", "inst_trace": [{"instr_func": "alarms_store", "instr_loc": -1, "instr": "  %5 = alloca i32, align 4"}], "at_file": "drivers/w1/slaves/w1_therm.c", "by": "ImproperTaintedDataUseDetector says:", "tainted_obj": "i8* %2", "at_func": "alarms_store"}, "warn_no": 2}]}]}

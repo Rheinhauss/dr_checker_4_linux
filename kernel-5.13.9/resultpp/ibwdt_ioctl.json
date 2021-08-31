@@ -1,0 +1,14 @@
+{"all_contexts":[
+{"num_warnings": 2,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i8*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 220, "warn_str": "Trying to use a global variable without locking.", "at": "return put_user(timeout, p);", "inst_trace": [{"instr_func": "ibwdt_ioctl", "instr_loc": -1, "instr": "  %4 = alloca i8*, align 8"}], "at_file": "drivers/watchdog/ib700wdt.c", "by": "GlobalVariableRaceDetector says:", "at_func": "ibwdt_ioctl"}, "warn_no": 1},
+{"warn_data": {"at_line": 182, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_to_user(argp, &ident, sizeof(ident)))", "inst_trace": [], "at_file": "drivers/watchdog/ib700wdt.c", "by": "TaintedSizeDetector says:", "at_func": "ibwdt_ioctl"}, "warn_no": 2}]},
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i8*, align 8"}, {"lineno": 214, "file": "drivers/watchdog/ib700wdt.c", "instr": "if (ibwdt_set_heartbeat(new_margin))"}],
+"warnings":[{"warn_data": {"at_line": 136, "warn_str": "Trying to use a global variable without locking.", "at": "timeout = t;", "inst_trace": [{"instr_func": "ibwdt_ioctl", "instr_loc": -1, "instr": "  %4 = alloca i8*, align 8"}, {"instr_func": "ibwdt_ioctl", "instr_loc": 214, "instr_file": "drivers/watchdog/ib700wdt.c", "instr": "if (ibwdt_set_heartbeat(new_margin))"}], "at_file": "drivers/watchdog/ib700wdt.c", "by": "GlobalVariableRaceDetector says:", "at_func": "ibwdt_set_heartbeat"}, "warn_no": 1}]},
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i8*, align 8"}, {"lineno": 216, "file": "drivers/watchdog/ib700wdt.c", "instr": "ibwdt_ping();"}],
+"warnings":[{"warn_data": {"at_line": 114, "warn_str": "Trying to use a global variable without locking.", "at": "int wd_margin = 15 - ((timeout + 1) / 2);", "inst_trace": [{"instr_func": "ibwdt_ioctl", "instr_loc": -1, "instr": "  %4 = alloca i8*, align 8"}, {"instr_func": "ibwdt_ioctl", "instr_loc": 216, "instr_file": "drivers/watchdog/ib700wdt.c", "instr": "ibwdt_ping();"}], "at_file": "drivers/watchdog/ib700wdt.c", "by": "GlobalVariableRaceDetector says:", "at_func": "ibwdt_ping"}, "warn_no": 1}]},
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i8*, align 8"}, {"lineno": 198, "file": "drivers/watchdog/ib700wdt.c", "instr": "ibwdt_disable();"}],
+"warnings":[{"warn_data": {"at_line": 125, "warn_str": "Trying to use a global variable without locking.", "at": "{", "inst_trace": [{"instr_func": "ibwdt_ioctl", "instr_loc": -1, "instr": "  %4 = alloca i8*, align 8"}, {"instr_func": "ibwdt_ioctl", "instr_loc": 198, "instr_file": "drivers/watchdog/ib700wdt.c", "instr": "ibwdt_disable();"}], "at_file": "drivers/watchdog/ib700wdt.c", "by": "GlobalVariableRaceDetector says:", "at_func": "ibwdt_disable"}, "warn_no": 1}]}]}

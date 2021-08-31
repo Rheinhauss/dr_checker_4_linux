@@ -1,0 +1,7 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}],
+"warnings":[{"warn_data": {"at_line": 875, "warn_str": "Trying to use a global variable without locking.", "at": "v4l2_dbg(1, debug, &vpfe_dev->v4l2_dev, \"vpfe_enum_fmt_vid_cap\\n\");", "inst_trace": [{"instr_func": "vpfe_enum_fmt_vid_cap", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}], "at_file": "drivers/media/platform/davinci/vpfe_capture.c", "by": "GlobalVariableRaceDetector says:", "at_func": "vpfe_enum_fmt_vid_cap"}, "warn_no": 1}]},
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}, {"lineno": 881, "file": "drivers/media/platform/davinci/vpfe_capture.c", "instr": "pix_fmt = vpfe_lookup_pix_format(pix);"}],
+"warnings":[{"warn_data": {"at_line": 156, "warn_str": "Trying to use a global variable without locking.", "at": "if (pix_format == vpfe_pix_fmts[i].pixelformat)", "inst_trace": [{"instr_func": "vpfe_enum_fmt_vid_cap", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}, {"instr_func": "vpfe_enum_fmt_vid_cap", "instr_loc": 881, "instr_file": "drivers/media/platform/davinci/vpfe_capture.c", "instr": "pix_fmt = vpfe_lookup_pix_format(pix);"}], "at_file": "drivers/media/platform/davinci/vpfe_capture.c", "by": "GlobalVariableRaceDetector says:", "at_func": "vpfe_lookup_pix_format"}, "warn_no": 1}]}]}

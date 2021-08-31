@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca %struct.spinlock*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 345, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "mutex_lock(&kcs_bmc->mutex);", "inst_trace": [], "at_file": "drivers/char/ipmi/kcs_bmc.c", "by": "TaintedSizeDetector says:", "at_func": "kcs_bmc_write"}, "warn_no": 1}]}]}

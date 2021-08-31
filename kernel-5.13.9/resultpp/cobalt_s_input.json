@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}, {"lineno": 985, "file": "drivers/media/pci/cobalt/cobalt-v4l2.c", "instr": "cobalt_enable_input(s);"}],
+"warnings":[{"warn_data": {"at_line": 215, "warn_str": "Trying to use a global variable without locking.", "at": "cobalt_dbg(1, \"video_channel %d (%s, %s)\\n\",", "inst_trace": [{"instr_func": "cobalt_s_input", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}, {"instr_func": "cobalt_s_input", "instr_loc": 985, "instr_file": "drivers/media/pci/cobalt/cobalt-v4l2.c", "instr": "cobalt_enable_input(s);"}], "at_file": "drivers/media/pci/cobalt/cobalt-v4l2.c", "by": "GlobalVariableRaceDetector says:", "at_func": "cobalt_enable_input"}, "warn_no": 1}]}]}

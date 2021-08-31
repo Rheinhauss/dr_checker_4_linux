@@ -1,0 +1,7 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca %struct.task_struct*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 8811, "warn_str": "Trying to use a global variable without locking.", "at": "if (!fan_control_allowed)", "inst_trace": [{"instr_func": "fan_watchdog_store", "instr_loc": -1, "instr": "  %4 = alloca %struct.task_struct*, align 8"}], "at_file": "drivers/platform/x86/thinkpad_acpi.c", "by": "GlobalVariableRaceDetector says:", "at_func": "fan_watchdog_store"}, "warn_no": 1}]},
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca %struct.task_struct*, align 8"}, {"lineno": 8815, "file": "drivers/platform/x86/thinkpad_acpi.c", "instr": "fan_watchdog_reset();"}],
+"warnings":[{"warn_data": {"at_line": 8588, "warn_str": "Trying to use a global variable without locking.", "at": "if (fan_control_access_mode == TPACPI_FAN_WR_NONE)", "inst_trace": [{"instr_func": "fan_watchdog_store", "instr_loc": -1, "instr": "  %4 = alloca %struct.task_struct*, align 8"}, {"instr_func": "fan_watchdog_store", "instr_loc": 8815, "instr_file": "drivers/platform/x86/thinkpad_acpi.c", "instr": "fan_watchdog_reset();"}], "at_file": "drivers/platform/x86/thinkpad_acpi.c", "by": "GlobalVariableRaceDetector says:", "at_func": "fan_watchdog_reset"}, "warn_no": 1}]}]}

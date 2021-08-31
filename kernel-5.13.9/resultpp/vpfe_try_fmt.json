@@ -1,0 +1,7 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca %struct.file*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 1402, "warn_str": "Trying to use a global variable without locking.", "at": "vpfe_dbg(3, vpfe, \"Invalid pixel code: %x, default used instead\\n\",", "inst_trace": [{"instr_func": "vpfe_try_fmt", "instr_loc": -1, "instr": "  %4 = alloca %struct.file*, align 8"}], "at_file": "drivers/media/platform/am437x/am437x-vpfe.c", "by": "GlobalVariableRaceDetector says:", "at_func": "vpfe_try_fmt"}, "warn_no": 1}]},
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca %struct.file*, align 8"}, {"lineno": 1446, "file": "drivers/media/platform/am437x/am437x-vpfe.c", "instr": "return vpfe_calc_format_size(vpfe, fmt, f);"}],
+"warnings":[{"warn_data": {"at_line": 1337, "warn_str": "Trying to use a global variable without locking.", "at": "vpfe_dbg(3, vpfe, \"No vpfe_fmt provided!\\n\");", "inst_trace": [{"instr_func": "vpfe_try_fmt", "instr_loc": -1, "instr": "  %4 = alloca %struct.file*, align 8"}, {"instr_func": "vpfe_try_fmt", "instr_loc": 1446, "instr_file": "drivers/media/platform/am437x/am437x-vpfe.c", "instr": "return vpfe_calc_format_size(vpfe, fmt, f);"}], "at_file": "drivers/media/platform/am437x/am437x-vpfe.c", "by": "GlobalVariableRaceDetector says:", "at_func": "vpfe_calc_format_size"}, "warn_no": 1}]}]}

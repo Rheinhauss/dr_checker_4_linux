@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca %struct.spinlock*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 1511, "warn_str": "Trying to use a global variable without locking.", "at": "if (id == tvnorms[i].id)", "inst_trace": [{"instr_func": "saa7134_s_std", "instr_loc": -1, "instr": "  %4 = alloca %struct.spinlock*, align 8"}], "at_file": "drivers/media/pci/saa7134/saa7134-video.c", "by": "GlobalVariableRaceDetector says:", "at_func": "saa7134_s_std"}, "warn_no": 1}]}]}

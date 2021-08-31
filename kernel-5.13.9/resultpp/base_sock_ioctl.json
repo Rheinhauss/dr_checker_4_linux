@@ -1,0 +1,6 @@
+{"all_contexts":[
+{"num_warnings": 3,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i8*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 678, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "struct mISDN_devrename dn;", "inst_trace": [], "at_file": "drivers/isdn/mISDN/socket.c", "by": "TaintedSizeDetector says:", "at_func": "base_sock_ioctl"}, "warn_no": 1},
+{"warn_data": {"at_line": 660, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "struct mISDN_devinfo di;", "inst_trace": [], "at_file": "drivers/isdn/mISDN/socket.c", "by": "TaintedSizeDetector says:", "at_func": "base_sock_ioctl"}, "warn_no": 2},
+{"warn_data": {"at_line": 642, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "ver.major = MISDN_MAJOR_VERSION;", "inst_trace": [], "at_file": "drivers/isdn/mISDN/socket.c", "by": "TaintedSizeDetector says:", "at_func": "base_sock_ioctl"}, "warn_no": 3}]}]}

@@ -1,0 +1,7 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i64, align 8"}, {"lineno": 257, "file": "drivers/usb/usbip/stub_main.c", "instr": "bid = get_busid_priv(buf);"}],
+"warnings":[{"warn_data": {"at_line": 66, "warn_str": "Trying to use a global variable without locking.", "at": "{", "inst_trace": [{"instr_func": "rebind_store", "instr_loc": -1, "instr": "  %4 = alloca i64, align 8"}, {"instr_func": "rebind_store", "instr_loc": 257, "instr_file": "drivers/usb/usbip/stub_main.c", "instr": "bid = get_busid_priv(buf);"}], "at_file": "drivers/usb/usbip/stub_main.c", "by": "GlobalVariableRaceDetector says:", "at_func": "get_busid_priv"}, "warn_no": 1}]},
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i64, align 8"}, {"lineno": 271, "file": "drivers/usb/usbip/stub_main.c", "instr": "del_match_busid((char *) buf);"}],
+"warnings":[{"warn_data": {"at_line": 121, "warn_str": "Trying to use a global variable without locking.", "at": "{", "inst_trace": [{"instr_func": "rebind_store", "instr_loc": -1, "instr": "  %4 = alloca i64, align 8"}, {"instr_func": "rebind_store", "instr_loc": 271, "instr_file": "drivers/usb/usbip/stub_main.c", "instr": "del_match_busid((char *) buf);"}], "at_file": "drivers/usb/usbip/stub_main.c", "by": "GlobalVariableRaceDetector says:", "at_func": "del_match_busid"}, "warn_no": 1}]}]}

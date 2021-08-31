@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}, {"lineno": 1399, "file": "drivers/media/usb/tm6000/tm6000-video.c", "instr": "if (!res_get(fh->dev, fh, true))"}],
+"warnings":[{"warn_data": {"at_line": 831, "warn_str": "Trying to use a global variable without locking.", "at": "dprintk(dev, V4L2_DEBUG_RES_LOCK, \"res: get\\n\");", "inst_trace": [{"instr_func": "tm6000_read", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}, {"instr_func": "tm6000_read", "instr_loc": 1399, "instr_file": "drivers/media/usb/tm6000/tm6000-video.c", "instr": "if (!res_get(fh->dev, fh, true))"}], "at_file": "drivers/media/usb/tm6000/tm6000-video.c", "by": "GlobalVariableRaceDetector says:", "at_func": "res_get"}, "warn_no": 1}]}]}

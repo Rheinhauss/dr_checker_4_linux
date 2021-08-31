@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i8*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 377, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_from_user(&sync, (void __user *) arg, sizeof(sync)))", "inst_trace": [], "at_file": "drivers/dma-buf/dma-buf.c", "by": "TaintedSizeDetector says:", "at_func": "dma_buf_ioctl"}, "warn_no": 1}]}]}

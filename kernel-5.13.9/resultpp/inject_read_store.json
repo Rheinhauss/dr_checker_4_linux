@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}],
+"warnings":[{"warn_data": {"at_line": 747, "warn_str": "Trying to use a global variable without locking.", "at": "edac_dbg(0, \"section=0x%x word_bits=0x%x\\n\", section, word_bits);", "inst_trace": [{"instr_func": "inject_read_store", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}], "at_file": "drivers/edac/amd64_edac.c", "by": "GlobalVariableRaceDetector says:", "at_func": "inject_read_store"}, "warn_no": 1}]}]}

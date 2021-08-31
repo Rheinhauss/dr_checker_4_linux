@@ -1,0 +1,9 @@
+{"all_contexts":[
+{"num_warnings": 3,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i8*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 128, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "(unsigned long *)uv_local_mmr_address(UVH_RTC),", "inst_trace": [], "at_file": "drivers/char/uv_mmtimer.c", "by": "TaintedSizeDetector says:", "at_func": "uv_mmtimer_ioctl"}, "warn_no": 1},
+{"warn_data": {"at_line": 112, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_to_user((unsigned long __user *)arg,", "inst_trace": [], "at_file": "drivers/char/uv_mmtimer.c", "by": "TaintedSizeDetector says:", "at_func": "uv_mmtimer_ioctl"}, "warn_no": 2},
+{"warn_data": {"at_line": 106, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_to_user((unsigned long __user *)arg,", "inst_trace": [], "at_file": "drivers/char/uv_mmtimer.c", "by": "TaintedSizeDetector says:", "at_func": "uv_mmtimer_ioctl"}, "warn_no": 3}]},
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i8*, align 8"}, {"lineno": 128, "file": "drivers/char/uv_mmtimer.c", "instr": "(unsigned long *)uv_local_mmr_address(UVH_RTC),"}],
+"warnings":[{"warn_data": {"at_line": 609, "warn_str": "Trying to use a global variable without locking.", "at": "  %39 = load i64, i64* @page_offset_base, align 8, !dbg !5023", "inst_trace": [{"instr_func": "uv_mmtimer_ioctl", "instr_loc": -1, "instr": "  %4 = alloca i8*, align 8"}, {"instr_func": "uv_mmtimer_ioctl", "instr_loc": 128, "instr_file": "drivers/char/uv_mmtimer.c", "instr": "(unsigned long *)uv_local_mmr_address(UVH_RTC),"}], "at_file": "./arch/x86/include/asm/uv/uv_hub.h", "by": "GlobalVariableRaceDetector says:", "at_func": "uv_local_mmr_address"}, "warn_no": 1}]}]}

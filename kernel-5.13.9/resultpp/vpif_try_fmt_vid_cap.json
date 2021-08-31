@@ -1,0 +1,7 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i1, align 1"}],
+"warnings":[{"warn_data": {"at_line": 976, "warn_str": "Trying to use a global variable without locking.", "at": "dev_dbg(vpif_dev, \"%s: %d x %d; pitch=%d pixelformat=0x%08x, field=%d, size=%d\\n\", __func__,", "inst_trace": [{"instr_func": "vpif_try_fmt_vid_cap", "instr_loc": -1, "instr": "  %4 = alloca i1, align 1"}], "at_file": "drivers/media/platform/davinci/vpif_capture.c", "by": "GlobalVariableRaceDetector says:", "at_func": "vpif_try_fmt_vid_cap"}, "warn_no": 1}]},
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i1, align 1"}, {"lineno": 963, "file": "drivers/media/platform/davinci/vpif_capture.c", "instr": "vpif_update_std_info(ch);"}],
+"warnings":[{"warn_data": {"at_line": 469, "warn_str": "Trying to use a global variable without locking.", "at": "vpif_dbg(2, debug, \"vpif_update_std_info\\n\");", "inst_trace": [{"instr_func": "vpif_try_fmt_vid_cap", "instr_loc": -1, "instr": "  %4 = alloca i1, align 1"}, {"instr_func": "vpif_try_fmt_vid_cap", "instr_loc": 963, "instr_file": "drivers/media/platform/davinci/vpif_capture.c", "instr": "vpif_update_std_info(ch);"}], "at_file": "drivers/media/platform/davinci/vpif_capture.c", "by": "GlobalVariableRaceDetector says:", "at_func": "vpif_update_std_info"}, "warn_no": 1}]}]}

@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca %struct.atomic_t*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 1314, "warn_str": "Trying to use a global variable without locking.", "at": "IVTV_DEBUG_IOCTL(\"V4L2_ENC_CMD_RESUME\\n\");", "inst_trace": [{"instr_func": "ivtv_encoder_cmd", "instr_loc": -1, "instr": "  %4 = alloca %struct.atomic_t*, align 8"}], "at_file": "drivers/media/pci/ivtv/ivtv-ioctl.c", "by": "GlobalVariableRaceDetector says:", "at_func": "ivtv_encoder_cmd"}, "warn_no": 1}]}]}

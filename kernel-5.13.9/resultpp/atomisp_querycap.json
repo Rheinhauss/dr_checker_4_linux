@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca %struct.file*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 550, "warn_str": "Trying to use a global variable without locking.", "at": "strscpy(cap->driver, DRIVER, sizeof(cap->driver));", "inst_trace": [{"instr_func": "atomisp_querycap", "instr_loc": -1, "instr": "  %4 = alloca %struct.file*, align 8"}], "at_file": "drivers/staging/media/atomisp/pci/atomisp_ioctl.c", "by": "GlobalVariableRaceDetector says:", "at_func": "atomisp_querycap"}, "warn_no": 1}]}]}

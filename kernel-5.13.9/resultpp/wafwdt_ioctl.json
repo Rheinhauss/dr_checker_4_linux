@@ -1,0 +1,14 @@
+{"all_contexts":[
+{"num_warnings": 2,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i8*, align 8"}],
+"warnings":[{"warn_data": {"at_line": 174, "warn_str": "Trying to use a global variable without locking.", "at": "timeout = new_timeout;", "inst_trace": [{"instr_func": "wafwdt_ioctl", "instr_loc": -1, "instr": "  %4 = alloca i8*, align 8"}], "at_file": "drivers/watchdog/wafer5823wdt.c", "by": "GlobalVariableRaceDetector says:", "at_func": "wafwdt_ioctl"}, "warn_no": 1},
+{"warn_data": {"at_line": 137, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_to_user(argp, &ident, sizeof(ident)))", "inst_trace": [], "at_file": "drivers/watchdog/wafer5823wdt.c", "by": "TaintedSizeDetector says:", "at_func": "wafwdt_ioctl"}, "warn_no": 2}]},
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i8*, align 8"}, {"lineno": 175, "file": "drivers/watchdog/wafer5823wdt.c", "instr": "wafwdt_stop();"}],
+"warnings":[{"warn_data": {"at_line": 91, "warn_str": "Trying to use a global variable without locking.", "at": "inb_p(wdt_stop);", "inst_trace": [{"instr_func": "wafwdt_ioctl", "instr_loc": -1, "instr": "  %4 = alloca i8*, align 8"}, {"instr_func": "wafwdt_ioctl", "instr_loc": 175, "instr_file": "drivers/watchdog/wafer5823wdt.c", "instr": "wafwdt_stop();"}], "at_file": "drivers/watchdog/wafer5823wdt.c", "by": "GlobalVariableRaceDetector says:", "at_func": "wafwdt_stop"}, "warn_no": 1}]},
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i8*, align 8"}, {"lineno": 176, "file": "drivers/watchdog/wafer5823wdt.c", "instr": "wafwdt_start();"}],
+"warnings":[{"warn_data": {"at_line": 84, "warn_str": "Trying to use a global variable without locking.", "at": "outb_p(timeout, wdt_start);", "inst_trace": [{"instr_func": "wafwdt_ioctl", "instr_loc": -1, "instr": "  %4 = alloca i8*, align 8"}, {"instr_func": "wafwdt_ioctl", "instr_loc": 176, "instr_file": "drivers/watchdog/wafer5823wdt.c", "instr": "wafwdt_start();"}], "at_file": "drivers/watchdog/wafer5823wdt.c", "by": "GlobalVariableRaceDetector says:", "at_func": "wafwdt_start"}, "warn_no": 1}]},
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i8*, align 8"}, {"lineno": 166, "file": "drivers/watchdog/wafer5823wdt.c", "instr": "wafwdt_ping();"}],
+"warnings":[{"warn_data": {"at_line": 73, "warn_str": "Trying to use a global variable without locking.", "at": "{", "inst_trace": [{"instr_func": "wafwdt_ioctl", "instr_loc": -1, "instr": "  %4 = alloca i8*, align 8"}, {"instr_func": "wafwdt_ioctl", "instr_loc": 166, "instr_file": "drivers/watchdog/wafer5823wdt.c", "instr": "wafwdt_ping();"}], "at_file": "drivers/watchdog/wafer5823wdt.c", "by": "GlobalVariableRaceDetector says:", "at_func": "wafwdt_ping"}, "warn_no": 1}]}]}

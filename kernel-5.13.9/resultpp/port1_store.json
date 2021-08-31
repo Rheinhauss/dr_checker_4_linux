@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %5 = alloca i1, align 1"}],
+"warnings":[{"warn_data": {"at_line": 264, "warn_str": "Trying to use a global variable without locking.", "at": "struct usb_interface *intf = to_usb_interface(dev);", "inst_trace": [{"instr_func": "port1_store", "instr_loc": -1, "instr": "  %5 = alloca i1, align 1"}], "at_file": "drivers/usb/misc/cytherm.c", "by": "GlobalVariableRaceDetector says:", "at_func": "port1_store"}, "warn_no": 1}]}]}

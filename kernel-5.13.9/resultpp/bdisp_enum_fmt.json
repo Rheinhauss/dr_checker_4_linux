@@ -1,0 +1,4 @@
+{"all_contexts":[
+{"num_warnings": 1,
+"context":[{"lineno": -1, "instr": "  %4 = alloca i1, align 1"}],
+"warnings":[{"warn_data": {"at_line": 705, "warn_str": "Trying to use a global variable without locking.", "at": "fmt = &bdisp_formats[f->index];", "inst_trace": [{"instr_func": "bdisp_enum_fmt", "instr_loc": -1, "instr": "  %4 = alloca i1, align 1"}], "at_file": "drivers/media/platform/sti/bdisp/bdisp-v4l2.c", "by": "GlobalVariableRaceDetector says:", "at_func": "bdisp_enum_fmt"}, "warn_no": 1}]}]}
