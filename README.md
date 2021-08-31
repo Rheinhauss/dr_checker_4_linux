@@ -10,7 +10,7 @@ Port to check Linux Kernel of "DR.CHECKER : A Soundy Vulnerability Detection Too
 
 Results for Linux 5.3.1
 
-Results for Linux 5.13.9 (current stable are in progress)
+Results for Linux 5.13.9
 
 
 # Setup
@@ -25,11 +25,11 @@ Ubuntu:
 
 `apt install clang-10 sparse`
 
-Make sure all the binaries have correct patsh i.e /usr/bin/llvm-link (linked to /usr/bin/llvm-link-10 etc), /usr/bin/opt (/usr/bin/opt-10) etc
+Make sure all the binaries have correct paths i.e /usr/bin/llvm-link (linked to /usr/bin/llvm-link-10), /usr/bin/opt (/usr/bin/opt-10) etc.
 
 Debug when needed.
 
-No need to run `setup_drchecker.py`, you can skip it. For other instruction refer to original Dr. Checker repo.
+No need to run `setup_drchecker.py`, you can skip it. For other instructions refer to the original Dr. Checker repo.
 
 
 Sample run
@@ -37,7 +37,7 @@ Sample run
 In Kernel source
 
 ```
-make  CC=clang-10 HOSTCC=clang-10 allyesconfig
+make  CC=clang-10 HOSTCC=clang-10 allyesconfig
 make V=1 CC=clang-10 HOSTCC=clang-10 > makeout.txt 2>&1
 ```
 
@@ -56,8 +56,10 @@ python ../dr_checker/helper_scripts/runner_scripts/run_all.py -l /laptop/media/m
 
 5.3.1 results with code and filenames in `kernel-5.3.1/resultspp`
 
+5.13.9 results with code and filenames in `kernel-5.13.9/resultspp`
+
 
 # Triage
 
-Obviously, there are many results that need to be triaged. Feel free to send me kudos and/or DR.Checker team if you will get a CVE/vuln out of it.
+Obviously, there are many results that need to be triaged. Feel free to send me kudos and/or Dr. Checker team if you will get a CVE/vuln out of it.
 
