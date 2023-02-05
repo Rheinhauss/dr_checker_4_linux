@@ -1,7 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}],
-"warnings":[{"warn_data": {"at_line": 893, "warn_str": "Trying to use a global variable without locking.", "at": "PWC_DEBUG_IOCTL(\"ioctl(VIDIOC_G_FMT) return size %dx%d\\n\",", "inst_trace": [{"instr_func": "pwc_g_fmt_vid_cap", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}], "at_file": "drivers/media/usb/pwc/pwc-v4l.c", "by": "GlobalVariableRaceDetector says:", "at_func": "pwc_g_fmt_vid_cap"}, "warn_no": 1}]},
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}, {"lineno": 895, "file": "drivers/media/usb/pwc/pwc-v4l.c", "instr": "pwc_vidioc_fill_fmt(f, pdev->width, pdev->height, pdev->pixfmt);"}],
-"warnings":[{"warn_data": {"at_line": 397, "warn_str": "Trying to use a global variable without locking.", "at": "PWC_DEBUG_IOCTL(\"pwc_vidioc_fill_fmt() width=%d, height=%d, bytesperline=%d, sizeimage=%d, pixelformat=%c%c%c%c\\n\",", "inst_trace": [{"instr_func": "pwc_g_fmt_vid_cap", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}, {"instr_func": "pwc_g_fmt_vid_cap", "instr_loc": 895, "instr_file": "drivers/media/usb/pwc/pwc-v4l.c", "instr": "pwc_vidioc_fill_fmt(f, pdev->width, pdev->height, pdev->pixfmt);"}], "at_file": "drivers/media/usb/pwc/pwc-v4l.c", "by": "GlobalVariableRaceDetector says:", "at_func": "pwc_vidioc_fill_fmt"}, "warn_no": 1}]}]}

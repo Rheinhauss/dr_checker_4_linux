@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}],
-"warnings":[{"warn_data": {"at_line": 156, "warn_str": "Trying to use a global variable without locking.", "at": "tcc_offset_save = tcc;", "inst_trace": [{"instr_func": "tcc_offset_degree_celsius_store", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}], "at_file": "drivers/thermal/intel/int340x_thermal/processor_thermal_device.c", "by": "GlobalVariableRaceDetector says:", "at_func": "tcc_offset_degree_celsius_store"}, "warn_no": 1}]}]}

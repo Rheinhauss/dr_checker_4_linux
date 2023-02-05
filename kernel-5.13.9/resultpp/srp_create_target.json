@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca %struct.spinlock*, align 8"}],
-"warnings":[{"warn_data": {"at_line": 3640, "warn_str": "Trying to use a global variable without locking.", "at": "target_host->transportt  = ib_srp_transport_template;", "inst_trace": [{"instr_func": "srp_create_target", "instr_loc": -1, "instr": "  %5 = alloca %struct.spinlock*, align 8"}], "at_file": "drivers/infiniband/ulp/srp/ib_srp.c", "by": "GlobalVariableRaceDetector says:", "at_func": "srp_create_target"}, "warn_no": 1}]}]}

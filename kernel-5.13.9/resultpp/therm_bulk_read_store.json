@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca %struct.device*, align 8"}, {"lineno": 1889, "file": "drivers/w1/slaves/w1_therm.c", "instr": "ret = trigger_bulk_read(dev_master);"}],
-"warnings":[{"warn_data": {"at_line": 1456, "warn_str": "Trying to use a global variable without locking.", "at": "w1_strong_pullup));", "inst_trace": [{"instr_func": "therm_bulk_read_store", "instr_loc": -1, "instr": "  %5 = alloca %struct.device*, align 8"}, {"instr_func": "therm_bulk_read_store", "instr_loc": 1889, "instr_file": "drivers/w1/slaves/w1_therm.c", "instr": "ret = trigger_bulk_read(dev_master);"}], "at_file": "drivers/w1/slaves/w1_therm.c", "by": "GlobalVariableRaceDetector says:", "at_func": "trigger_bulk_read"}, "warn_no": 1}]}]}

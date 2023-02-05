@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}, {"lineno": 73, "file": "drivers/net/netdevsim/dev.c", "instr": "err = nsim_dev_take_snapshot(devlink, NULL, NULL, &dummy_data);"}],
-"warnings":[{"warn_data": {"at_line": 47, "warn_str": "Trying to use a global variable without locking.", "at": "{", "inst_trace": [{"instr_func": "nsim_dev_take_snapshot_write", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}, {"instr_func": "nsim_dev_take_snapshot_write", "instr_loc": 73, "instr_file": "drivers/net/netdevsim/dev.c", "instr": "err = nsim_dev_take_snapshot(devlink, NULL, NULL, &dummy_data);"}], "at_file": "drivers/net/netdevsim/dev.c", "by": "GlobalVariableRaceDetector says:", "at_func": "nsim_dev_take_snapshot"}, "warn_no": 1}]}]}

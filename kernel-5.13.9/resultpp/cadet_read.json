@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i8*, align 8"}],
-"warnings":[{"warn_data": {"at_line": 348, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (i && copy_to_user(data, readbuf, i))", "inst_trace": [], "at_file": "drivers/media/radio/radio-cadet.c", "by": "TaintedSizeDetector says:", "at_func": "cadet_read"}, "warn_no": 1}]}]}

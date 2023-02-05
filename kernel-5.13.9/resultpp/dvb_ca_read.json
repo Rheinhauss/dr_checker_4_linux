@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca %struct.file*, align 8"}],
-"warnings":[{"warn_data": {"at_line": 337, "warn_str": "Trying to use a global variable without locking.", "at": "dprintk(8, \"av7110:%p\\n\",av7110);", "inst_trace": [{"instr_func": "dvb_ca_read", "instr_loc": -1, "instr": "  %5 = alloca %struct.file*, align 8"}], "at_file": "drivers/media/pci/ttpci/av7110_ca.c", "by": "GlobalVariableRaceDetector says:", "at_func": "dvb_ca_read"}, "warn_no": 1}]}]}

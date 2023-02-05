@@ -1,7 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %4 = alloca i64, align 8"}, {"lineno": 391, "file": "drivers/platform/surface/surface_dtx.c", "instr": "status = __surface_dtx_ioctl(client, cmd, arg);"}],
-"warnings":[{"warn_data": {"at_line": 335, "warn_str": "Trying to use a global variable without locking.", "at": "lockdep_assert_held_read(&ddev->lock);", "inst_trace": [{"instr_func": "surface_dtx_ioctl", "instr_loc": -1, "instr": "  %4 = alloca i64, align 8"}, {"instr_func": "surface_dtx_ioctl", "instr_loc": 391, "instr_file": "drivers/platform/surface/surface_dtx.c", "instr": "status = __surface_dtx_ioctl(client, cmd, arg);"}], "at_file": "drivers/platform/surface/surface_dtx.c", "by": "GlobalVariableRaceDetector says:", "at_func": "__surface_dtx_ioctl"}, "warn_no": 1}]},
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %4 = alloca i64, align 8"}, {"lineno": 391, "file": "drivers/platform/surface/surface_dtx.c", "instr": "status = __surface_dtx_ioctl(client, cmd, arg);"}, {"lineno": 365, "file": "drivers/platform/surface/surface_dtx.c", "instr": "return sdtx_ioctl_get_base_info(ddev, (struct sdtx_base_info __user *)arg);"}],
-"warnings":[{"warn_data": {"at_line": 294, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "info.state = sdtx_translate_base_state(ddev, raw.state);", "inst_trace": [], "at_file": "drivers/platform/surface/surface_dtx.c", "by": "TaintedSizeDetector says:", "at_func": "sdtx_ioctl_get_base_info"}, "warn_no": 1}]}]}

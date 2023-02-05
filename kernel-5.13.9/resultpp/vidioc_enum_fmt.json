@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}],
-"warnings":[{"warn_data": {"at_line": 304, "warn_str": "Trying to use a global variable without locking.", "at": "f->pixelformat = formats[f->index].fourcc;", "inst_trace": [{"instr_func": "vidioc_enum_fmt", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}], "at_file": "drivers/media/platform/s5p-g2d/g2d.c", "by": "GlobalVariableRaceDetector says:", "at_func": "vidioc_enum_fmt"}, "warn_no": 1}]}]}

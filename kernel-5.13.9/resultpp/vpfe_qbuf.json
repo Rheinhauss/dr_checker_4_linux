@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}],
-"warnings":[{"warn_data": {"at_line": 1327, "warn_str": "Trying to use a global variable without locking.", "at": "v4l2_dbg(1, debug, &vpfe_dev->v4l2_dev, \"vpfe_qbuf\\n\");", "inst_trace": [{"instr_func": "vpfe_qbuf", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}], "at_file": "drivers/media/platform/davinci/vpfe_capture.c", "by": "GlobalVariableRaceDetector says:", "at_func": "vpfe_qbuf"}, "warn_no": 1}]}]}

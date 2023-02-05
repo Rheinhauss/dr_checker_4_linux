@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}, {"lineno": 193, "file": "drivers/watchdog/rdc321x_wdt.c", "instr": "rdc321x_wdt_reset();"}],
-"warnings":[{"warn_data": {"at_line": 86, "warn_str": "Trying to use a global variable without locking.", "at": "ticks = rdc321x_wdt_device.default_ticks;", "inst_trace": [{"instr_func": "rdc321x_wdt_write", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}, {"instr_func": "rdc321x_wdt_write", "instr_loc": 193, "instr_file": "drivers/watchdog/rdc321x_wdt.c", "instr": "rdc321x_wdt_reset();"}], "at_file": "drivers/watchdog/rdc321x_wdt.c", "by": "GlobalVariableRaceDetector says:", "at_func": "rdc321x_wdt_reset"}, "warn_no": 1}]}]}

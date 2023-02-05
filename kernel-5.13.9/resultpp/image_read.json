@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %7 = alloca %struct.file*, align 8"}],
-"warnings":[{"warn_data": {"at_line": 35, "warn_str": "Trying to read from a user pointer.", "at": "memcpy(buf, attr->private + off, count);", "inst_trace": [{"instr_func": "image_read", "instr_loc": -1, "instr": "  %7 = alloca %struct.file*, align 8"}, {"instr_func": "image_read", "instr_loc": 34, "instr_file": "drivers/acpi/bgrt.c", "instr": "{"}, {"instr_func": "image_read", "instr_loc": 35, "instr_file": "drivers/acpi/bgrt.c", "instr": "memcpy(buf, attr->private + off, count);"}, {"instr_func": "image_read", "instr_loc": 35, "instr_file": "drivers/acpi/bgrt.c", "instr": "memcpy(buf, attr->private + off, count);"}], "at_file": "drivers/acpi/bgrt.c", "by": "TaintedPointerDereferenceChecker says:", "at_func": "image_read"}, "warn_no": 1}]}]}

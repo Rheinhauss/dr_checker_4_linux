@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}, {"lineno": 993, "file": "drivers/media/platform/vsp1/vsp1_video.c", "instr": "return __vsp1_video_try_format(video, &format->fmt.pix_mp, NULL);"}],
-"warnings":[{"warn_data": {"at_line": 108, "warn_str": "Trying to use a global variable without locking.", "at": "if (xrgb_formats[i][0] == pix->pixelformat) {", "inst_trace": [{"instr_func": "vsp1_video_try_format", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}, {"instr_func": "vsp1_video_try_format", "instr_loc": 993, "instr_file": "drivers/media/platform/vsp1/vsp1_video.c", "instr": "return __vsp1_video_try_format(video, &format->fmt.pix_mp, NULL);"}], "at_file": "drivers/media/platform/vsp1/vsp1_video.c", "by": "GlobalVariableRaceDetector says:", "at_func": "__vsp1_video_try_format"}, "warn_no": 1}]}]}

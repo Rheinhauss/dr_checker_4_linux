@@ -1,5 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 2,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i16*, align 8"}],
-"warnings":[{"warn_data": {"at_line": 466, "warn_str": "Tainted Data used in risky function", "at": "p = strchr(buf, '=');", "inst_trace": [{"instr_func": "mt7615_ext_mac_addr_write", "instr_loc": 461, "instr_file": "drivers/net/wireless/mediatek/mt76/mt7615/debugfs.c", "instr": "if (copy_from_user(buf, userbuf, count))"}], "at_file": "drivers/net/wireless/mediatek/mt76/mt7615/debugfs.c", "by": "ImproperTaintedDataUseDetector says:", "tainted_obj": "  %30 = alloca [32 x i8], align 16", "at_func": "mt7615_ext_mac_addr_write"}, "warn_no": 1},
-{"warn_data": {"at_line": 461, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_from_user(buf, userbuf, count))", "inst_trace": [], "at_file": "drivers/net/wireless/mediatek/mt76/mt7615/debugfs.c", "by": "TaintedSizeDetector says:", "at_func": "mt7615_ext_mac_addr_write"}, "warn_no": 2}]}]}

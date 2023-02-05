@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %4 = alloca i64, align 8"}],
-"warnings":[{"warn_data": {"at_line": 363, "warn_str": "Trying to use a global variable without locking.", "at": "timeout = jiffies + msecs_to_jiffies(30000);", "inst_trace": [{"instr_func": "vidioc_s_hw_freq_seek", "instr_loc": -1, "instr": "  %4 = alloca i64, align 8"}], "at_file": "drivers/media/radio/radio-mr800.c", "by": "GlobalVariableRaceDetector says:", "at_func": "vidioc_s_hw_freq_seek"}, "warn_no": 1}]}]}

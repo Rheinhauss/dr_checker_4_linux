@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}],
-"warnings":[{"warn_data": {"at_line": 500, "warn_str": "Trying to use a global variable without locking.", "at": "userspace_control = enable;", "inst_trace": [{"instr_func": "userspace_control_store", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}], "at_file": "drivers/platform/chrome/cros_ec_lightbar.c", "by": "GlobalVariableRaceDetector says:", "at_func": "userspace_control_store"}, "warn_no": 1}]}]}

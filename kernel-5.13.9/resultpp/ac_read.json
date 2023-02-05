@@ -1,6 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 3,
-"context":[{"lineno": -1, "instr": "  %5 = alloca %struct.task_struct*, align 8"}],
-"warnings":[{"warn_data": {"at_line": 598, "warn_str": "Trying to use a global variable without locking.", "at": "Dummy = readb(apbs[i].RamIO + VERS);", "inst_trace": [{"instr_func": "ac_read", "instr_loc": -1, "instr": "  %5 = alloca %struct.task_struct*, align 8"}], "at_file": "drivers/char/applicom.c", "by": "GlobalVariableRaceDetector says:", "at_func": "ac_read"}, "warn_no": 1},
-{"warn_data": {"at_line": 574, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "remove_wait_queue(&FlagSleepRec, &wait);", "inst_trace": [], "at_file": "drivers/char/applicom.c", "by": "TaintedSizeDetector says:", "at_func": "ac_read"}, "warn_no": 2},
-{"warn_data": {"at_line": 578, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_to_user(buf + sizeof(st_loc), &mailbox, sizeof(mailbox)))", "inst_trace": [], "at_file": "drivers/char/applicom.c", "by": "TaintedSizeDetector says:", "at_func": "ac_read"}, "warn_no": 3}]}]}

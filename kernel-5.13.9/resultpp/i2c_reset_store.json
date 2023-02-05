@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}, {"lineno": 895, "file": "drivers/hid/hid-ft260.c", "instr": "int ret = ft260_i2c_reset(hdev);"}],
-"warnings":[{"warn_data": {"at_line": 292, "warn_str": "Trying to use a global variable without locking.", "at": "ft260_dbg(\"done\\n\");", "inst_trace": [{"instr_func": "i2c_reset_store", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}, {"instr_func": "i2c_reset_store", "instr_loc": 895, "instr_file": "drivers/hid/hid-ft260.c", "instr": "int ret = ft260_i2c_reset(hdev);"}], "at_file": "drivers/hid/hid-ft260.c", "by": "GlobalVariableRaceDetector says:", "at_func": "ft260_i2c_reset"}, "warn_no": 1}]}]}

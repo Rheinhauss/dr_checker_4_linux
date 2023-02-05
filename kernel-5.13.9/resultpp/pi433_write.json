@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i1, align 1"}],
-"warnings":[{"warn_data": {"at_line": 834, "warn_str": "Potential overflow, using tainted value in binary operation.", "at": "required = sizeof(instance->tx_cfg) + sizeof(size_t) + count;", "inst_trace": [{"instr_func": "pi433_write", "instr_loc": -1, "instr": "  %5 = alloca i1, align 1"}, {"instr_func": "pi433_write", "instr_loc": 810, "instr_file": "drivers/staging/pi433/pi433_if.c", "instr": "{"}, {"instr_func": "pi433_write", "instr_loc": 834, "instr_file": "drivers/staging/pi433/pi433_if.c", "instr": "required = sizeof(instance->tx_cfg) + sizeof(size_t) + count;"}], "at_file": "drivers/staging/pi433/pi433_if.c", "by": "IntegerOverflowDetector says:", "at_func": "pi433_write"}, "warn_no": 1}]}]}

@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %4 = alloca i64, align 8"}],
-"warnings":[{"warn_data": {"at_line": 182, "warn_str": "Trying to use a global variable without locking.", "at": "return noiommu && (arg == VFIO_NOIOMMU_IOMMU) ? 1 : 0;", "inst_trace": [{"instr_func": "vfio_noiommu_ioctl", "instr_loc": -1, "instr": "  %4 = alloca i64, align 8"}], "at_file": "drivers/vfio/vfio.c", "by": "GlobalVariableRaceDetector says:", "at_func": "vfio_noiommu_ioctl"}, "warn_no": 1}]}]}

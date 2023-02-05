@@ -1,7 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %4 = alloca i64, align 8"}],
-"warnings":[{"warn_data": {"at_line": 6399, "warn_str": "Trying to use a global variable without locking.", "at": "sdebug_statistics = false;", "inst_trace": [{"instr_func": "statistics_store", "instr_loc": -1, "instr": "  %4 = alloca i64, align 8"}], "at_file": "drivers/scsi/scsi_debug.c", "by": "GlobalVariableRaceDetector says:", "at_func": "statistics_store"}, "warn_no": 1}]},
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %4 = alloca i64, align 8"}, {"lineno": 6398, "file": "drivers/scsi/scsi_debug.c", "instr": "clear_queue_stats();"}],
-"warnings":[{"warn_data": {"at_line": 5341, "warn_str": "Trying to use a global variable without locking.", "at": "{", "inst_trace": [{"instr_func": "statistics_store", "instr_loc": -1, "instr": "  %4 = alloca i64, align 8"}, {"instr_func": "statistics_store", "instr_loc": 6398, "instr_file": "drivers/scsi/scsi_debug.c", "instr": "clear_queue_stats();"}], "at_file": "drivers/scsi/scsi_debug.c", "by": "GlobalVariableRaceDetector says:", "at_func": "clear_queue_stats"}, "warn_no": 1}]}]}

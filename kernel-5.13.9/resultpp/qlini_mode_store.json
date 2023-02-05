@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}, {"lineno": 2236, "file": "drivers/scsi/qla2xxx/qla_attr.c", "instr": "qla_set_ini_mode(vha, ini);"}],
-"warnings":[{"warn_data": {"at_line": 2188, "warn_str": "Trying to use a global variable without locking.", "at": "mode_to_str[vha->qlini_mode], mode_to_str[op],", "inst_trace": [{"instr_func": "qlini_mode_store", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}, {"instr_func": "qlini_mode_store", "instr_loc": 2236, "instr_file": "drivers/scsi/qla2xxx/qla_attr.c", "instr": "qla_set_ini_mode(vha, ini);"}], "at_file": "drivers/scsi/qla2xxx/qla_attr.c", "by": "GlobalVariableRaceDetector says:", "at_func": "qla_set_ini_mode"}, "warn_no": 1}]}]}

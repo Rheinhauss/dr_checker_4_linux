@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca %struct.file*, align 8"}],
-"warnings":[{"warn_data": {"at_line": 1468, "warn_str": "Trying to use a global variable without locking.", "at": "uvc_dbg(stream->dev, CALLS, \"%s: not implemented\\n\", __func__);", "inst_trace": [{"instr_func": "uvc_v4l2_read", "instr_loc": -1, "instr": "  %5 = alloca %struct.file*, align 8"}], "at_file": "drivers/media/usb/uvc/uvc_v4l2.c", "by": "GlobalVariableRaceDetector says:", "at_func": "uvc_v4l2_read"}, "warn_no": 1}]}]}

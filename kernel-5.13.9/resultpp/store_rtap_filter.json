@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}],
-"warnings":[{"warn_data": {"at_line": 1448, "warn_str": "Trying to use a global variable without locking.", "at": "IPW_DEBUG_INFO(\"Setting rtap filter to \" BIT_FMT16 \"\\n\",", "inst_trace": [{"instr_func": "store_rtap_filter", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}], "at_file": "drivers/net/wireless/intel/ipw2x00/ipw2200.c", "by": "GlobalVariableRaceDetector says:", "at_func": "store_rtap_filter"}, "warn_no": 1}]}]}

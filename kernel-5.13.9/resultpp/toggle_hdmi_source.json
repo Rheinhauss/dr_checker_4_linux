@@ -1,5 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 2,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i1, align 1"}],
-"warnings":[{"warn_data": {"at_line": 590, "warn_str": "Tainted Data used in risky function", "at": "if (strcmp(buf, \"gpu\\n\") == 0)", "inst_trace": [{"instr_func": "toggle_hdmi_source", "instr_loc": -1, "instr": "  %5 = alloca i1, align 1"}], "at_file": "drivers/platform/x86/dell/alienware-wmi.c", "by": "ImproperTaintedDataUseDetector says:", "tainted_obj": "i8* %2", "at_func": "toggle_hdmi_source"}, "warn_no": 1},
-{"warn_data": {"at_line": 592, "warn_str": "Tainted Data used in risky function", "at": "else if (strcmp(buf, \"input\\n\") == 0)", "inst_trace": [{"instr_func": "toggle_hdmi_source", "instr_loc": -1, "instr": "  %5 = alloca i1, align 1"}], "at_file": "drivers/platform/x86/dell/alienware-wmi.c", "by": "ImproperTaintedDataUseDetector says:", "tainted_obj": "i8* %2", "at_func": "toggle_hdmi_source"}, "warn_no": 2}]}]}

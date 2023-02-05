@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}],
-"warnings":[{"warn_data": {"at_line": 108, "warn_str": "Trying to use a global variable without locking.", "at": "p += sprintf(p, \"bss_mode=\\\"%s\\\"\\n\", bss_modes[info.bss_mode]);", "inst_trace": [{"instr_func": "mwifiex_info_read", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}], "at_file": "drivers/net/wireless/marvell/mwifiex/debugfs.c", "by": "GlobalVariableRaceDetector says:", "at_func": "mwifiex_info_read"}, "warn_no": 1}]}]}

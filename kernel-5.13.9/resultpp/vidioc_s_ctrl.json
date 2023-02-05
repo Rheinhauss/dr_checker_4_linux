@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %4 = alloca %struct.file*, align 8"}],
-"warnings":[{"warn_data": {"at_line": 1549, "warn_str": "Trying to use a global variable without locking.", "at": "dprintk(3, \"enter vidioc_s_ctrl()\\n\");", "inst_trace": [{"instr_func": "vidioc_s_ctrl", "instr_loc": -1, "instr": "  %4 = alloca %struct.file*, align 8"}], "at_file": "drivers/media/usb/cx231xx/cx231xx-417.c", "by": "GlobalVariableRaceDetector says:", "at_func": "vidioc_s_ctrl"}, "warn_no": 1}]}]}

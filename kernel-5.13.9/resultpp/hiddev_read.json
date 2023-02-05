@@ -1,6 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 3,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i8*, align 8"}],
-"warnings":[{"warn_data": {"at_line": 378, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "struct hiddev_event event;", "inst_trace": [], "at_file": "drivers/hid/usbhid/hiddev.c", "by": "TaintedSizeDetector says:", "at_func": "hiddev_read"}, "warn_no": 1},
-{"warn_data": {"at_line": 392, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_to_user(buffer + retval, list->buffer + list->tail, sizeof(struct hiddev_usage_ref))) {", "inst_trace": [], "at_file": "drivers/hid/usbhid/hiddev.c", "by": "TaintedSizeDetector says:", "at_func": "hiddev_read"}, "warn_no": 2},
-{"warn_data": {"leaked_struct": "  %69 = alloca %struct.hiddev_event, align 4", "at_line": 378, "warn_str": "Potentially leaking memory on kernel stack (via padded fields) into user space", "at": "struct hiddev_event event;", "inst_trace": [], "at_file": "drivers/hid/usbhid/hiddev.c", "by": "KernelUninitMemoryLeakDetector says:", "at_func": "hiddev_read"}, "warn_no": 3}]}]}

@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca %struct.device*, align 8"}, {"lineno": 108, "file": "drivers/scsi/ufs/ufs-sysfs.c", "instr": "return ufs_sysfs_pm_lvl_store(dev, attr, buf, count, false);"}],
-"warnings":[{"warn_data": {"at_line": 51, "warn_str": "Trying to use a global variable without locking.", "at": "if (ufs_pm_lvl_states[value].dev_state == UFS_DEEPSLEEP_PWR_MODE &&", "inst_trace": [{"instr_func": "spm_lvl_store", "instr_loc": -1, "instr": "  %5 = alloca %struct.device*, align 8"}, {"instr_func": "spm_lvl_store", "instr_loc": 108, "instr_file": "drivers/scsi/ufs/ufs-sysfs.c", "instr": "return ufs_sysfs_pm_lvl_store(dev, attr, buf, count, false);"}], "at_file": "drivers/scsi/ufs/ufs-sysfs.c", "by": "GlobalVariableRaceDetector says:", "at_func": "ufs_sysfs_pm_lvl_store"}, "warn_no": 1}]}]}

@@ -1,5 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 2,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i8*, align 8"}],
-"warnings":[{"warn_data": {"at_line": 1004, "warn_str": "Trying to use a global variable without locking.", "at": "{", "inst_trace": [{"instr_func": "vga_arb_read", "instr_loc": -1, "instr": "  %5 = alloca i8*, align 8"}], "at_file": "drivers/gpu/vga/vgaarb.c", "by": "GlobalVariableRaceDetector says:", "at_func": "vga_arb_read"}, "warn_no": 1},
-{"warn_data": {"at_line": 1058, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "rc = copy_to_user(buf, lbuf, len);", "inst_trace": [], "at_file": "drivers/gpu/vga/vgaarb.c", "by": "TaintedSizeDetector says:", "at_func": "vga_arb_read"}, "warn_no": 2}]}]}

@@ -1,7 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}],
-"warnings":[{"warn_data": {"at_line": 397, "warn_str": "Trying to use a global variable without locking.", "at": "v4l2_dbg(2, debug, &ctx->jpeg->v4l2_dev, \"(%d) try_fmt:%c%c%c%c\\n\",", "inst_trace": [{"instr_func": "mtk_jpeg_try_fmt_vid_out_mplane", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}], "at_file": "drivers/media/platform/mtk-jpeg/mtk_jpeg_core.c", "by": "GlobalVariableRaceDetector says:", "at_func": "mtk_jpeg_try_fmt_vid_out_mplane"}, "warn_no": 1}]},
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}, {"lineno": 405, "file": "drivers/media/platform/mtk-jpeg/mtk_jpeg_core.c", "instr": "mtk_jpeg_g_fmt_vid_mplane(file, priv, f);"}],
-"warnings":[{"warn_data": {"at_line": 331, "warn_str": "Trying to use a global variable without locking.", "at": "v4l2_dbg(1, debug, &jpeg->v4l2_dev, \"(%d) g_fmt:%c%c%c%c wxh:%ux%u\\n\",", "inst_trace": [{"instr_func": "mtk_jpeg_try_fmt_vid_out_mplane", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}, {"instr_func": "mtk_jpeg_try_fmt_vid_out_mplane", "instr_loc": 405, "instr_file": "drivers/media/platform/mtk-jpeg/mtk_jpeg_core.c", "instr": "mtk_jpeg_g_fmt_vid_mplane(file, priv, f);"}], "at_file": "drivers/media/platform/mtk-jpeg/mtk_jpeg_core.c", "by": "GlobalVariableRaceDetector says:", "at_func": "mtk_jpeg_g_fmt_vid_mplane"}, "warn_no": 1}]}]}

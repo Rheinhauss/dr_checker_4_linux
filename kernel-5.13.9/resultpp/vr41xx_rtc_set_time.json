@@ -1,7 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %3 = alloca %struct.device*, align 8"}],
-"warnings":[{"warn_data": {"at_line": 129, "warn_str": "Trying to use a global variable without locking.", "at": "epoch_sec = mktime64(epoch, 1, 1, 0, 0, 0);", "inst_trace": [{"instr_func": "vr41xx_rtc_set_time", "instr_loc": -1, "instr": "  %3 = alloca %struct.device*, align 8"}], "at_file": "drivers/rtc/rtc-vr41xx.c", "by": "GlobalVariableRaceDetector says:", "at_func": "vr41xx_rtc_set_time"}, "warn_no": 1}]},
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %3 = alloca %struct.device*, align 8"}, {"lineno": 132, "file": "drivers/rtc/rtc-vr41xx.c", "instr": "write_elapsed_second(current_sec - epoch_sec);"}],
-"warnings":[{"warn_data": {"at_line": 103, "warn_str": "Trying to use a global variable without locking.", "at": "{", "inst_trace": [{"instr_func": "vr41xx_rtc_set_time", "instr_loc": -1, "instr": "  %3 = alloca %struct.device*, align 8"}, {"instr_func": "vr41xx_rtc_set_time", "instr_loc": 132, "instr_file": "drivers/rtc/rtc-vr41xx.c", "instr": "write_elapsed_second(current_sec - epoch_sec);"}], "at_file": "drivers/rtc/rtc-vr41xx.c", "by": "GlobalVariableRaceDetector says:", "at_func": "write_elapsed_second"}, "warn_no": 1}]}]}

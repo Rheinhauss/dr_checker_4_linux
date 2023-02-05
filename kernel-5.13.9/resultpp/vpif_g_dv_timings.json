@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}],
-"warnings":[{"warn_data": {"at_line": 1008, "warn_str": "Trying to use a global variable without locking.", "at": "struct vpif_display_config *config = vpif_dev->platform_data;", "inst_trace": [{"instr_func": "vpif_g_dv_timings", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}], "at_file": "drivers/media/platform/davinci/vpif_display.c", "by": "GlobalVariableRaceDetector says:", "at_func": "vpif_g_dv_timings"}, "warn_no": 1}]}]}

@@ -1,6 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 3,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}],
-"warnings":[{"warn_data": {"at_line": 854, "warn_str": "Tainted Data used in risky function", "at": "DECLARE_ADDR_MATCH(bank, 32);", "inst_trace": [{"instr_func": "i7core_inject_store_bank", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}], "at_file": "drivers/edac/i7core_edac.c", "by": "ImproperTaintedDataUseDetector says:", "tainted_obj": "i8* %2", "at_func": "i7core_inject_store_bank"}, "warn_no": 1},
-{"warn_data": {"at_line": 854, "warn_str": "Trying to use a global variable without locking.", "at": "DECLARE_ADDR_MATCH(bank, 32);", "inst_trace": [{"instr_func": "i7core_inject_store_bank", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}], "at_file": "drivers/edac/i7core_edac.c", "by": "GlobalVariableRaceDetector says:", "at_func": "i7core_inject_store_bank"}, "warn_no": 2},
-{"warn_data": {"at_line": 854, "warn_str": "Tainted Data used in risky function", "at": "DECLARE_ADDR_MATCH(bank, 32);", "inst_trace": [{"instr_func": "i7core_inject_store_bank", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}], "at_file": "drivers/edac/i7core_edac.c", "by": "ImproperTaintedDataUseDetector says:", "tainted_obj": "i8* %2", "at_func": "i7core_inject_store_bank"}, "warn_no": 3}]}]}

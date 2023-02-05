@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %3 = alloca %struct.device*, align 8"}, {"lineno": 185, "file": "drivers/rtc/rtc-mt2712.c", "instr": "mt2712_rtc_write_trigger(mt2712_rtc);"}],
-"warnings":[{"warn_data": {"at_line": 98, "warn_str": "Trying to use a global variable without locking.", "at": "unsigned long timeout = jiffies + HZ / 10;", "inst_trace": [{"instr_func": "mt2712_rtc_set_time", "instr_loc": -1, "instr": "  %3 = alloca %struct.device*, align 8"}, {"instr_func": "mt2712_rtc_set_time", "instr_loc": 185, "instr_file": "drivers/rtc/rtc-mt2712.c", "instr": "mt2712_rtc_write_trigger(mt2712_rtc);"}], "at_file": "drivers/rtc/rtc-mt2712.c", "by": "GlobalVariableRaceDetector says:", "at_func": "mt2712_rtc_write_trigger"}, "warn_no": 1}]}]}

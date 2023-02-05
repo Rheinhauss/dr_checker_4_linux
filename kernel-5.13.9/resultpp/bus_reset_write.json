@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}, {"lineno": 1182, "file": "drivers/net/wireless/broadcom/brcm80211/brcmfmac/core.c", "instr": "schedule_work(&drvr->bus_reset);"}],
-"warnings":[{"warn_data": {"at_line": 568, "warn_str": "Trying to use a global variable without locking.", "at": "  %3 = load %struct.workqueue_struct*, %struct.workqueue_struct** @system_wq, align 8, !dbg !15550", "inst_trace": [{"instr_func": "bus_reset_write", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}, {"instr_func": "bus_reset_write", "instr_loc": 1182, "instr_file": "drivers/net/wireless/broadcom/brcm80211/brcmfmac/core.c", "instr": "schedule_work(&drvr->bus_reset);"}], "at_file": "./include/linux/workqueue.h", "by": "GlobalVariableRaceDetector says:", "at_func": "schedule_work"}, "warn_no": 1}]}]}

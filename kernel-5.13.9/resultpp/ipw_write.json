@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}],
-"warnings":[{"warn_data": {"at_line": 225, "warn_str": "Potential overflow, using tainted value in binary operation.", "at": "tty->tx_bytes_queued += count;", "inst_trace": [{"instr_func": "ipw_write", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}, {"instr_func": "ipw_write", "instr_loc": 192, "instr_file": "drivers/tty/ipwireless/tty.c", "instr": "{"}, {"instr_func": "ipw_write", "instr_loc": 225, "instr_file": "drivers/tty/ipwireless/tty.c", "instr": "tty->tx_bytes_queued += count;"}], "at_file": "drivers/tty/ipwireless/tty.c", "by": "IntegerOverflowDetector says:", "at_func": "ipw_write"}, "warn_no": 1}]}]}

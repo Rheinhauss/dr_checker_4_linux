@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}],
-"warnings":[{"warn_data": {"at_line": 908, "warn_str": "Trying to use a global variable without locking.", "at": "f->pixelformat = formats[f->index].pixelformat;", "inst_trace": [{"instr_func": "rcar_drif_enum_fmt_sdr_cap", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}], "at_file": "drivers/media/platform/rcar_drif.c", "by": "GlobalVariableRaceDetector says:", "at_func": "rcar_drif_enum_fmt_sdr_cap"}, "warn_no": 1}]}]}

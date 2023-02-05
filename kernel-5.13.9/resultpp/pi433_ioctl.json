@@ -1,7 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 4,
-"context":[{"lineno": -1, "instr": "  %4 = alloca i8*, align 8"}],
-"warnings":[{"warn_data": {"at_line": 916, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_from_user(&device->rx_cfg, argp,", "inst_trace": [], "at_file": "drivers/staging/pi433/pi433_if.c", "by": "TaintedSizeDetector says:", "at_func": "pi433_ioctl"}, "warn_no": 1},
-{"warn_data": {"at_line": 903, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_to_user(argp, &device->rx_cfg,", "inst_trace": [], "at_file": "drivers/staging/pi433/pi433_if.c", "by": "TaintedSizeDetector says:", "at_func": "pi433_ioctl"}, "warn_no": 2},
-{"warn_data": {"at_line": 896, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_from_user(&tx_cfg, argp, sizeof(struct pi433_tx_cfg)))", "inst_trace": [], "at_file": "drivers/staging/pi433/pi433_if.c", "by": "TaintedSizeDetector says:", "at_func": "pi433_ioctl"}, "warn_no": 3},
-{"warn_data": {"at_line": 891, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_to_user(argp, &instance->tx_cfg,", "inst_trace": [], "at_file": "drivers/staging/pi433/pi433_if.c", "by": "TaintedSizeDetector says:", "at_func": "pi433_ioctl"}, "warn_no": 4}]}]}

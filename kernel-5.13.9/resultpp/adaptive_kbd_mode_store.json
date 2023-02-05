@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}, {"lineno": 3074, "file": "drivers/platform/x86/thinkpad_acpi.c", "instr": "res = adaptive_keyboard_set_mode(t);"}],
-"warnings":[{"warn_data": {"at_line": 3799, "warn_str": "Trying to use a global variable without locking.", "at": "if (!acpi_evalf(hkey_handle, NULL, \"STRW\", \"vd\", new_mode)) {", "inst_trace": [{"instr_func": "adaptive_kbd_mode_store", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}, {"instr_func": "adaptive_kbd_mode_store", "instr_loc": 3074, "instr_file": "drivers/platform/x86/thinkpad_acpi.c", "instr": "res = adaptive_keyboard_set_mode(t);"}], "at_file": "drivers/platform/x86/thinkpad_acpi.c", "by": "GlobalVariableRaceDetector says:", "at_func": "adaptive_keyboard_set_mode"}, "warn_no": 1}]}]}

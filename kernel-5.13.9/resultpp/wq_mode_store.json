@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}, {"lineno": 862, "file": "drivers/dma/idxd/sysfs.c", "instr": "} else if (sysfs_streq(buf, \"shared\") && device_swq_supported(idxd)) {"}],
-"warnings":[{"warn_data": {"at_line": 360, "warn_str": "Trying to use a global variable without locking.", "at": "  %3 = load i8, i8* @support_enqcmd, align 1, !dbg !7602", "inst_trace": [{"instr_func": "wq_mode_store", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}, {"instr_func": "wq_mode_store", "instr_loc": 862, "instr_file": "drivers/dma/idxd/sysfs.c", "instr": "} else if (sysfs_streq(buf, \"shared\") && device_swq_supported(idxd)) {"}], "at_file": "drivers/dma/idxd/idxd.h", "by": "GlobalVariableRaceDetector says:", "at_func": "device_swq_supported"}, "warn_no": 1}]}]}

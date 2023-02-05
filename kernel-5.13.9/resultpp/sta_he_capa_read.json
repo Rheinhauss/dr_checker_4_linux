@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i32, align 4"}],
-"warnings":[{"warn_data": {"at_line": 620, "warn_str": "Trying to use a global variable without locking.", "at": "size_t buf_sz = PAGE_SIZE;", "inst_trace": [{"instr_func": "sta_he_capa_read", "instr_loc": -1, "instr": "  %5 = alloca i32, align 4"}], "at_file": "net/mac80211/debugfs_sta.c", "by": "GlobalVariableRaceDetector says:", "at_func": "sta_he_capa_read"}, "warn_no": 1}]}]}

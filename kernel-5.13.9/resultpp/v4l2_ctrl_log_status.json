@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %3 = alloca %struct.file*, align 8"}, {"lineno": 4959, "file": "drivers/media/v4l2-core/v4l2-ctrls.c", "instr": "struct video_device *vfd = video_devdata(file);"}],
-"warnings":[{"warn_data": {"at_line": 239, "warn_str": "Trying to use a global variable without locking.", "at": "return video_devices[iminor(file_inode(file))];", "inst_trace": [{"instr_func": "v4l2_ctrl_log_status", "instr_loc": -1, "instr": "  %3 = alloca %struct.file*, align 8"}, {"instr_func": "v4l2_ctrl_log_status", "instr_loc": 4959, "instr_file": "drivers/media/v4l2-core/v4l2-ctrls.c", "instr": "struct video_device *vfd = video_devdata(file);"}], "at_file": "drivers/media/v4l2-core/v4l2-dev.c", "by": "GlobalVariableRaceDetector says:", "at_func": "video_devdata"}, "warn_no": 1}]}]}

@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}],
-"warnings":[{"warn_data": {"at_line": 207, "warn_str": "Trying to use a global variable without locking.", "at": "const char *mode_str = acx565akm_cabc_modes[i];", "inst_trace": [{"instr_func": "cabc_mode_store", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}], "at_file": "drivers/gpu/drm/panel/panel-sony-acx565akm.c", "by": "GlobalVariableRaceDetector says:", "at_func": "cabc_mode_store"}, "warn_no": 1}]}]}

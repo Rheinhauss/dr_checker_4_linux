@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}],
-"warnings":[{"warn_data": {"at_line": 1690, "warn_str": "Trying to use a global variable without locking.", "at": "card_in(dev, n).type == SAA7134_INPUT_TV_MONO)", "inst_trace": [{"instr_func": "saa7134_g_tuner", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}], "at_file": "drivers/media/pci/saa7134/saa7134-video.c", "by": "GlobalVariableRaceDetector says:", "at_func": "saa7134_g_tuner"}, "warn_no": 1}]}]}

@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}],
-"warnings":[{"warn_data": {"at_line": 1384, "warn_str": "Trying to use a global variable without locking.", "at": "vpfe_dbg(1, vpfe, \"%s: mbus index: %d code: %x pixelformat: %s\\n\",", "inst_trace": [{"instr_func": "vpfe_enum_fmt", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}], "at_file": "drivers/media/platform/am437x/am437x-vpfe.c", "by": "GlobalVariableRaceDetector says:", "at_func": "vpfe_enum_fmt"}, "warn_no": 1}]}]}

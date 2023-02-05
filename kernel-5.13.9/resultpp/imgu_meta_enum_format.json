@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}],
-"warnings":[{"warn_data": {"at_line": 846, "warn_str": "Trying to use a global variable without locking.", "at": "strscpy(fmt->description, meta_fmts[i].name, sizeof(fmt->description));", "inst_trace": [{"instr_func": "imgu_meta_enum_format", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}], "at_file": "drivers/staging/media/ipu3/ipu3-v4l2.c", "by": "GlobalVariableRaceDetector says:", "at_func": "imgu_meta_enum_format"}, "warn_no": 1}]}]}

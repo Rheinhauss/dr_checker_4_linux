@@ -1,7 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %4 = alloca %struct.file*, align 8"}],
-"warnings":[{"warn_data": {"at_line": 202, "warn_str": "Trying to use a global variable without locking.", "at": "ctx_dbg(3, ctx, \"Fourcc format (0x%08x) not found.\\n\",", "inst_trace": [{"instr_func": "cal_try_fmt_vid_cap", "instr_loc": -1, "instr": "  %4 = alloca %struct.file*, align 8"}], "at_file": "drivers/media/platform/ti-vpe/cal-video.c", "by": "GlobalVariableRaceDetector says:", "at_func": "cal_try_fmt_vid_cap"}, "warn_no": 1}]},
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %4 = alloca %struct.file*, align 8"}, {"lineno": 248, "file": "drivers/media/platform/ti-vpe/cal-video.c", "instr": "cal_calc_format_size(ctx, fmtinfo, f);"}],
-"warnings":[{"warn_data": {"at_line": 186, "warn_str": "Trying to use a global variable without locking.", "at": "ctx_dbg(3, ctx, \"%s: fourcc: %s size: %dx%d bpl:%d img_size:%d\\n\",", "inst_trace": [{"instr_func": "cal_try_fmt_vid_cap", "instr_loc": -1, "instr": "  %4 = alloca %struct.file*, align 8"}, {"instr_func": "cal_try_fmt_vid_cap", "instr_loc": 248, "instr_file": "drivers/media/platform/ti-vpe/cal-video.c", "instr": "cal_calc_format_size(ctx, fmtinfo, f);"}], "at_file": "drivers/media/platform/ti-vpe/cal-video.c", "by": "GlobalVariableRaceDetector says:", "at_func": "cal_calc_format_size"}, "warn_no": 1}]}]}

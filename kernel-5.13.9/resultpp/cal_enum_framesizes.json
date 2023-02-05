@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}],
-"warnings":[{"warn_data": {"at_line": 314, "warn_str": "Trying to use a global variable without locking.", "at": "ctx_dbg(3, ctx, \"Invalid pixel code: %x\\n\",", "inst_trace": [{"instr_func": "cal_enum_framesizes", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}], "at_file": "drivers/media/platform/ti-vpe/cal-video.c", "by": "GlobalVariableRaceDetector says:", "at_func": "cal_enum_framesizes"}, "warn_no": 1}]}]}

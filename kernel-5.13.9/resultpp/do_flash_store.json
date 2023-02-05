@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}, {"lineno": 1309, "file": "drivers/usb/typec/ucsi/ucsi_ccg.c", "instr": "schedule_work(&uc->work);"}],
-"warnings":[{"warn_data": {"at_line": 568, "warn_str": "Trying to use a global variable without locking.", "at": "  %3 = load %struct.workqueue_struct*, %struct.workqueue_struct** @system_wq, align 8, !dbg !5961", "inst_trace": [{"instr_func": "do_flash_store", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}, {"instr_func": "do_flash_store", "instr_loc": 1309, "instr_file": "drivers/usb/typec/ucsi/ucsi_ccg.c", "instr": "schedule_work(&uc->work);"}], "at_file": "./include/linux/workqueue.h", "by": "GlobalVariableRaceDetector says:", "at_func": "schedule_work"}, "warn_no": 1}]}]}

@@ -1,5 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 2,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i8*, align 8"}],
-"warnings":[{"warn_data": {"at_line": 3103, "warn_str": "Trying to use a global variable without locking.", "at": "c_stat = per_cpu_ptr(phba->sli4_hba.c_stat, i);", "inst_trace": [{"instr_func": "lpfc_debugfs_hdwqstat_write", "instr_loc": -1, "instr": "  %5 = alloca i8*, align 8"}], "at_file": "drivers/scsi/lpfc/lpfc_debugfs.c", "by": "GlobalVariableRaceDetector says:", "at_func": "lpfc_debugfs_hdwqstat_write"}, "warn_no": 1},
-{"warn_data": {"at_line": 3066, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "memset(mybuf, 0, sizeof(mybuf));", "inst_trace": [], "at_file": "drivers/scsi/lpfc/lpfc_debugfs.c", "by": "TaintedSizeDetector says:", "at_func": "lpfc_debugfs_hdwqstat_write"}, "warn_no": 2}]}]}

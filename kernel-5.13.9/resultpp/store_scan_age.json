@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca %struct.device*, align 8"}],
-"warnings":[{"warn_data": {"at_line": 4221, "warn_str": "Trying to use a global variable without locking.", "at": "IPW_DEBUG_INFO(\"enter\\n\");", "inst_trace": [{"instr_func": "store_scan_age", "instr_loc": -1, "instr": "  %5 = alloca %struct.device*, align 8"}], "at_file": "drivers/net/wireless/intel/ipw2x00/ipw2100.c", "by": "GlobalVariableRaceDetector says:", "at_func": "store_scan_age"}, "warn_no": 1}]}]}

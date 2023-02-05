@@ -1,8 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 2,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i8*, align 8"}],
-"warnings":[{"warn_data": {"at_line": 3876, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_from_user(kbuf, buf, count))", "inst_trace": [], "at_file": "drivers/scsi/hisi_sas/hisi_sas_v3_hw.c", "by": "TaintedSizeDetector says:", "at_func": "debugfs_bist_code_mode_v3_hw_write"}, "warn_no": 1},
-{"warn_data": {"at_line": 3882, "warn_str": "Trying to use a global variable without locking.", "at": "if (!strncmp(debugfs_loop_code_mode_v3_hw[i].name,", "inst_trace": [{"instr_func": "debugfs_bist_code_mode_v3_hw_write", "instr_loc": -1, "instr": "  %5 = alloca i8*, align 8"}], "at_file": "drivers/scsi/hisi_sas/hisi_sas_v3_hw.c", "by": "GlobalVariableRaceDetector says:", "at_func": "debugfs_bist_code_mode_v3_hw_write"}, "warn_no": 2}]},
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i8*, align 8"}, {"lineno": 3879, "file": "drivers/scsi/hisi_sas/hisi_sas_v3_hw.c", "instr": "pkbuf = strstrip(kbuf);"}],
-"warnings":[{"warn_data": {"at_line": 79, "warn_str": "Tainted Data used in risky function", "at": "  %4 = call i8* @strim(i8* %3) #11, !dbg !9840", "inst_trace": [{"instr_func": "debugfs_bist_code_mode_v3_hw_write", "instr_loc": 3876, "instr_file": "drivers/scsi/hisi_sas/hisi_sas_v3_hw.c", "instr": "if (copy_from_user(kbuf, buf, count))"}], "at_file": "./include/linux/string.h", "by": "ImproperTaintedDataUseDetector says:", "tainted_obj": "  %25 = alloca [16 x i8], align 16", "at_func": "strstrip"}, "warn_no": 1}]}]}

@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %4 = alloca i64, align 8"}],
-"warnings":[{"warn_data": {"at_line": 1556, "warn_str": "Trying to use a global variable without locking.", "at": "tpacpi_uwb_emulstate = !!t;", "inst_trace": [{"instr_func": "uwb_emulstate_store", "instr_loc": -1, "instr": "  %4 = alloca i64, align 8"}], "at_file": "drivers/platform/x86/thinkpad_acpi.c", "by": "GlobalVariableRaceDetector says:", "at_func": "uwb_emulstate_store"}, "warn_no": 1}]}]}

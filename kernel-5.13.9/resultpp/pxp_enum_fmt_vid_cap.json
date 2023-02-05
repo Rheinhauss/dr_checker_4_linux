@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %4 = alloca %struct.file*, align 8"}, {"lineno": 1069, "file": "drivers/media/platform/imx-pxp.c", "instr": "return pxp_enum_fmt(f, MEM2MEM_CAPTURE);"}],
-"warnings":[{"warn_data": {"at_line": 1043, "warn_str": "Trying to use a global variable without locking.", "at": "if (formats[i].types & type) {", "inst_trace": [{"instr_func": "pxp_enum_fmt_vid_cap", "instr_loc": -1, "instr": "  %4 = alloca %struct.file*, align 8"}, {"instr_func": "pxp_enum_fmt_vid_cap", "instr_loc": 1069, "instr_file": "drivers/media/platform/imx-pxp.c", "instr": "return pxp_enum_fmt(f, MEM2MEM_CAPTURE);"}], "at_file": "drivers/media/platform/imx-pxp.c", "by": "GlobalVariableRaceDetector says:", "at_func": "pxp_enum_fmt"}, "warn_no": 1}]}]}

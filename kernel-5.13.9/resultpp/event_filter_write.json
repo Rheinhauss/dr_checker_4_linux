@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}],
-"warnings":[{"warn_data": {"at_line": 1698, "warn_str": "Potential overflow, using tainted value in binary operation.", "at": "*ppos += cnt;", "inst_trace": [{"instr_func": "event_filter_write", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}, {"instr_func": "event_filter_write", "instr_loc": 1676, "instr_file": "kernel/trace/trace_events.c", "instr": "{"}, {"instr_func": "event_filter_write", "instr_loc": 1698, "instr_file": "kernel/trace/trace_events.c", "instr": "*ppos += cnt;"}], "at_file": "kernel/trace/trace_events.c", "by": "IntegerOverflowDetector says:", "at_func": "event_filter_write"}, "warn_no": 1}]}]}

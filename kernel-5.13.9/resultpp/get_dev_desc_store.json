@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i32, align 4"}],
-"warnings":[{"warn_data": {"at_line": 258, "warn_str": "Trying to use a global variable without locking.", "at": "struct usb_interface *intf = to_usb_interface(dev);", "inst_trace": [{"instr_func": "get_dev_desc_store", "instr_loc": -1, "instr": "  %5 = alloca i32, align 4"}], "at_file": "drivers/usb/misc/lvstest.c", "by": "GlobalVariableRaceDetector says:", "at_func": "get_dev_desc_store"}, "warn_no": 1}]}]}

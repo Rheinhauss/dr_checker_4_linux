@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}, {"lineno": 5718, "file": "drivers/platform/x86/thinkpad_acpi.c", "instr": "res = issue_thinkpad_cmos_command(cmos_cmd);"}],
-"warnings":[{"warn_data": {"at_line": 685, "warn_str": "Trying to use a global variable without locking.", "at": "if (!cmos_handle)", "inst_trace": [{"instr_func": "cmos_command_store", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}, {"instr_func": "cmos_command_store", "instr_loc": 5718, "instr_file": "drivers/platform/x86/thinkpad_acpi.c", "instr": "res = issue_thinkpad_cmos_command(cmos_cmd);"}], "at_file": "drivers/platform/x86/thinkpad_acpi.c", "by": "GlobalVariableRaceDetector says:", "at_func": "issue_thinkpad_cmos_command"}, "warn_no": 1}]}]}

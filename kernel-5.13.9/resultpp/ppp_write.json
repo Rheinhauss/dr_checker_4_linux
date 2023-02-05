@@ -1,5 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 2,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i8*, align 8"}],
-"warnings":[{"warn_data": {"at_line": 501, "warn_str": "Potential overflow, using tainted value in binary operation.", "at": "skb = alloc_skb(count + pf->hdrlen, GFP_KERNEL);", "inst_trace": [{"instr_func": "ppp_write", "instr_loc": -1, "instr": "  %5 = alloca i8*, align 8"}, {"instr_func": "ppp_write", "instr_loc": 493, "instr_file": "drivers/net/ppp/ppp_generic.c", "instr": "{"}, {"instr_func": "ppp_write", "instr_loc": 501, "instr_file": "drivers/net/ppp/ppp_generic.c", "instr": "skb = alloc_skb(count + pf->hdrlen, GFP_KERNEL);"}], "at_file": "drivers/net/ppp/ppp_generic.c", "by": "IntegerOverflowDetector says:", "at_func": "ppp_write"}, "warn_no": 1},
-{"warn_data": {"at_line": 504, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "skb_reserve(skb, pf->hdrlen);", "inst_trace": [], "at_file": "drivers/net/ppp/ppp_generic.c", "by": "TaintedSizeDetector says:", "at_func": "ppp_write"}, "warn_no": 2}]}]}

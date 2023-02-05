@@ -1,7 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %4 = alloca i64, align 8"}],
-"warnings":[{"warn_data": {"at_line": 1493, "warn_str": "Trying to use a global variable without locking.", "at": "if (tpacpi_wlsw_emulstate != !!t) {", "inst_trace": [{"instr_func": "wlsw_emulstate_store", "instr_loc": -1, "instr": "  %4 = alloca i64, align 8"}], "at_file": "drivers/platform/x86/thinkpad_acpi.c", "by": "GlobalVariableRaceDetector says:", "at_func": "wlsw_emulstate_store"}, "warn_no": 1}]},
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %4 = alloca i64, align 8"}, {"lineno": 1495, "file": "drivers/platform/x86/thinkpad_acpi.c", "instr": "tpacpi_rfk_update_hwblock_state(!t);\t/* negative logic */"}],
-"warnings":[{"warn_data": {"at_line": 1199, "warn_str": "Trying to use a global variable without locking.", "at": "tp_rfk = tpacpi_rfkill_switches[i];", "inst_trace": [{"instr_func": "wlsw_emulstate_store", "instr_loc": -1, "instr": "  %4 = alloca i64, align 8"}, {"instr_func": "wlsw_emulstate_store", "instr_loc": 1495, "instr_file": "drivers/platform/x86/thinkpad_acpi.c", "instr": "tpacpi_rfk_update_hwblock_state(!t);\t/* negative logic */"}], "at_file": "drivers/platform/x86/thinkpad_acpi.c", "by": "GlobalVariableRaceDetector says:", "at_func": "tpacpi_rfk_update_hwblock_state"}, "warn_no": 1}]}]}

@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}, {"lineno": 171, "file": "drivers/platform/x86/ibm_rtl.c", "instr": "ret = ibm_rtl_write(1);"}],
-"warnings":[{"warn_data": {"at_line": 94, "warn_str": "Trying to use a global variable without locking.", "at": "RTL_DEBUG(\"%s(%d)\\n\", __func__, value);", "inst_trace": [{"instr_func": "rtl_set_state", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}, {"instr_func": "rtl_set_state", "instr_loc": 171, "instr_file": "drivers/platform/x86/ibm_rtl.c", "instr": "ret = ibm_rtl_write(1);"}], "at_file": "drivers/platform/x86/ibm_rtl.c", "by": "GlobalVariableRaceDetector says:", "at_func": "ibm_rtl_write"}, "warn_no": 1}]}]}

@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %4 = alloca %struct.file*, align 8"}, {"lineno": 1398, "file": "drivers/media/platform/rcar_fdp1.c", "instr": "return fdp1_enum_fmt(f, FDP1_CAPTURE);"}],
-"warnings":[{"warn_data": {"at_line": 1378, "warn_str": "Trying to use a global variable without locking.", "at": "if (fdp1_formats[i].types & type) {", "inst_trace": [{"instr_func": "fdp1_enum_fmt_vid_cap", "instr_loc": -1, "instr": "  %4 = alloca %struct.file*, align 8"}, {"instr_func": "fdp1_enum_fmt_vid_cap", "instr_loc": 1398, "instr_file": "drivers/media/platform/rcar_fdp1.c", "instr": "return fdp1_enum_fmt(f, FDP1_CAPTURE);"}], "at_file": "drivers/media/platform/rcar_fdp1.c", "by": "GlobalVariableRaceDetector says:", "at_func": "fdp1_enum_fmt"}, "warn_no": 1}]}]}

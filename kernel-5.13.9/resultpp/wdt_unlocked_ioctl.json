@@ -1,5 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 2,
-"context":[{"lineno": -1, "instr": "  %4 = alloca %struct.file*, align 8"}, {"lineno": 774, "file": "drivers/rtc/rtc-m41t80.c", "instr": "ret = wdt_ioctl(file, cmd, arg);"}],
-"warnings":[{"warn_data": {"at_line": 750, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_from_user(&rv, (int __user *)arg, sizeof(int)))", "inst_trace": [], "at_file": "drivers/rtc/rtc-m41t80.c", "by": "TaintedSizeDetector says:", "at_func": "wdt_ioctl"}, "warn_no": 1},
-{"warn_data": {"at_line": 728, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "return copy_to_user((struct watchdog_info __user *)arg, &ident,", "inst_trace": [], "at_file": "drivers/rtc/rtc-m41t80.c", "by": "TaintedSizeDetector says:", "at_func": "wdt_ioctl"}, "warn_no": 2}]}]}

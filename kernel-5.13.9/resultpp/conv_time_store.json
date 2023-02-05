@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}, {"lineno": 1957, "file": "drivers/w1/slaves/w1_therm.c", "instr": "ret = conv_time_measure(sl, &conv_time);"}],
-"warnings":[{"warn_data": {"at_line": 1161, "warn_str": "Trying to use a global variable without locking.", "at": "strong_pullup = (w1_strong_pullup == 2 ||", "inst_trace": [{"instr_func": "conv_time_store", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}, {"instr_func": "conv_time_store", "instr_loc": 1957, "instr_file": "drivers/w1/slaves/w1_therm.c", "instr": "ret = conv_time_measure(sl, &conv_time);"}], "at_file": "drivers/w1/slaves/w1_therm.c", "by": "GlobalVariableRaceDetector says:", "at_func": "conv_time_measure"}, "warn_no": 1}]}]}

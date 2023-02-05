@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}, {"lineno": 2574, "file": "drivers/staging/media/atomisp/pci/atomisp_ioctl.c", "instr": "ret = atomisp_s_ctrl(file, fh, &ctrl);"}],
-"warnings":[{"warn_data": {"at_line": 2233, "warn_str": "Trying to use a global variable without locking.", "at": "if (ci_v4l2_controls[i].id == control->id) {", "inst_trace": [{"instr_func": "atomisp_s_ext_ctrls", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}, {"instr_func": "atomisp_s_ext_ctrls", "instr_loc": 2574, "instr_file": "drivers/staging/media/atomisp/pci/atomisp_ioctl.c", "instr": "ret = atomisp_s_ctrl(file, fh, &ctrl);"}], "at_file": "drivers/staging/media/atomisp/pci/atomisp_ioctl.c", "by": "GlobalVariableRaceDetector says:", "at_func": "atomisp_s_ctrl"}, "warn_no": 1}]}]}

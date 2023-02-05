@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca %struct.spinlock*, align 8"}],
-"warnings":[{"warn_data": {"at_line": 152, "warn_str": "Potential overflow, using tainted value in binary operation.", "at": "*pos += count;", "inst_trace": [{"instr_func": "average_write", "instr_loc": -1, "instr": "  %5 = alloca %struct.spinlock*, align 8"}, {"instr_func": "average_write", "instr_loc": 143, "instr_file": "drivers/net/ethernet/mellanox/mlx5/core/debugfs.c", "instr": "{"}, {"instr_func": "average_write", "instr_loc": 152, "instr_file": "drivers/net/ethernet/mellanox/mlx5/core/debugfs.c", "instr": "*pos += count;"}], "at_file": "drivers/net/ethernet/mellanox/mlx5/core/debugfs.c", "by": "IntegerOverflowDetector says:", "at_func": "average_write"}, "warn_no": 1}]}]}

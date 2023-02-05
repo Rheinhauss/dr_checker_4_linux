@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i8*, align 8"}],
-"warnings":[{"warn_data": {"at_line": 306, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_from_user(buf, user_buf, count))", "inst_trace": [], "at_file": "net/mac80211/debugfs.c", "by": "TaintedSizeDetector says:", "at_func": "aql_enable_write"}, "warn_no": 1}]}]}

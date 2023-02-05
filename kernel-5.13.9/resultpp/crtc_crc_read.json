@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i8*, align 8"}],
-"warnings":[{"warn_data": {"at_line": 336, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "sprintf(buf + 10 + crc->values_cnt * 11, \"\\n\");", "inst_trace": [], "at_file": "drivers/gpu/drm/drm_debugfs_crc.c", "by": "TaintedSizeDetector says:", "at_func": "crtc_crc_read"}, "warn_no": 1}]}]}

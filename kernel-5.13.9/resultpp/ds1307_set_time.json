@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %3 = alloca i1, align 1"}],
-"warnings":[{"warn_data": {"at_line": 322, "warn_str": "Trying to use a global variable without locking.", "at": "const struct chip_desc *chip = &chips[ds1307->type];", "inst_trace": [{"instr_func": "ds1307_set_time", "instr_loc": -1, "instr": "  %3 = alloca i1, align 1"}], "at_file": "drivers/rtc/rtc-ds1307.c", "by": "GlobalVariableRaceDetector says:", "at_func": "ds1307_set_time"}, "warn_no": 1}]}]}

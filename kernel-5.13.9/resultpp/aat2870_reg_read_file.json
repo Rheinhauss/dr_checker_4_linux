@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i32, align 4"}],
-"warnings":[{"warn_data": {"at_line": 258, "warn_str": "Trying to use a global variable without locking.", "at": "buf = kmalloc(PAGE_SIZE, GFP_KERNEL);", "inst_trace": [{"instr_func": "aat2870_reg_read_file", "instr_loc": -1, "instr": "  %5 = alloca i32, align 4"}], "at_file": "drivers/mfd/aat2870-core.c", "by": "GlobalVariableRaceDetector says:", "at_func": "aat2870_reg_read_file"}, "warn_no": 1}]}]}

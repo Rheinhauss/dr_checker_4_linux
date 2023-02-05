@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca %struct.spinlock*, align 8"}],
-"warnings":[{"warn_data": {"at_line": 317, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_from_user(cmd->buffer, ubuff, count)) {", "inst_trace": [], "at_file": "drivers/misc/ibmasm/ibmasmfs.c", "by": "TaintedSizeDetector says:", "at_func": "command_file_write"}, "warn_no": 1}]}]}

@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca %struct.device*, align 8"}, {"lineno": 2472, "file": "kernel/cpu.c", "instr": "return __store_smt_control(dev, attr, buf, count);"}],
-"warnings":[{"warn_data": {"at_line": 2417, "warn_str": "Trying to use a global variable without locking.", "at": "if (cpu_smt_control == CPU_SMT_FORCE_DISABLED)", "inst_trace": [{"instr_func": "store_smt_control", "instr_loc": -1, "instr": "  %5 = alloca %struct.device*, align 8"}, {"instr_func": "store_smt_control", "instr_loc": 2472, "instr_file": "kernel/cpu.c", "instr": "return __store_smt_control(dev, attr, buf, count);"}], "at_file": "kernel/cpu.c", "by": "GlobalVariableRaceDetector says:", "at_func": "__store_smt_control"}, "warn_no": 1}]}]}

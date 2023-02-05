@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}],
-"warnings":[{"warn_data": {"at_line": 516, "warn_str": "Tainted Data used in risky function", "at": "if (!strcmp(buf, \"assert\")) {", "inst_trace": [{"instr_func": "ath11k_write_simulate_fw_crash", "instr_loc": 503, "instr_file": "drivers/net/wireless/ath/ath11k/debugfs.c", "instr": "rc = simple_write_to_buffer(buf, sizeof(buf) - 1, ppos, user_buf, count);"}], "at_file": "drivers/net/wireless/ath/ath11k/debugfs.c", "by": "ImproperTaintedDataUseDetector says:", "tainted_obj": "  %13 = alloca [32 x i8], align 16", "at_func": "ath11k_write_simulate_fw_crash"}, "warn_no": 1}]}]}

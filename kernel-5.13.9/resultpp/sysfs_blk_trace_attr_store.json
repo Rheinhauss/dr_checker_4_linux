@@ -1,7 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca %struct.device*, align 8"}],
-"warnings":[{"warn_data": {"at_line": 1800, "warn_str": "Trying to use a global variable without locking.", "at": "if (attr == &dev_attr_act_mask) {", "inst_trace": [{"instr_func": "sysfs_blk_trace_attr_store", "instr_loc": -1, "instr": "  %5 = alloca %struct.device*, align 8"}], "at_file": "kernel/trace/blktrace.c", "by": "GlobalVariableRaceDetector says:", "at_func": "sysfs_blk_trace_attr_store"}, "warn_no": 1}]},
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca %struct.device*, align 8"}, {"lineno": 1803, "file": "kernel/trace/blktrace.c", "instr": "ret = blk_trace_str2mask(buf);"}],
-"warnings":[{"warn_data": {"at_line": 1723, "warn_str": "Trying to use a global variable without locking.", "at": "mask |= mask_maps[i].mask;", "inst_trace": [{"instr_func": "sysfs_blk_trace_attr_store", "instr_loc": -1, "instr": "  %5 = alloca %struct.device*, align 8"}, {"instr_func": "sysfs_blk_trace_attr_store", "instr_loc": 1803, "instr_file": "kernel/trace/blktrace.c", "instr": "ret = blk_trace_str2mask(buf);"}], "at_file": "kernel/trace/blktrace.c", "by": "GlobalVariableRaceDetector says:", "at_func": "blk_trace_str2mask"}, "warn_no": 1}]}]}

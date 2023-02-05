@@ -1,9 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 6,
-"context":[{"lineno": -1, "instr": "  %4 = alloca i8*, align 8"}],
-"warnings":[{"warn_data": {"at_line": 127, "warn_str": "Trying to use a global variable without locking.", "at": "pMWAVE_DEVICE_DATA pDrvData = &mwave_s_mdd;", "inst_trace": [{"instr_func": "mwave_ioctl", "instr_loc": -1, "instr": "  %4 = alloca i8*, align 8"}], "at_file": "drivers/char/mwave/mwavedd.c", "by": "GlobalVariableRaceDetector says:", "at_func": "mwave_ioctl"}, "warn_no": 1},
-{"warn_data": {"at_line": 260, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "MW_READWRITE rWriteData;", "inst_trace": [], "at_file": "drivers/char/mwave/mwavedd.c", "by": "TaintedSizeDetector says:", "at_func": "mwave_ioctl"}, "warn_no": 2},
-{"warn_data": {"at_line": 237, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "MW_READWRITE rWriteData;", "inst_trace": [], "at_file": "drivers/char/mwave/mwavedd.c", "by": "TaintedSizeDetector says:", "at_func": "mwave_ioctl"}, "warn_no": 3},
-{"warn_data": {"at_line": 214, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "MW_READWRITE rReadData;", "inst_trace": [], "at_file": "drivers/char/mwave/mwavedd.c", "by": "TaintedSizeDetector says:", "at_func": "mwave_ioctl"}, "warn_no": 4},
-{"warn_data": {"at_line": 191, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "MW_READWRITE rReadData;", "inst_trace": [], "at_file": "drivers/char/mwave/mwavedd.c", "by": "TaintedSizeDetector says:", "at_func": "mwave_ioctl"}, "warn_no": 5},
-{"warn_data": {"at_line": 178, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if( copy_to_user(arg, &rAbilities,", "inst_trace": [], "at_file": "drivers/char/mwave/mwavedd.c", "by": "TaintedSizeDetector says:", "at_func": "mwave_ioctl"}, "warn_no": 6}]}]}

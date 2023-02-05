@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca %struct.device*, align 8"}],
-"warnings":[{"warn_data": {"at_line": 687, "warn_str": "Trying to use a global variable without locking.", "at": "mci->start_time = jiffies;", "inst_trace": [{"instr_func": "mci_reset_counters_store", "instr_loc": -1, "instr": "  %5 = alloca %struct.device*, align 8"}], "at_file": "drivers/edac/edac_mc_sysfs.c", "by": "GlobalVariableRaceDetector says:", "at_func": "mci_reset_counters_store"}, "warn_no": 1}]}]}

@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}, {"lineno": 966, "file": "drivers/visorbus/visorchipset.c", "instr": "err = parahotplug_request_complete(id, 0);"}],
-"warnings":[{"warn_data": {"at_line": 915, "warn_str": "Trying to use a global variable without locking.", "at": "{", "inst_trace": [{"instr_func": "devicedisabled_store", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}, {"instr_func": "devicedisabled_store", "instr_loc": 966, "instr_file": "drivers/visorbus/visorchipset.c", "instr": "err = parahotplug_request_complete(id, 0);"}], "at_file": "drivers/visorbus/visorchipset.c", "by": "GlobalVariableRaceDetector says:", "at_func": "parahotplug_request_complete"}, "warn_no": 1}]}]}

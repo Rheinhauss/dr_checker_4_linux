@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %4 = alloca %struct.file*, align 8"}, {"lineno": 416, "file": "drivers/media/platform/sunxi/sun8i-di/sun8i-di.c", "instr": "if (!deinterlace_check_format(f->fmt.pix.pixelformat))"}],
-"warnings":[{"warn_data": {"at_line": 320, "warn_str": "Trying to use a global variable without locking.", "at": "if (deinterlace_formats[i] == pixelformat)", "inst_trace": [{"instr_func": "deinterlace_try_fmt_vid_cap", "instr_loc": -1, "instr": "  %4 = alloca %struct.file*, align 8"}, {"instr_func": "deinterlace_try_fmt_vid_cap", "instr_loc": 416, "instr_file": "drivers/media/platform/sunxi/sun8i-di/sun8i-di.c", "instr": "if (!deinterlace_check_format(f->fmt.pix.pixelformat))"}], "at_file": "drivers/media/platform/sunxi/sun8i-di/sun8i-di.c", "by": "GlobalVariableRaceDetector says:", "at_func": "deinterlace_check_format"}, "warn_no": 1}]}]}

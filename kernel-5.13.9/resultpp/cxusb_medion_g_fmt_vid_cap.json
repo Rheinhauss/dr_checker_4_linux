@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %4 = alloca %struct.file*, align 8"}, {"lineno": 1003, "file": "drivers/media/usb/dvb-usb/cxusb-analog.c", "instr": "cxdev->field_order : cxusb_medion_field_order(cxdev);"}],
-"warnings":[{"warn_data": {"at_line": 758, "warn_str": "Trying to use a global variable without locking.", "at": "cxusb_vprintk(dvbdev, OPS,", "inst_trace": [{"instr_func": "cxusb_medion_g_fmt_vid_cap", "instr_loc": -1, "instr": "  %4 = alloca %struct.file*, align 8"}, {"instr_func": "cxusb_medion_g_fmt_vid_cap", "instr_loc": 1003, "instr_file": "drivers/media/usb/dvb-usb/cxusb-analog.c", "instr": "cxdev->field_order : cxusb_medion_field_order(cxdev);"}], "at_file": "drivers/media/usb/dvb-usb/cxusb-analog.c", "by": "GlobalVariableRaceDetector says:", "at_func": "cxusb_medion_field_order"}, "warn_no": 1}]}]}

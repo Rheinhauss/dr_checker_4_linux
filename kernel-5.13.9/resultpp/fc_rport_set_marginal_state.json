@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}, {"lineno": 1249, "file": "drivers/scsi/scsi_transport_fc.c", "instr": "ret = get_fc_port_state_match(buf, &port_state);"}],
-"warnings":[{"warn_data": {"at_line": 167, "warn_str": "Trying to use a global variable without locking.", "at": "fc_enum_name_match(port_state, fc_port_state, fc_port_state_names)", "inst_trace": [{"instr_func": "fc_rport_set_marginal_state", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}, {"instr_func": "fc_rport_set_marginal_state", "instr_loc": 1249, "instr_file": "drivers/scsi/scsi_transport_fc.c", "instr": "ret = get_fc_port_state_match(buf, &port_state);"}], "at_file": "drivers/scsi/scsi_transport_fc.c", "by": "GlobalVariableRaceDetector says:", "at_func": "get_fc_port_state_match"}, "warn_no": 1}]}]}

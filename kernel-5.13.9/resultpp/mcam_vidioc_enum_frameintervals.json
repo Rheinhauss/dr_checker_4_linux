@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}, {"lineno": 1534, "file": "drivers/media/platform/marvell-ccic/mcam-core.c", "instr": "f = mcam_find_format(interval->pixel_format);"}],
-"warnings":[{"warn_data": {"at_line": 157, "warn_str": "Trying to use a global variable without locking.", "at": "if (mcam_formats[i].pixelformat == pixelformat)", "inst_trace": [{"instr_func": "mcam_vidioc_enum_frameintervals", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}, {"instr_func": "mcam_vidioc_enum_frameintervals", "instr_loc": 1534, "instr_file": "drivers/media/platform/marvell-ccic/mcam-core.c", "instr": "f = mcam_find_format(interval->pixel_format);"}], "at_file": "drivers/media/platform/marvell-ccic/mcam-core.c", "by": "GlobalVariableRaceDetector says:", "at_func": "mcam_find_format"}, "warn_no": 1}]}]}

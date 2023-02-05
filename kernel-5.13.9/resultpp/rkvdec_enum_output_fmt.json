@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}],
-"warnings":[{"warn_data": {"at_line": 389, "warn_str": "Trying to use a global variable without locking.", "at": "f->pixelformat = rkvdec_coded_fmts[f->index].fourcc;", "inst_trace": [{"instr_func": "rkvdec_enum_output_fmt", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}], "at_file": "drivers/staging/media/rkvdec/rkvdec.c", "by": "GlobalVariableRaceDetector says:", "at_func": "rkvdec_enum_output_fmt"}, "warn_no": 1}]}]}

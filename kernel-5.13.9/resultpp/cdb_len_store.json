@@ -1,7 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %4 = alloca i64, align 8"}],
-"warnings":[{"warn_data": {"at_line": 6553, "warn_str": "Trying to use a global variable without locking.", "at": "sdebug_cdb_len = n;", "inst_trace": [{"instr_func": "cdb_len_store", "instr_loc": -1, "instr": "  %4 = alloca i64, align 8"}], "at_file": "drivers/scsi/scsi_debug.c", "by": "GlobalVariableRaceDetector says:", "at_func": "cdb_len_store"}, "warn_no": 1}]},
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %4 = alloca i64, align 8"}, {"lineno": 6554, "file": "drivers/scsi/scsi_debug.c", "instr": "all_config_cdb_len();"}],
-"warnings":[{"warn_data": {"at_line": 1042, "warn_str": "Trying to use a global variable without locking.", "at": "{", "inst_trace": [{"instr_func": "cdb_len_store", "instr_loc": -1, "instr": "  %4 = alloca i64, align 8"}, {"instr_func": "cdb_len_store", "instr_loc": 6554, "instr_file": "drivers/scsi/scsi_debug.c", "instr": "all_config_cdb_len();"}], "at_file": "drivers/scsi/scsi_debug.c", "by": "GlobalVariableRaceDetector says:", "at_func": "all_config_cdb_len"}, "warn_no": 1}]}]}

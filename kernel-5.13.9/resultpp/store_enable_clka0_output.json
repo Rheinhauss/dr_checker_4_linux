@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca %struct.spinlock*, align 8"}],
-"warnings":[{"warn_data": {"at_line": 487, "warn_str": "Trying to use a global variable without locking.", "at": "spin_lock_irqsave(&event_lock, flags);", "inst_trace": [{"instr_func": "store_enable_clka0_output", "instr_loc": -1, "instr": "  %5 = alloca %struct.spinlock*, align 8"}], "at_file": "drivers/char/tlclk.c", "by": "GlobalVariableRaceDetector says:", "at_func": "store_enable_clka0_output"}, "warn_no": 1}]}]}

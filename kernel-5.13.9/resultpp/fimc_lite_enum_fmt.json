@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}],
-"warnings":[{"warn_data": {"at_line": 664, "warn_str": "Trying to use a global variable without locking.", "at": "fmt = &fimc_lite_formats[f->index];", "inst_trace": [{"instr_func": "fimc_lite_enum_fmt", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}], "at_file": "drivers/media/platform/exynos4-is/fimc-lite.c", "by": "GlobalVariableRaceDetector says:", "at_func": "fimc_lite_enum_fmt"}, "warn_no": 1}]}]}

@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i8*, align 8"}],
-"warnings":[{"warn_data": {"at_line": 107, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_to_user(buf, (void*)&fw_att_record, sizeof(FW_ATT_RECORD)))", "inst_trace": [], "at_file": "drivers/gpu/drm/amd/amdgpu/amdgpu_fw_attestation.c", "by": "TaintedSizeDetector says:", "at_func": "amdgpu_fw_attestation_debugfs_read"}, "warn_no": 1}]}]}

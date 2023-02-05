@@ -1,7 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}],
-"warnings":[{"warn_data": {"at_line": 1525, "warn_str": "Tainted Data used in risky function", "at": "if (!strcmp(buf, \"\\n\"))", "inst_trace": [{"instr_func": "key_store", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}], "at_file": "drivers/thunderbolt/switch.c", "by": "ImproperTaintedDataUseDetector says:", "tainted_obj": "i8* %2", "at_func": "key_store"}, "warn_no": 1}]},
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}, {"lineno": 1520, "file": "drivers/thunderbolt/switch.c", "instr": "struct tb_switch *sw = tb_to_switch(dev);"}, {"lineno": 725, "file": "drivers/thunderbolt/tb.h", "instr": "  %7 = call zeroext i1 @tb_is_switch(%struct.device* %6) #10, !dbg !5376"}],
-"warnings":[{"warn_data": {"at_line": 720, "warn_str": "Trying to use a global variable without locking.", "at": "  %6 = icmp eq %struct.device_type* %5, @tb_switch_type, !dbg !5376", "inst_trace": [{"instr_func": "key_store", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}, {"instr_func": "key_store", "instr_loc": 1520, "instr_file": "drivers/thunderbolt/switch.c", "instr": "struct tb_switch *sw = tb_to_switch(dev);"}, {"instr_func": "tb_to_switch", "instr_loc": 725, "instr_file": "drivers/thunderbolt/tb.h", "instr": "  %7 = call zeroext i1 @tb_is_switch(%struct.device* %6) #10, !dbg !5376"}], "at_file": "drivers/thunderbolt/tb.h", "by": "GlobalVariableRaceDetector says:", "at_func": "tb_is_switch"}, "warn_no": 1}]}]}

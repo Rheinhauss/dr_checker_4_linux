@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %4 = alloca %struct.file*, align 8"}, {"lineno": 291, "file": "drivers/staging/media/zoran/zoran_driver.c", "instr": "return zoran_enum_fmt(zr, f, ZORAN_FORMAT_CAPTURE);"}],
-"warnings":[{"warn_data": {"at_line": 273, "warn_str": "Trying to use a global variable without locking.", "at": "if (zoran_formats[i].flags & flag && num++ == fmt->index) {", "inst_trace": [{"instr_func": "zoran_enum_fmt_vid_cap", "instr_loc": -1, "instr": "  %4 = alloca %struct.file*, align 8"}, {"instr_func": "zoran_enum_fmt_vid_cap", "instr_loc": 291, "instr_file": "drivers/staging/media/zoran/zoran_driver.c", "instr": "return zoran_enum_fmt(zr, f, ZORAN_FORMAT_CAPTURE);"}], "at_file": "drivers/staging/media/zoran/zoran_driver.c", "by": "GlobalVariableRaceDetector says:", "at_func": "zoran_enum_fmt"}, "warn_no": 1}]}]}

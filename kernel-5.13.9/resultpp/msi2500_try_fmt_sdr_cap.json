@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %4 = alloca i1, align 1"}],
-"warnings":[{"warn_data": {"at_line": 962, "warn_str": "Trying to use a global variable without locking.", "at": "if (formats[i].pixelformat == f->fmt.sdr.pixelformat) {", "inst_trace": [{"instr_func": "msi2500_try_fmt_sdr_cap", "instr_loc": -1, "instr": "  %4 = alloca i1, align 1"}], "at_file": "drivers/media/usb/msi2500/msi2500.c", "by": "GlobalVariableRaceDetector says:", "at_func": "msi2500_try_fmt_sdr_cap"}, "warn_no": 1}]}]}

@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca %struct.file*, align 8"}],
-"warnings":[{"warn_data": {"at_line": 18, "warn_str": "Trying to use a global variable without locking.", "at": "type = mci->fake_inject_ue ? HW_EVENT_ERR_UNCORRECTED", "inst_trace": [{"instr_func": "edac_fake_inject_write", "instr_loc": -1, "instr": "  %5 = alloca %struct.file*, align 8"}], "at_file": "drivers/edac/debugfs.c", "by": "GlobalVariableRaceDetector says:", "at_func": "edac_fake_inject_write"}, "warn_no": 1}]}]}

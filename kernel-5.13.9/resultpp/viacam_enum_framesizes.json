@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}],
-"warnings":[{"warn_data": {"at_line": 950, "warn_str": "Trying to use a global variable without locking.", "at": "if (sizes->pixel_format == via_formats[i].pixelformat)", "inst_trace": [{"instr_func": "viacam_enum_framesizes", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}], "at_file": "drivers/media/platform/via-camera.c", "by": "GlobalVariableRaceDetector says:", "at_func": "viacam_enum_framesizes"}, "warn_no": 1}]}]}

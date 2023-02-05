@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %4 = alloca %struct.file*, align 8"}],
-"warnings":[{"warn_data": {"at_line": 437, "warn_str": "Trying to use a global variable without locking.", "at": "if (runtime_allowed == 1 && dev_priv->is_lvds_on) {", "inst_trace": [{"instr_func": "psb_unlocked_ioctl", "instr_loc": -1, "instr": "  %4 = alloca %struct.file*, align 8"}], "at_file": "drivers/gpu/drm/gma500/psb_drv.c", "by": "GlobalVariableRaceDetector says:", "at_func": "psb_unlocked_ioctl"}, "warn_no": 1}]}]}

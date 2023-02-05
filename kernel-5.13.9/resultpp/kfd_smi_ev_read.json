@@ -1,7 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i8*, align 8"}],
-"warnings":[{"warn_data": {"at_line": 106, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "ret = copy_to_user(user, buf, to_copy);", "inst_trace": [], "at_file": "drivers/gpu/drm/amd/amdgpu/../amdkfd/kfd_smi_events.c", "by": "TaintedSizeDetector says:", "at_func": "kfd_smi_ev_read"}, "warn_no": 1}]},
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i8*, align 8"}, {"lineno": 84, "file": "drivers/gpu/drm/amd/amdgpu/../amdkfd/kfd_smi_events.c", "instr": "buf = kmalloc_array(MAX_KFIFO_SIZE, sizeof(*buf), GFP_KERNEL);"}],
-"warnings":[{"warn_data": {"at_line": 557, "warn_str": "Trying to use a global variable without locking.", "at": "  %278 = getelementptr [3 x [14 x %struct.kmem_cache*]], [3 x [14 x %struct.kmem_cache*]]* @kmalloc_caches, i64 0, i64 %277, !dbg !16437", "inst_trace": [{"instr_func": "kfd_smi_ev_read", "instr_loc": -1, "instr": "  %5 = alloca i8*, align 8"}, {"instr_func": "kfd_smi_ev_read", "instr_loc": 84, "instr_file": "drivers/gpu/drm/amd/amdgpu/../amdkfd/kfd_smi_events.c", "instr": "buf = kmalloc_array(MAX_KFIFO_SIZE, sizeof(*buf), GFP_KERNEL);"}], "at_file": "./include/linux/slab.h", "by": "GlobalVariableRaceDetector says:", "at_func": "kmalloc_array"}, "warn_no": 1}]}]}

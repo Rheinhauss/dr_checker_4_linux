@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i8*, align 8"}],
-"warnings":[{"warn_data": {"at_line": 101, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "rc = copy_to_user(buf, proxy_dev->buffer, len);", "inst_trace": [], "at_file": "drivers/char/tpm/tpm_vtpm_proxy.c", "by": "TaintedSizeDetector says:", "at_func": "vtpm_proxy_fops_read"}, "warn_no": 1}]}]}

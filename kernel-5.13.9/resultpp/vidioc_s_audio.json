@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}],
-"warnings":[{"warn_data": {"at_line": 1821, "warn_str": "Trying to use a global variable without locking.", "at": "dev->ctl_aoutput = INPUT(i)->aout;", "inst_trace": [{"instr_func": "vidioc_s_audio", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}], "at_file": "drivers/media/usb/em28xx/em28xx-video.c", "by": "GlobalVariableRaceDetector says:", "at_func": "vidioc_s_audio"}, "warn_no": 1}]}]}

@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %4 = alloca i64, align 8"}, {"lineno": 1690, "file": "drivers/virt/nitro_enclaves/ne_misc_dev.c", "instr": "enclave_fd = ne_create_vm_ioctl(ne_pci_dev, slot_uid);"}],
-"warnings":[{"warn_data": {"at_line": 1630, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "ne_enclave->max_mem_regions = cmd_reply.mem_regions;", "inst_trace": [], "at_file": "drivers/virt/nitro_enclaves/ne_misc_dev.c", "by": "TaintedSizeDetector says:", "at_func": "ne_create_vm_ioctl"}, "warn_no": 1}]}]}

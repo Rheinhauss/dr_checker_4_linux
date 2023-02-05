@@ -1,5 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 2,
-"context":[{"lineno": -1, "instr": "  %4 = alloca i8*, align 8"}],
-"warnings":[{"warn_data": {"at_line": 3134, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "nc.if_name[IFNAMSIZ-1] = '\\0';", "inst_trace": [], "at_file": "drivers/tty/n_gsm.c", "by": "TaintedSizeDetector says:", "at_func": "gsmtty_ioctl"}, "warn_no": 1},
-{"warn_data": {"at_line": 3132, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_from_user(&nc, (void __user *)arg, sizeof(nc)))", "inst_trace": [], "at_file": "drivers/tty/n_gsm.c", "by": "TaintedSizeDetector says:", "at_func": "gsmtty_ioctl"}, "warn_no": 2}]}]}

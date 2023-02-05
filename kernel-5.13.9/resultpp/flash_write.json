@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}],
-"warnings":[{"warn_data": {"at_line": 346, "warn_str": "Potential overflow, using tainted value in binary operation.", "at": "*ppos = pos + count;", "inst_trace": [{"instr_func": "flash_write", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}, {"instr_func": "flash_write", "instr_loc": 324, "instr_file": "drivers/infiniband/hw/qib/qib_fs.c", "instr": "{"}, {"instr_func": "flash_write", "instr_loc": 346, "instr_file": "drivers/infiniband/hw/qib/qib_fs.c", "instr": "*ppos = pos + count;"}], "at_file": "drivers/infiniband/hw/qib/qib_fs.c", "by": "IntegerOverflowDetector says:", "at_func": "flash_write"}, "warn_no": 1}]}]}

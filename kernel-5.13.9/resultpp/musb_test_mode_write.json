@@ -1,5 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 2,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i8*, align 8"}],
-"warnings":[{"warn_data": {"at_line": 173, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_from_user(buf, ubuf, min_t(size_t, sizeof(buf) - 1, count)))", "inst_trace": [], "at_file": "drivers/usb/musb/musb_debugfs.c", "by": "TaintedSizeDetector says:", "at_func": "musb_test_mode_write"}, "warn_no": 1},
-{"warn_data": {"at_line": 177, "warn_str": "Trying to use a global variable without locking.", "at": "test = musb_readb(musb->mregs, MUSB_TESTMODE);", "inst_trace": [{"instr_func": "musb_test_mode_write", "instr_loc": -1, "instr": "  %5 = alloca i8*, align 8"}], "at_file": "drivers/usb/musb/musb_debugfs.c", "by": "GlobalVariableRaceDetector says:", "at_func": "musb_test_mode_write"}, "warn_no": 2}]}]}

@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i32, align 4"}],
-"warnings":[{"warn_data": {"at_line": 301, "warn_str": "Trying to use a global variable without locking.", "at": "{", "inst_trace": [{"instr_func": "key_key_read", "instr_loc": -1, "instr": "  %5 = alloca i32, align 4"}], "at_file": "net/mac80211/debugfs_key.c", "by": "GlobalVariableRaceDetector says:", "at_func": "key_key_read"}, "warn_no": 1}]}]}

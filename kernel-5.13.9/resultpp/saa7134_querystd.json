@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %4 = alloca %struct.file*, align 8"}, {"lineno": 1594, "file": "drivers/media/pci/saa7134/saa7134-video.c", "instr": "*std &= saa7134_read_std(dev);"}],
-"warnings":[{"warn_data": {"at_line": 1586, "warn_str": "Trying to use a global variable without locking.", "at": "result = stds[st1 & 0x03];", "inst_trace": [{"instr_func": "saa7134_querystd", "instr_loc": -1, "instr": "  %4 = alloca %struct.file*, align 8"}, {"instr_func": "saa7134_querystd", "instr_loc": 1594, "instr_file": "drivers/media/pci/saa7134/saa7134-video.c", "instr": "*std &= saa7134_read_std(dev);"}], "at_file": "drivers/media/pci/saa7134/saa7134-video.c", "by": "GlobalVariableRaceDetector says:", "at_func": "saa7134_read_std"}, "warn_no": 1}]}]}

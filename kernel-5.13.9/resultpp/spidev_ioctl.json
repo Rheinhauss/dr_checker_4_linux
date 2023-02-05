@@ -1,5 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 2,
-"context":[{"lineno": -1, "instr": "  %4 = alloca i1, align 1"}, {"lineno": 485, "file": "drivers/spi/spidev.c", "instr": "retval = spidev_message(spidev, ioc, n_ioc);"}],
-"warnings":[{"warn_data": {"at_line": 262, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "k_tmp->tx_buf = tx_buf;", "inst_trace": [], "at_file": "drivers/spi/spidev.c", "by": "TaintedSizeDetector says:", "at_func": "spidev_message"}, "warn_no": 1},
-{"warn_data": {"at_line": 306, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "(uintptr_t) u_tmp->rx_buf, k_tmp->rx_buf,", "inst_trace": [], "at_file": "drivers/spi/spidev.c", "by": "TaintedSizeDetector says:", "at_func": "spidev_message"}, "warn_no": 2}]}]}

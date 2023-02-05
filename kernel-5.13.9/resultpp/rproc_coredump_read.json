@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca %struct.file*, align 8"}],
-"warnings":[{"warn_data": {"at_line": 50, "warn_str": "Trying to use a global variable without locking.", "at": "rproc_coredump_str[rproc->dump_conf]);", "inst_trace": [{"instr_func": "rproc_coredump_read", "instr_loc": -1, "instr": "  %5 = alloca %struct.file*, align 8"}], "at_file": "drivers/remoteproc/remoteproc_debugfs.c", "by": "GlobalVariableRaceDetector says:", "at_func": "rproc_coredump_read"}, "warn_no": 1}]}]}

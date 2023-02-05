@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}],
-"warnings":[{"warn_data": {"at_line": 365, "warn_str": "Trying to use a global variable without locking.", "at": "w1_enable_crccheck = val;", "inst_trace": [{"instr_func": "crccheck_store", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}], "at_file": "drivers/w1/slaves/w1_ds28e04.c", "by": "GlobalVariableRaceDetector says:", "at_func": "crccheck_store"}, "warn_no": 1}]}]}

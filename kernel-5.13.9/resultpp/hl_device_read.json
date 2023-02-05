@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca %struct.file*, align 8"}],
-"warnings":[{"warn_data": {"at_line": 915, "warn_str": "Trying to use a global variable without locking.", "at": "return simple_read_from_buffer(buf, count, ppos, help, strlen(help));", "inst_trace": [{"instr_func": "hl_device_read", "instr_loc": -1, "instr": "  %5 = alloca %struct.file*, align 8"}], "at_file": "drivers/misc/habanalabs/common/debugfs.c", "by": "GlobalVariableRaceDetector says:", "at_func": "hl_device_read"}, "warn_no": 1}]}]}

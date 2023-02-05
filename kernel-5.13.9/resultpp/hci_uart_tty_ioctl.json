@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i1, align 1"}, {"lineno": 760, "file": "drivers/bluetooth/hci_ldisc.c", "instr": "err = hci_uart_set_proto(hu, arg);"}, {"lineno": 700, "file": "drivers/bluetooth/hci_ldisc.c", "instr": "p = hci_uart_get_proto(id);"}],
-"warnings":[{"warn_data": {"at_line": 75, "warn_str": "Trying to use a global variable without locking.", "at": "return hup[id];", "inst_trace": [{"instr_func": "hci_uart_tty_ioctl", "instr_loc": -1, "instr": "  %5 = alloca i1, align 1"}, {"instr_func": "hci_uart_tty_ioctl", "instr_loc": 760, "instr_file": "drivers/bluetooth/hci_ldisc.c", "instr": "err = hci_uart_set_proto(hu, arg);"}, {"instr_func": "hci_uart_set_proto", "instr_loc": 700, "instr_file": "drivers/bluetooth/hci_ldisc.c", "instr": "p = hci_uart_get_proto(id);"}], "at_file": "drivers/bluetooth/hci_ldisc.c", "by": "GlobalVariableRaceDetector says:", "at_func": "hci_uart_get_proto"}, "warn_no": 1}]}]}

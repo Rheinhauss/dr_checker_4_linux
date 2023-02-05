@@ -1,5 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 2,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i8*, align 8"}],
-"warnings":[{"warn_data": {"at_line": 422, "warn_str": "Trying to use a global variable without locking.", "at": "struct parport *port = lp_table[minor].dev->port;", "inst_trace": [{"instr_func": "lp_read", "instr_loc": -1, "instr": "  %5 = alloca i8*, align 8"}], "at_file": "drivers/char/lp.c", "by": "GlobalVariableRaceDetector says:", "at_func": "lp_read"}, "warn_no": 1},
-{"warn_data": {"at_line": 486, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (retval > 0 && copy_to_user(buf, kbuf, retval))", "inst_trace": [], "at_file": "drivers/char/lp.c", "by": "TaintedSizeDetector says:", "at_func": "lp_read"}, "warn_no": 2}]}]}

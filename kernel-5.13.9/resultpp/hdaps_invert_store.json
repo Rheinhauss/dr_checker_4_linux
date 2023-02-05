@@ -1,7 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}],
-"warnings":[{"warn_data": {"at_line": 438, "warn_str": "Trying to use a global variable without locking.", "at": "hdaps_invert = invert;", "inst_trace": [{"instr_func": "hdaps_invert_store", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}], "at_file": "drivers/platform/x86/hdaps.c", "by": "GlobalVariableRaceDetector says:", "at_func": "hdaps_invert_store"}, "warn_no": 1}]},
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}, {"lineno": 439, "file": "drivers/platform/x86/hdaps.c", "instr": "hdaps_calibrate();"}, {"lineno": 318, "file": "drivers/platform/x86/hdaps.c", "instr": "__hdaps_read_pair(HDAPS_PORT_XPOS, HDAPS_PORT_YPOS, &rest_x, &rest_y);"}],
-"warnings":[{"warn_data": {"at_line": 175, "warn_str": "Trying to use a global variable without locking.", "at": "km_activity = inb(HDAPS_PORT_KMACT);", "inst_trace": [{"instr_func": "hdaps_invert_store", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}, {"instr_func": "hdaps_invert_store", "instr_loc": 439, "instr_file": "drivers/platform/x86/hdaps.c", "instr": "hdaps_calibrate();"}, {"instr_func": "hdaps_calibrate", "instr_loc": 318, "instr_file": "drivers/platform/x86/hdaps.c", "instr": "__hdaps_read_pair(HDAPS_PORT_XPOS, HDAPS_PORT_YPOS, &rest_x, &rest_y);"}], "at_file": "drivers/platform/x86/hdaps.c", "by": "GlobalVariableRaceDetector says:", "at_func": "__hdaps_read_pair"}, "warn_no": 1}]}]}

@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}, {"lineno": 457, "file": "drivers/platform/x86/compal-laptop.c", "instr": "set_pwm(val);"}],
-"warnings":[{"warn_data": {"at_line": 298, "warn_str": "Trying to use a global variable without locking.", "at": "ec_transaction(PWM_ADDRESS, &pwm_lookup_table[pwm], 1, NULL, 0);", "inst_trace": [{"instr_func": "pwm_store", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}, {"instr_func": "pwm_store", "instr_loc": 457, "instr_file": "drivers/platform/x86/compal-laptop.c", "instr": "set_pwm(val);"}], "at_file": "drivers/platform/x86/compal-laptop.c", "by": "GlobalVariableRaceDetector says:", "at_func": "set_pwm"}, "warn_no": 1}]}]}

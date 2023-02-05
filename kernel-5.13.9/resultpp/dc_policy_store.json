@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca %struct.device*, align 8"}, {"lineno": 513, "file": "drivers/acpi/acpi_tad.c", "instr": "int ret = acpi_tad_policy_write(dev, buf, ACPI_TAD_DC_TIMER);"}],
-"warnings":[{"warn_data": {"at_line": 349, "warn_str": "Trying to use a global variable without locking.", "at": "return acpi_tad_wake_write(dev, buf, \"_STP\", timer_id, policy_specval);", "inst_trace": [{"instr_func": "dc_policy_store", "instr_loc": -1, "instr": "  %5 = alloca %struct.device*, align 8"}, {"instr_func": "dc_policy_store", "instr_loc": 513, "instr_file": "drivers/acpi/acpi_tad.c", "instr": "int ret = acpi_tad_policy_write(dev, buf, ACPI_TAD_DC_TIMER);"}], "at_file": "drivers/acpi/acpi_tad.c", "by": "GlobalVariableRaceDetector says:", "at_func": "acpi_tad_policy_write"}, "warn_no": 1}]}]}

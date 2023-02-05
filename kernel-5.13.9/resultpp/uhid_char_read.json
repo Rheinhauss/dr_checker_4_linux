@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca %struct.spinlock*, align 8"}],
-"warnings":[{"warn_data": {"at_line": 683, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "len = min(count, sizeof(**uhid->outq));", "inst_trace": [], "at_file": "drivers/hid/uhid.c", "by": "TaintedSizeDetector says:", "at_func": "uhid_char_read"}, "warn_no": 1}]}]}

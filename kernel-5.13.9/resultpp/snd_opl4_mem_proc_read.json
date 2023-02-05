@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %7 = alloca i8*, align 8"}],
-"warnings":[{"warn_data": {"at_line": 49, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "snd_opl4_read_memory(opl4, buf, pos, count);", "inst_trace": [], "at_file": "sound/drivers/opl4/opl4_proc.c", "by": "TaintedSizeDetector says:", "at_func": "snd_opl4_mem_proc_read"}, "warn_no": 1}]}]}

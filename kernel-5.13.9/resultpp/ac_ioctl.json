@@ -1,6 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 3,
-"context":[{"lineno": -1, "instr": "  %4 = alloca i8*, align 8"}],
-"warnings":[{"warn_data": {"at_line": 774, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "pmem = apbs[IndexCard].RamIO + TIC_OWNER_TO_PC;", "inst_trace": [], "at_file": "drivers/char/applicom.c", "by": "TaintedSizeDetector says:", "at_func": "ac_ioctl"}, "warn_no": 1},
-{"warn_data": {"at_line": 748, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "(readb(apbs[IndexCard].RamIO + SERIAL_NUMBER + 1) << 8) +", "inst_trace": [], "at_file": "drivers/char/applicom.c", "by": "TaintedSizeDetector says:", "at_func": "ac_ioctl"}, "warn_no": 2},
-{"warn_data": {"at_line": 730, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_to_user(argp, adgl, sizeof(struct st_ram_io)))", "inst_trace": [], "at_file": "drivers/char/applicom.c", "by": "TaintedSizeDetector says:", "at_func": "ac_ioctl"}, "warn_no": 3}]}]}

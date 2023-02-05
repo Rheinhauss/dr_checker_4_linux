@@ -1,6 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 3,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i1, align 1"}],
-"warnings":[{"warn_data": {"at_line": 412, "warn_str": "Tainted Data used in risky function", "at": "if (strcmp(buf, \"booting\\n\") == 0)", "inst_trace": [{"instr_func": "store_control_state", "instr_loc": -1, "instr": "  %5 = alloca i1, align 1"}], "at_file": "drivers/platform/x86/dell/alienware-wmi.c", "by": "ImproperTaintedDataUseDetector says:", "tainted_obj": "i8* %2", "at_func": "store_control_state"}, "warn_no": 1},
-{"warn_data": {"at_line": 414, "warn_str": "Tainted Data used in risky function", "at": "else if (strcmp(buf, \"suspend\\n\") == 0)", "inst_trace": [{"instr_func": "store_control_state", "instr_loc": -1, "instr": "  %5 = alloca i1, align 1"}], "at_file": "drivers/platform/x86/dell/alienware-wmi.c", "by": "ImproperTaintedDataUseDetector says:", "tainted_obj": "i8* %2", "at_func": "store_control_state"}, "warn_no": 2},
-{"warn_data": {"at_line": 416, "warn_str": "Trying to use a global variable without locking.", "at": "else if (interface == LEGACY)", "inst_trace": [{"instr_func": "store_control_state", "instr_loc": -1, "instr": "  %5 = alloca i1, align 1"}], "at_file": "drivers/platform/x86/dell/alienware-wmi.c", "by": "GlobalVariableRaceDetector says:", "at_func": "store_control_state"}, "warn_no": 3}]}]}

@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}],
-"warnings":[{"warn_data": {"at_line": 922, "warn_str": "Trying to use a global variable without locking.", "at": "fsize->discrete.width = pwc_image_sizes[i][0];", "inst_trace": [{"instr_func": "pwc_enum_framesizes", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}], "at_file": "drivers/media/usb/pwc/pwc-v4l.c", "by": "GlobalVariableRaceDetector says:", "at_func": "pwc_enum_framesizes"}, "warn_no": 1}]}]}

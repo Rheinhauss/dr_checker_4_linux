@@ -1,7 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca %struct.spinlock*, align 8"}],
-"warnings":[{"warn_data": {"at_line": 371, "warn_str": "Trying to use a global variable without locking.", "at": "spin_lock_irqsave(&pm_qos_lock, flags);", "inst_trace": [{"instr_func": "cpu_latency_qos_read", "instr_loc": -1, "instr": "  %5 = alloca %struct.spinlock*, align 8"}], "at_file": "kernel/power/qos.c", "by": "GlobalVariableRaceDetector says:", "at_func": "cpu_latency_qos_read"}, "warn_no": 1}]},
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca %struct.spinlock*, align 8"}, {"lineno": 368, "file": "kernel/power/qos.c", "instr": "if (!req || !cpu_latency_qos_request_active(req))"}],
-"warnings":[{"warn_data": {"at_line": 240, "warn_str": "Trying to use a global variable without locking.", "at": "return req->qos == &cpu_latency_constraints;", "inst_trace": [{"instr_func": "cpu_latency_qos_read", "instr_loc": -1, "instr": "  %5 = alloca %struct.spinlock*, align 8"}, {"instr_func": "cpu_latency_qos_read", "instr_loc": 368, "instr_file": "kernel/power/qos.c", "instr": "if (!req || !cpu_latency_qos_request_active(req))"}], "at_file": "kernel/power/qos.c", "by": "GlobalVariableRaceDetector says:", "at_func": "cpu_latency_qos_request_active"}, "warn_no": 1}]}]}

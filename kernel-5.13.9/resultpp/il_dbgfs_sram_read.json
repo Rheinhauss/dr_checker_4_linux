@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i32, align 4"}],
-"warnings":[{"warn_data": {"at_line": 324, "warn_str": "Trying to use a global variable without locking.", "at": "bufsz = 30 + il->dbgfs_sram_len * sizeof(char) * 10;", "inst_trace": [{"instr_func": "il_dbgfs_sram_read", "instr_loc": -1, "instr": "  %5 = alloca i32, align 4"}], "at_file": "drivers/net/wireless/intel/iwlegacy/debug.c", "by": "GlobalVariableRaceDetector says:", "at_func": "il_dbgfs_sram_read"}, "warn_no": 1}]}]}

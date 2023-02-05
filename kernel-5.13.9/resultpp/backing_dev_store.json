@@ -1,7 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i32, align 4"}],
-"warnings":[{"warn_data": {"at_line": 448, "warn_str": "Trying to use a global variable without locking.", "at": "{", "inst_trace": [{"instr_func": "backing_dev_store", "instr_loc": -1, "instr": "  %5 = alloca i32, align 4"}], "at_file": "drivers/block/zram/zram_drv.c", "by": "GlobalVariableRaceDetector says:", "at_func": "backing_dev_store"}, "warn_no": 1}]},
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i32, align 4"}, {"lineno": 509, "file": "drivers/block/zram/zram_drv.c", "instr": "reset_bdev(zram);"}],
-"warnings":[{"warn_data": {"at_line": 411, "warn_str": "Trying to use a global variable without locking.", "at": "zram->disk->fops = &zram_devops;", "inst_trace": [{"instr_func": "backing_dev_store", "instr_loc": -1, "instr": "  %5 = alloca i32, align 4"}, {"instr_func": "backing_dev_store", "instr_loc": 509, "instr_file": "drivers/block/zram/zram_drv.c", "instr": "reset_bdev(zram);"}], "at_file": "drivers/block/zram/zram_drv.c", "by": "GlobalVariableRaceDetector says:", "at_func": "reset_bdev"}, "warn_no": 1}]}]}

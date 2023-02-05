@@ -1,7 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i8*, align 8"}],
-"warnings":[{"warn_data": {"at_line": 71, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_from_user(tdev->signal, userbuf, count)) {", "inst_trace": [], "at_file": "drivers/mailbox/mailbox-test.c", "by": "TaintedSizeDetector says:", "at_func": "mbox_test_signal_write"}, "warn_no": 1}]},
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i8*, align 8"}, {"lineno": 66, "file": "drivers/mailbox/mailbox-test.c", "instr": "tdev->signal = kzalloc(MBOX_MAX_SIG_LEN, GFP_KERNEL);"}],
-"warnings":[{"warn_data": {"at_line": 557, "warn_str": "Trying to use a global variable without locking.", "at": "  %234 = getelementptr [3 x [14 x %struct.kmem_cache*]], [3 x [14 x %struct.kmem_cache*]]* @kmalloc_caches, i64 0, i64 %233, !dbg !5212", "inst_trace": [{"instr_func": "mbox_test_signal_write", "instr_loc": -1, "instr": "  %5 = alloca i8*, align 8"}, {"instr_func": "mbox_test_signal_write", "instr_loc": 66, "instr_file": "drivers/mailbox/mailbox-test.c", "instr": "tdev->signal = kzalloc(MBOX_MAX_SIG_LEN, GFP_KERNEL);"}], "at_file": "./include/linux/slab.h", "by": "GlobalVariableRaceDetector says:", "at_func": "kzalloc"}, "warn_no": 1}]}]}

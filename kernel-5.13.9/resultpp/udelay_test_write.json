@@ -1,5 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 2,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i8*, align 8"}],
-"warnings":[{"warn_data": {"at_line": 112, "warn_str": "Trying to write to a user pointer.", "at": "lbuf[count] = '\\0';", "inst_trace": [{"instr_func": "udelay_test_write", "instr_loc": -1, "instr": "  %5 = alloca i8*, align 8"}, {"instr_func": "udelay_test_write", "instr_loc": 101, "instr_file": "kernel/time/test_udelay.c", "instr": "{"}, {"instr_func": "udelay_test_write", "instr_loc": 112, "instr_file": "kernel/time/test_udelay.c", "instr": "lbuf[count] = '\\0';"}, {"instr_func": "udelay_test_write", "instr_loc": 112, "instr_file": "kernel/time/test_udelay.c", "instr": "lbuf[count] = '\\0';"}], "at_file": "kernel/time/test_udelay.c", "by": "TaintedPointerDereferenceChecker says:", "at_func": "udelay_test_write"}, "warn_no": 1},
-{"warn_data": {"at_line": 110, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_from_user(lbuf, buf, count))", "inst_trace": [], "at_file": "kernel/time/test_udelay.c", "by": "TaintedSizeDetector says:", "at_func": "udelay_test_write"}, "warn_no": 2}]}]}

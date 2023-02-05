@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca %struct.task_struct*, align 8"}],
-"warnings":[{"warn_data": {"at_line": 313, "warn_str": "Trying to use a global variable without locking.", "at": "set_current_state(TASK_INTERRUPTIBLE);", "inst_trace": [{"instr_func": "hpet_read", "instr_loc": -1, "instr": "  %5 = alloca %struct.task_struct*, align 8"}], "at_file": "drivers/char/hpet.c", "by": "GlobalVariableRaceDetector says:", "at_func": "hpet_read"}, "warn_no": 1}]}]}

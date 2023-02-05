@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i8*, align 8"}],
-"warnings":[{"warn_data": {"at_line": 1209, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "buf_size = min(count, sizeof(buf) - 1);", "inst_trace": [], "at_file": "drivers/net/wireless/intel/iwlegacy/debug.c", "by": "TaintedSizeDetector says:", "at_func": "il_dbgfs_missed_beacon_write"}, "warn_no": 1}]}]}

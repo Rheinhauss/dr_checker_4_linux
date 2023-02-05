@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %4 = alloca %struct.file*, align 8"}],
-"warnings":[{"warn_data": {"at_line": 1244, "warn_str": "Trying to use a global variable without locking.", "at": "dprintk(vc->dev, 2, \"%s: quality %d\\n\", __func__, jc->quality);", "inst_trace": [{"instr_func": "vidioc_g_jpegcomp", "instr_loc": -1, "instr": "  %4 = alloca %struct.file*, align 8"}], "at_file": "drivers/media/usb/s2255/s2255drv.c", "by": "GlobalVariableRaceDetector says:", "at_func": "vidioc_g_jpegcomp"}, "warn_no": 1}]}]}

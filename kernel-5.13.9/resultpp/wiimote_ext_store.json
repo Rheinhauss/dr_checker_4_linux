@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}],
-"warnings":[{"warn_data": {"at_line": 1684, "warn_str": "Tainted Data used in risky function", "at": "if (!strcmp(buf, \"scan\")) {", "inst_trace": [{"instr_func": "wiimote_ext_store", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}], "at_file": "drivers/hid/hid-wiimote-core.c", "by": "ImproperTaintedDataUseDetector says:", "tainted_obj": "i8* %2", "at_func": "wiimote_ext_store"}, "warn_no": 1}]}]}

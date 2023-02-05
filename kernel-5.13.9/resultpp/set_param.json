@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i8*, align 8"}],
-"warnings":[{"warn_data": {"at_line": 361, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_from_user(lbuf, buf, count))", "inst_trace": [], "at_file": "drivers/infiniband/hw/mlx5/cong.c", "by": "TaintedSizeDetector says:", "at_func": "set_param"}, "warn_no": 1}]}]}

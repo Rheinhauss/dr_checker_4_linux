@@ -1,6 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 3,
-"context":[{"lineno": -1, "instr": "  %4 = alloca i1, align 1"}],
-"warnings":[{"warn_data": {"at_line": 1864, "warn_str": "Trying to use a global variable without locking.", "at": "ioctl = &amdkfd_ioctls[nr];", "inst_trace": [{"instr_func": "kfd_ioctl", "instr_loc": -1, "instr": "  %4 = alloca i1, align 1"}], "at_file": "drivers/gpu/drm/amd/amdgpu/../amdkfd/kfd_chardev.c", "by": "GlobalVariableRaceDetector says:", "at_func": "kfd_ioctl"}, "warn_no": 1},
-{"warn_data": {"at_line": 1912, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_from_user(kdata, (void __user *)arg, usize) != 0) {", "inst_trace": [], "at_file": "drivers/gpu/drm/amd/amdgpu/../amdkfd/kfd_chardev.c", "by": "TaintedSizeDetector says:", "at_func": "kfd_ioctl"}, "warn_no": 2},
-{"warn_data": {"at_line": 1923, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_to_user((void __user *)arg, kdata, usize) != 0)", "inst_trace": [], "at_file": "drivers/gpu/drm/amd/amdgpu/../amdkfd/kfd_chardev.c", "by": "TaintedSizeDetector says:", "at_func": "kfd_ioctl"}, "warn_no": 3}]}]}

@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %3 = alloca i32, align 4"}, {"lineno": 589, "file": "drivers/rtc/rtc-sun6i.c", "instr": "if (sun6i_rtc_wait(chip, SUN6I_LOSC_CTRL,"}],
-"warnings":[{"warn_data": {"at_line": 553, "warn_str": "Trying to use a global variable without locking.", "at": "const unsigned long timeout = jiffies + msecs_to_jiffies(ms_timeout);", "inst_trace": [{"instr_func": "sun6i_rtc_settime", "instr_loc": -1, "instr": "  %3 = alloca i32, align 4"}, {"instr_func": "sun6i_rtc_settime", "instr_loc": 589, "instr_file": "drivers/rtc/rtc-sun6i.c", "instr": "if (sun6i_rtc_wait(chip, SUN6I_LOSC_CTRL,"}], "at_file": "drivers/rtc/rtc-sun6i.c", "by": "GlobalVariableRaceDetector says:", "at_func": "sun6i_rtc_wait"}, "warn_no": 1}]}]}

@@ -1,7 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}],
-"warnings":[{"warn_data": {"at_line": 522, "warn_str": "Trying to use a global variable without locking.", "at": "struct v4l2_fract f2 = framerate_controls[i].period;", "inst_trace": [{"instr_func": "cpia2_s_parm", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}], "at_file": "drivers/media/usb/cpia2/cpia2_v4l.c", "by": "GlobalVariableRaceDetector says:", "at_func": "cpia2_s_parm"}, "warn_no": 1}]},
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}, {"lineno": 512, "file": "drivers/media/usb/cpia2/cpia2_v4l.c", "instr": "ret = cpia2_g_parm(file, fh, p);"}],
-"warnings":[{"warn_data": {"at_line": 496, "warn_str": "Trying to use a global variable without locking.", "at": "if (cam->params.vp_params.frame_rate == framerate_controls[i].value) {", "inst_trace": [{"instr_func": "cpia2_s_parm", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}, {"instr_func": "cpia2_s_parm", "instr_loc": 512, "instr_file": "drivers/media/usb/cpia2/cpia2_v4l.c", "instr": "ret = cpia2_g_parm(file, fh, p);"}], "at_file": "drivers/media/usb/cpia2/cpia2_v4l.c", "by": "GlobalVariableRaceDetector says:", "at_func": "cpia2_g_parm"}, "warn_no": 1}]}]}

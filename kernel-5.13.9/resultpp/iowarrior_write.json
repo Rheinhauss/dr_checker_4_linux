@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca %struct.atomic_t*, align 8"}],
-"warnings":[{"warn_data": {"at_line": 433, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "usb_sndintpipe(dev->udev,", "inst_trace": [], "at_file": "drivers/usb/misc/iowarrior.c", "by": "TaintedSizeDetector says:", "at_func": "iowarrior_write"}, "warn_no": 1}]}]}

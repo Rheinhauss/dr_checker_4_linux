@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}, {"lineno": 189, "file": "drivers/input/misc/ideapad_slidebar.c", "instr": "slidebar_mode_set(mode);"}],
-"warnings":[{"warn_data": {"at_line": 128, "warn_str": "Trying to use a global variable without locking.", "at": "spin_lock_irqsave(&io_lock, flags);", "inst_trace": [{"instr_func": "store_slidebar_mode", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}, {"instr_func": "store_slidebar_mode", "instr_loc": 189, "instr_file": "drivers/input/misc/ideapad_slidebar.c", "instr": "slidebar_mode_set(mode);"}], "at_file": "drivers/input/misc/ideapad_slidebar.c", "by": "GlobalVariableRaceDetector says:", "at_func": "slidebar_mode_set"}, "warn_no": 1}]}]}

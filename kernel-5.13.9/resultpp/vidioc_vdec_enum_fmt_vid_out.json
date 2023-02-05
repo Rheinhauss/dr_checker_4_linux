@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %4 = alloca %struct.file*, align 8"}, {"lineno": 976, "file": "drivers/media/platform/mtk-vcodec/mtk_vcodec_dec.c", "instr": "return vidioc_enum_fmt(f, true);"}],
-"warnings":[{"warn_data": {"at_line": 949, "warn_str": "Trying to use a global variable without locking.", "at": "(mtk_video_formats[i].type != MTK_FMT_FRAME))", "inst_trace": [{"instr_func": "vidioc_vdec_enum_fmt_vid_out", "instr_loc": -1, "instr": "  %4 = alloca %struct.file*, align 8"}, {"instr_func": "vidioc_vdec_enum_fmt_vid_out", "instr_loc": 976, "instr_file": "drivers/media/platform/mtk-vcodec/mtk_vcodec_dec.c", "instr": "return vidioc_enum_fmt(f, true);"}], "at_file": "drivers/media/platform/mtk-vcodec/mtk_vcodec_dec.c", "by": "GlobalVariableRaceDetector says:", "at_func": "vidioc_enum_fmt"}, "warn_no": 1}]}]}

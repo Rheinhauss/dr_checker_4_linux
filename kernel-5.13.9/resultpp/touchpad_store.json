@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}, {"lineno": 591, "file": "drivers/platform/x86/ideapad-laptop.c", "instr": "err = write_ec_cmd(priv->adev->handle, VPCCMD_W_TOUCHPAD, state);"}],
-"warnings":[{"warn_data": {"at_line": 292, "warn_str": "Trying to use a global variable without locking.", "at": "end_jiffies = jiffies + msecs_to_jiffies(IDEAPAD_EC_TIMEOUT) + 1;", "inst_trace": [{"instr_func": "touchpad_store", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}, {"instr_func": "touchpad_store", "instr_loc": 591, "instr_file": "drivers/platform/x86/ideapad-laptop.c", "instr": "err = write_ec_cmd(priv->adev->handle, VPCCMD_W_TOUCHPAD, state);"}], "at_file": "drivers/platform/x86/ideapad-laptop.c", "by": "GlobalVariableRaceDetector says:", "at_func": "write_ec_cmd"}, "warn_no": 1}]}]}

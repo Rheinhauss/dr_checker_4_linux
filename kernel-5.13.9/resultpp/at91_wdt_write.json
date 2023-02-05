@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca %struct.file*, align 8"}, {"lineno": 206, "file": "drivers/watchdog/at91rm9200_wdt.c", "instr": "at91_wdt_reload();\t\t/* pat the watchdog */"}],
-"warnings":[{"warn_data": {"at_line": 99, "warn_str": "Trying to use a global variable without locking.", "at": "regmap_write(regmap_st, AT91_ST_CR, AT91_ST_WDRST);", "inst_trace": [{"instr_func": "at91_wdt_write", "instr_loc": -1, "instr": "  %5 = alloca %struct.file*, align 8"}, {"instr_func": "at91_wdt_write", "instr_loc": 206, "instr_file": "drivers/watchdog/at91rm9200_wdt.c", "instr": "at91_wdt_reload();\t\t/* pat the watchdog */"}], "at_file": "drivers/watchdog/at91rm9200_wdt.c", "by": "GlobalVariableRaceDetector says:", "at_func": "at91_wdt_reload"}, "warn_no": 1}]}]}

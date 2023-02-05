@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}],
-"warnings":[{"warn_data": {"at_line": 329, "warn_str": "Trying to use a global variable without locking.", "at": "last_index = supplied_index;", "inst_trace": [{"instr_func": "softsynth_write", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}], "at_file": "drivers/accessibility/speakup/speakup_soft.c", "by": "GlobalVariableRaceDetector says:", "at_func": "softsynth_write"}, "warn_no": 1}]}]}

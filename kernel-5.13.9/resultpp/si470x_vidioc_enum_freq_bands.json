@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}],
-"warnings":[{"warn_data": {"at_line": 749, "warn_str": "Trying to use a global variable without locking.", "at": "*band = bands[band->index];", "inst_trace": [{"instr_func": "si470x_vidioc_enum_freq_bands", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}], "at_file": "drivers/media/radio/si470x/radio-si470x-common.c", "by": "GlobalVariableRaceDetector says:", "at_func": "si470x_vidioc_enum_freq_bands"}, "warn_no": 1}]}]}

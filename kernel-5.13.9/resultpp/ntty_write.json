@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %4 = alloca i1, align 1"}, {"lineno": 1606, "file": "drivers/tty/nozomi.c", "instr": "struct nozomi *dc = get_dc_by_tty(tty);"}],
-"warnings":[{"warn_data": {"at_line": 376, "warn_str": "Trying to use a global variable without locking.", "at": "return tty ? ndevs[tty->index / MAX_PORT] : NULL;", "inst_trace": [{"instr_func": "ntty_write", "instr_loc": -1, "instr": "  %4 = alloca i1, align 1"}, {"instr_func": "ntty_write", "instr_loc": 1606, "instr_file": "drivers/tty/nozomi.c", "instr": "struct nozomi *dc = get_dc_by_tty(tty);"}], "at_file": "drivers/tty/nozomi.c", "by": "GlobalVariableRaceDetector says:", "at_func": "get_dc_by_tty"}, "warn_no": 1}]}]}
