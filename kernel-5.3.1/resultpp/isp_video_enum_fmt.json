@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}, {"lineno": 361, "file": "drivers/media/platform/exynos4-is/fimc-isp-video.c", "instr": "fmt = fimc_isp_find_format(NULL, NULL, f->index);"}],
-"warnings":[{"warn_data": {"at_line": 76, "warn_str": "Trying to use a global variable without locking.", "at": "fmt = &fimc_isp_formats[i];", "inst_trace": [{"instr_func": "isp_video_enum_fmt", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}, {"instr_func": "isp_video_enum_fmt", "instr_loc": 361, "instr_file": "drivers/media/platform/exynos4-is/fimc-isp-video.c", "instr": "fmt = fimc_isp_find_format(NULL, NULL, f->index);"}], "at_file": "drivers/media/platform/exynos4-is/fimc-isp.c", "by": "GlobalVariableRaceDetector says:", "at_func": "fimc_isp_find_format"}, "warn_no": 1}]}]}

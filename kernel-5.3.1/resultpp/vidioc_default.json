@@ -1,7 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %6 = alloca i64, align 8"}, {"lineno": 1398, "file": "drivers/media/pci/meye/meye.c", "instr": "return meyeioc_sync(file, fh, (int *) arg);"}],
-"warnings":[{"warn_data": {"at_line": 936, "warn_str": "Trying to use a global variable without locking.", "at": "if (*i < 0 || *i >= gbuffers)", "inst_trace": [{"instr_func": "vidioc_default", "instr_loc": -1, "instr": "  %6 = alloca i64, align 8"}, {"instr_func": "vidioc_default", "instr_loc": 1398, "instr_file": "drivers/media/pci/meye/meye.c", "instr": "return meyeioc_sync(file, fh, (int *) arg);"}], "at_file": "drivers/media/pci/meye/meye.c", "by": "GlobalVariableRaceDetector says:", "at_func": "meyeioc_sync"}, "warn_no": 1}]},
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %6 = alloca i64, align 8"}, {"lineno": 1395, "file": "drivers/media/pci/meye/meye.c", "instr": "return meyeioc_qbuf_capt((int *) arg);"}],
-"warnings":[{"warn_data": {"at_line": 907, "warn_str": "Trying to use a global variable without locking.", "at": "if (*nb >= gbuffers)", "inst_trace": [{"instr_func": "vidioc_default", "instr_loc": -1, "instr": "  %6 = alloca i64, align 8"}, {"instr_func": "vidioc_default", "instr_loc": 1395, "instr_file": "drivers/media/pci/meye/meye.c", "instr": "return meyeioc_qbuf_capt((int *) arg);"}], "at_file": "drivers/media/pci/meye/meye.c", "by": "GlobalVariableRaceDetector says:", "at_func": "meyeioc_qbuf_capt"}, "warn_no": 1}]}]}

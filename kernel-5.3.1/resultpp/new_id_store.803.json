@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %4 = alloca i64, align 8"}, {"lineno": 111, "file": "drivers/pcmcia/ds.c", "instr": "dynid = kzalloc(sizeof(struct pcmcia_dynid), GFP_KERNEL);"}],
-"warnings":[{"warn_data": {"at_line": 553, "warn_str": "Trying to use a global variable without locking.", "at": "  %183 = getelementptr [3 x [14 x %struct.kmem_cache*]], [3 x [14 x %struct.kmem_cache*]]* @kmalloc_caches, i64 0, i64 %182, !dbg !463295", "inst_trace": [{"instr_func": "new_id_store.803", "instr_loc": -1, "instr": "  %4 = alloca i64, align 8"}, {"instr_func": "new_id_store.803", "instr_loc": 111, "instr_file": "drivers/pcmcia/ds.c", "instr": "dynid = kzalloc(sizeof(struct pcmcia_dynid), GFP_KERNEL);"}], "at_file": "./include/linux/slab.h", "by": "GlobalVariableRaceDetector says:", "at_func": "kzalloc.761"}, "warn_no": 1}]}]}

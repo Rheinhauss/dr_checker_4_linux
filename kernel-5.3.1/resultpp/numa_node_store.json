@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}, {"lineno": 335, "file": "drivers/pci/pci-sysfs.c", "instr": "if (node != NUMA_NO_NODE && !node_online(node))"}],
-"warnings":[{"warn_data": {"at_line": 415, "warn_str": "Trying to use a global variable without locking.", "at": "  %9 = getelementptr [5 x %struct.nodemask_t], [5 x %struct.nodemask_t]* @node_states, i64 0, i64 %8, !dbg !671978", "inst_trace": [{"instr_func": "numa_node_store", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}, {"instr_func": "numa_node_store", "instr_loc": 335, "instr_file": "drivers/pci/pci-sysfs.c", "instr": "if (node != NUMA_NO_NODE && !node_online(node))"}], "at_file": "./include/linux/nodemask.h", "by": "GlobalVariableRaceDetector says:", "at_func": "node_state.3833"}, "warn_no": 1}]}]}

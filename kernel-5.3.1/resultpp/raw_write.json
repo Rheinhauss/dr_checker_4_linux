@@ -1,7 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}],
-"warnings":[{"warn_data": {"at_line": 98, "warn_str": "Trying to use a global variable without locking.", "at": "char *buf = debug_info->formatted_data;", "inst_trace": [{"instr_func": "raw_write", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}], "at_file": "drivers/platform/chrome/wilco_ec/debugfs.c", "by": "GlobalVariableRaceDetector says:", "at_func": "raw_write"}, "warn_no": 1}]},
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}, {"lineno": 112, "file": "drivers/platform/chrome/wilco_ec/debugfs.c", "instr": "ret = parse_hex_sentence(buf, kcount, request_data, TYPE_AND_DATA_SIZE);"}],
-"warnings":[{"warn_data": {"at_line": 0, "warn_str": "Trying to use a global variable without locking.", "at": "", "inst_trace": [{"instr_func": "raw_write", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}, {"instr_func": "raw_write", "instr_loc": 112, "instr_file": "drivers/platform/chrome/wilco_ec/debugfs.c", "instr": "ret = parse_hex_sentence(buf, kcount, request_data, TYPE_AND_DATA_SIZE);"}], "at_file": "drivers/platform/chrome/wilco_ec/debugfs.c", "by": "GlobalVariableRaceDetector says:", "at_func": "parse_hex_sentence"}, "warn_no": 1}]}]}

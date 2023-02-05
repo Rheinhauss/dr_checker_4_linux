@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}],
-"warnings":[{"warn_data": {"at_line": 1803, "warn_str": "Tainted Data used in risky function", "at": "board_mode_str = strchr(buf, '\\n');", "inst_trace": [{"instr_func": "lpfc_board_mode_store", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}], "at_file": "drivers/scsi/lpfc/lpfc_attr.c", "by": "ImproperTaintedDataUseDetector says:", "tainted_obj": "i8* %2", "at_func": "lpfc_board_mode_store"}, "warn_no": 1}]}]}

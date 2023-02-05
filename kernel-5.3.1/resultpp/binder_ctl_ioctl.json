@@ -1,8 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %4 = alloca i8*, align 8"}],
-"warnings":[{"warn_data": {"at_line": 253, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "ret = copy_from_user(&device_req, device, sizeof(device_req));", "inst_trace": [], "at_file": "drivers/android/binderfs.c", "by": "TaintedSizeDetector says:", "at_func": "binder_ctl_ioctl"}, "warn_no": 1}]},
-{"num_warnings": 2,
-"context":[{"lineno": -1, "instr": "  %4 = alloca i8*, align 8"}, {"lineno": 259, "file": "drivers/android/binderfs.c", "instr": "ret = binderfs_binder_device_create(inode, device, &device_req);"}],
-"warnings":[{"warn_data": {"at_line": 134, "warn_str": "Trying to use a global variable without locking.", "at": "bool use_reserve = (info->ipc_ns == &init_ipc_ns);", "inst_trace": [{"instr_func": "binder_ctl_ioctl", "instr_loc": -1, "instr": "  %4 = alloca i8*, align 8"}, {"instr_func": "binder_ctl_ioctl", "instr_loc": 259, "instr_file": "drivers/android/binderfs.c", "instr": "ret = binderfs_binder_device_create(inode, device, &device_req);"}], "at_file": "drivers/android/binderfs.c", "by": "GlobalVariableRaceDetector says:", "at_func": "binderfs_binder_device_create"}, "warn_no": 1},
-{"warn_data": {"at_line": 186, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "req->major = MAJOR(binderfs_dev);", "inst_trace": [], "at_file": "drivers/android/binderfs.c", "by": "TaintedSizeDetector says:", "at_func": "binderfs_binder_device_create"}, "warn_no": 2}]}]}

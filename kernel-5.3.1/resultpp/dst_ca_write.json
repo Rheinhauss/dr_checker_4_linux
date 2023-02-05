@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca %struct.file*, align 8"}],
-"warnings":[{"warn_data": {"at_line": 634, "warn_str": "Trying to use a global variable without locking.", "at": "dprintk(verbose, DST_CA_DEBUG, 1, \" Device write.\");", "inst_trace": [{"instr_func": "dst_ca_write", "instr_loc": -1, "instr": "  %5 = alloca %struct.file*, align 8"}], "at_file": "drivers/media/pci/bt8xx/dst_ca.c", "by": "GlobalVariableRaceDetector says:", "at_func": "dst_ca_write"}, "warn_no": 1}]}]}

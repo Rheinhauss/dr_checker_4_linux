@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}, {"lineno": 2684, "file": "drivers/media/pci/bt8xx/bttv-driver.c", "instr": "return videobuf_qbuf(bttv_queue(fh), b);"}],
-"warnings":[{"warn_data": {"at_line": 586, "warn_str": "Trying to use a global variable without locking.", "at": "dprintk(1, \"qbuf: buffer length is not enough\\n\");", "inst_trace": [{"instr_func": "bttv_qbuf", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}, {"instr_func": "bttv_qbuf", "instr_loc": 2684, "instr_file": "drivers/media/pci/bt8xx/bttv-driver.c", "instr": "return videobuf_qbuf(bttv_queue(fh), b);"}], "at_file": "drivers/media/v4l2-core/videobuf-core.c", "by": "GlobalVariableRaceDetector says:", "at_func": "videobuf_qbuf"}, "warn_no": 1}]}]}

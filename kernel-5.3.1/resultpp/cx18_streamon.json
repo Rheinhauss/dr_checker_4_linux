@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %4 = alloca i64, align 8"}],
-"warnings":[{"warn_data": {"at_line": 832, "warn_str": "Trying to use a global variable without locking.", "at": "mod_timer(&s->vb_timeout, msecs_to_jiffies(2000) + jiffies);", "inst_trace": [{"instr_func": "cx18_streamon", "instr_loc": -1, "instr": "  %4 = alloca i64, align 8"}], "at_file": "drivers/media/pci/cx18/cx18-ioctl.c", "by": "GlobalVariableRaceDetector says:", "at_func": "cx18_streamon"}, "warn_no": 1}]}]}

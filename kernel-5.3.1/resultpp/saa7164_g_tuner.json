@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}],
-"warnings":[{"warn_data": {"at_line": 323, "warn_str": "Trying to use a global variable without locking.", "at": "dprintk(DBGLVL_ENC, \"VIDIOC_G_TUNER: tuner type %d\\n\", t->type);", "inst_trace": [{"instr_func": "saa7164_g_tuner", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}], "at_file": "drivers/media/pci/saa7164/saa7164-encoder.c", "by": "GlobalVariableRaceDetector says:", "at_func": "saa7164_g_tuner"}, "warn_no": 1}]}]}

@@ -1,5 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 2,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i8*, align 8"}],
-"warnings":[{"warn_data": {"at_line": 725, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "char addr[AX25_ADDR_LEN];", "inst_trace": [], "at_file": "drivers/net/hamradio/6pack.c", "by": "TaintedSizeDetector says:", "at_func": "sixpack_ioctl"}, "warn_no": 1},
-{"warn_data": {"at_line": 701, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "err = copy_to_user((void __user *) arg, dev->name,", "inst_trace": [], "at_file": "drivers/net/hamradio/6pack.c", "by": "TaintedSizeDetector says:", "at_func": "sixpack_ioctl"}, "warn_no": 2}]}]}

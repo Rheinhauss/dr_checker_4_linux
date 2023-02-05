@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca %struct.spinlock*, align 8"}],
-"warnings":[{"warn_data": {"at_line": 3979, "warn_str": "Trying to use a global variable without locking.", "at": "if (!debug->buffer)", "inst_trace": [{"instr_func": "lpfc_idiag_queinfo_read", "instr_loc": -1, "instr": "  %5 = alloca %struct.spinlock*, align 8"}], "at_file": "drivers/scsi/lpfc/lpfc_debugfs.c", "by": "GlobalVariableRaceDetector says:", "at_func": "lpfc_idiag_queinfo_read"}, "warn_no": 1}]}]}

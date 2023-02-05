@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}],
-"warnings":[{"warn_data": {"at_line": 314, "warn_str": "Trying to use a global variable without locking.", "at": "strscpy(f->description, formats[f->index].name, sizeof(f->description));", "inst_trace": [{"instr_func": "cx25821_vidioc_enum_fmt_vid_cap", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}], "at_file": "drivers/media/pci/cx25821/cx25821-video.c", "by": "GlobalVariableRaceDetector says:", "at_func": "cx25821_vidioc_enum_fmt_vid_cap"}, "warn_no": 1}]}]}

@@ -1,7 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i8*, align 8"}],
-"warnings":[{"warn_data": {"at_line": 1879, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "MVM_DEBUGFS_READ_WRITE_FILE_OPS(sram, 64);", "inst_trace": [], "at_file": "drivers/net/wireless/intel/iwlwifi/mvm/debugfs.c", "by": "TaintedSizeDetector says:", "at_func": "_iwl_dbgfs_sram_write"}, "warn_no": 1}]},
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i8*, align 8"}, {"lineno": 1879, "file": "drivers/net/wireless/intel/iwlwifi/mvm/debugfs.c", "instr": "MVM_DEBUGFS_READ_WRITE_FILE_OPS(sram, 64);"}],
-"warnings":[{"warn_data": {"at_line": 250, "warn_str": "Potential overflow, using tainted value in binary operation.", "at": "if (offset + len > img_offset + img_len)", "inst_trace": [{"instr_func": "_iwl_dbgfs_sram_write", "instr_loc": 1879, "instr_file": "drivers/net/wireless/intel/iwlwifi/mvm/debugfs.c", "instr": "MVM_DEBUGFS_READ_WRITE_FILE_OPS(sram, 64);"}, {"instr_func": "iwl_dbgfs_sram_write", "instr_loc": 246, "instr_file": "drivers/net/wireless/intel/iwlwifi/mvm/debugfs.c", "instr": "if (sscanf(buf, \"%x,%x\", &offset, &len) == 2) {"}, {"instr_func": "iwl_dbgfs_sram_write", "instr_loc": 250, "instr_file": "drivers/net/wireless/intel/iwlwifi/mvm/debugfs.c", "instr": "if (offset + len > img_offset + img_len)"}], "at_file": "drivers/net/wireless/intel/iwlwifi/mvm/debugfs.c", "by": "IntegerOverflowDetector says:", "at_func": "iwl_dbgfs_sram_write"}, "warn_no": 1}]}]}

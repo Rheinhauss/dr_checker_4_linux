@@ -1,5 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 2,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}],
-"warnings":[{"warn_data": {"at_line": 764, "warn_str": "Loop is bounded by a tainted value.", "at": "if (strncmp(sdev_states[i].name, buf, len) == 0 &&", "inst_trace": [{"instr_func": "store_state_field", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}, {"instr_func": "store_state_field", "instr_loc": 765, "instr_file": "drivers/scsi/scsi_sysfs.c", "instr": "buf[len] == '\\n') {"}, {"instr_func": "store_state_field", "instr_loc": 765, "instr_file": "drivers/scsi/scsi_sysfs.c", "instr": "buf[len] == '\\n') {"}], "at_file": "drivers/scsi/scsi_sysfs.c", "by": "TaintedLoopBoundDetector says:", "at_func": "store_state_field"}, "warn_no": 1},
-{"warn_data": {"at_line": 763, "warn_str": "Trying to use a global variable without locking.", "at": "const int len = strlen(sdev_states[i].name);", "inst_trace": [{"instr_func": "store_state_field", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}], "at_file": "drivers/scsi/scsi_sysfs.c", "by": "GlobalVariableRaceDetector says:", "at_func": "store_state_field"}, "warn_no": 2}]}]}

@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i8*, align 8"}],
-"warnings":[{"warn_data": {"at_line": 287, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_to_user(buf, sess_data->response, count))", "inst_trace": [], "at_file": "drivers/platform/chrome/wilco_ec/telemetry.c", "by": "TaintedSizeDetector says:", "at_func": "telem_read"}, "warn_no": 1}]}]}

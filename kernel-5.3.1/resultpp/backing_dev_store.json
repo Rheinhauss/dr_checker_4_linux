@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i32, align 4"}],
-"warnings":[{"warn_data": {"at_line": 444, "warn_str": "Trying to use a global variable without locking.", "at": "{", "inst_trace": [{"instr_func": "backing_dev_store", "instr_loc": -1, "instr": "  %5 = alloca i32, align 4"}], "at_file": "drivers/block/zram/zram_drv.c", "by": "GlobalVariableRaceDetector says:", "at_func": "backing_dev_store"}, "warn_no": 1}]}]}

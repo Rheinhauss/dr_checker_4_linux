@@ -1,5 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 2,
-"context":[{"lineno": -1, "instr": "  %5 = alloca %struct.spinlock*, align 8"}],
-"warnings":[{"warn_data": {"at_line": 225, "warn_str": "Trying to use a global variable without locking.", "at": "spin_lock_irqsave(&emsgs_lock, flags);", "inst_trace": [{"instr_func": "aoechr_read", "instr_loc": -1, "instr": "  %5 = alloca %struct.spinlock*, align 8"}], "at_file": "drivers/block/aoe/aoechr.c", "by": "GlobalVariableRaceDetector says:", "at_func": "aoechr_read"}, "warn_no": 1},
-{"warn_data": {"at_line": 254, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "mp = em->msg;", "inst_trace": [], "at_file": "drivers/block/aoe/aoechr.c", "by": "TaintedSizeDetector says:", "at_func": "aoechr_read"}, "warn_no": 2}]}]}

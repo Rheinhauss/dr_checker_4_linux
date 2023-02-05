@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i8*, align 8"}],
-"warnings":[{"warn_data": {"at_line": 697, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_to_user((void __user *)arg, sl->dev->name,", "inst_trace": [], "at_file": "drivers/net/wan/x25_asy.c", "by": "TaintedSizeDetector says:", "at_func": "x25_asy_ioctl"}, "warn_no": 1}]}]}

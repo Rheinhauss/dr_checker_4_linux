@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca %struct.file*, align 8"}],
-"warnings":[{"warn_data": {"at_line": 140, "warn_str": "Trying to use a global variable without locking.", "at": "if (debug_info->response_size) {", "inst_trace": [{"instr_func": "raw_read", "instr_loc": -1, "instr": "  %5 = alloca %struct.file*, align 8"}], "at_file": "drivers/platform/chrome/wilco_ec/debugfs.c", "by": "GlobalVariableRaceDetector says:", "at_func": "raw_read"}, "warn_no": 1}]}]}

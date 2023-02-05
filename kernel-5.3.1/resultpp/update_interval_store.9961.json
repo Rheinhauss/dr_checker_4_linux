@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}],
-"warnings":[{"warn_data": {"at_line": 474, "warn_str": "Trying to use a global variable without locking.", "at": "if (val <= update_intervals[regval])", "inst_trace": [{"instr_func": "update_interval_store.9961", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}], "at_file": "drivers/hwmon/lm95234.c", "by": "GlobalVariableRaceDetector says:", "at_func": "update_interval_store.9961"}, "warn_no": 1}]}]}

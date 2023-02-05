@@ -1,7 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}],
-"warnings":[{"warn_data": {"at_line": 2524, "warn_str": "Trying to use a global variable without locking.", "at": "if (no_overlay > 0) {", "inst_trace": [{"instr_func": "bttv_enum_fmt_vid_overlay", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}], "at_file": "drivers/media/pci/bt8xx/bttv-driver.c", "by": "GlobalVariableRaceDetector says:", "at_func": "bttv_enum_fmt_vid_overlay"}, "warn_no": 1}]},
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}, {"lineno": 2529, "file": "drivers/media/pci/bt8xx/bttv-driver.c", "instr": "rc = bttv_enum_fmt_cap_ovr(f);"}],
-"warnings":[{"warn_data": {"at_line": 2494, "warn_str": "Trying to use a global variable without locking.", "at": "if (formats[i].fourcc != -1)", "inst_trace": [{"instr_func": "bttv_enum_fmt_vid_overlay", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}, {"instr_func": "bttv_enum_fmt_vid_overlay", "instr_loc": 2529, "instr_file": "drivers/media/pci/bt8xx/bttv-driver.c", "instr": "rc = bttv_enum_fmt_cap_ovr(f);"}], "at_file": "drivers/media/pci/bt8xx/bttv-driver.c", "by": "GlobalVariableRaceDetector says:", "at_func": "bttv_enum_fmt_cap_ovr"}, "warn_no": 1}]}]}

@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}, {"lineno": 241, "file": "drivers/dax/super.c", "instr": "struct dax_device *dax_dev = dax_get_by_host(dev_name(dev));"}],
-"warnings":[{"warn_data": {"at_line": 603, "warn_str": "Trying to use a global variable without locking.", "at": "hash = dax_host_hash(host);", "inst_trace": [{"instr_func": "write_cache_store", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}, {"instr_func": "write_cache_store", "instr_loc": 241, "instr_file": "drivers/dax/super.c", "instr": "struct dax_device *dax_dev = dax_get_by_host(dev_name(dev));"}], "at_file": "drivers/dax/super.c", "by": "GlobalVariableRaceDetector says:", "at_func": "dax_get_by_host"}, "warn_no": 1}]}]}

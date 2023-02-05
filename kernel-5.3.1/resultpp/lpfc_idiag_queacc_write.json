@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}, {"lineno": 4268, "file": "drivers/scsi/lpfc/lpfc_debugfs.c", "instr": "rc = lpfc_idiag_cmd_get(buf, nbytes, &idiag.cmd);"}],
-"warnings":[{"warn_data": {"at_line": 3050, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "bsize = min(nbytes, (sizeof(mybuf)-1));", "inst_trace": [], "at_file": "drivers/scsi/lpfc/lpfc_debugfs.c", "by": "TaintedSizeDetector says:", "at_func": "lpfc_idiag_cmd_get"}, "warn_no": 1}]}]}

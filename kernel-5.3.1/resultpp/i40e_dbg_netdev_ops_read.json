@@ -1,7 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i8*, align 8"}],
-"warnings":[{"warn_data": {"at_line": 1595, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "len = snprintf(buf, buf_size, \"%s: %s\\n\",", "inst_trace": [], "at_file": "drivers/net/ethernet/intel/i40e/i40e_debugfs.c", "by": "TaintedSizeDetector says:", "at_func": "i40e_dbg_netdev_ops_read"}, "warn_no": 1}]},
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i8*, align 8"}, {"lineno": 1591, "file": "drivers/net/ethernet/intel/i40e/i40e_debugfs.c", "instr": "buf = kzalloc(buf_size, GFP_KERNEL);"}],
-"warnings":[{"warn_data": {"at_line": 553, "warn_str": "Trying to use a global variable without locking.", "at": "  %183 = getelementptr [3 x [14 x %struct.kmem_cache*]], [3 x [14 x %struct.kmem_cache*]]* @kmalloc_caches, i64 0, i64 %182, !dbg !12784", "inst_trace": [{"instr_func": "i40e_dbg_netdev_ops_read", "instr_loc": -1, "instr": "  %5 = alloca i8*, align 8"}, {"instr_func": "i40e_dbg_netdev_ops_read", "instr_loc": 1591, "instr_file": "drivers/net/ethernet/intel/i40e/i40e_debugfs.c", "instr": "buf = kzalloc(buf_size, GFP_KERNEL);"}], "at_file": "./include/linux/slab.h", "by": "GlobalVariableRaceDetector says:", "at_func": "kzalloc"}, "warn_no": 1}]}]}

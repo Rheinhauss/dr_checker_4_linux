@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}],
-"warnings":[{"warn_data": {"at_line": 1081, "warn_str": "Trying to use a global variable without locking.", "at": "f->pixelformat = formats[f->index].fourcc;", "inst_trace": [{"instr_func": "cio2_v4l2_enum_fmt", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}], "at_file": "drivers/media/pci/intel/ipu3/ipu3-cio2.c", "by": "GlobalVariableRaceDetector says:", "at_func": "cio2_v4l2_enum_fmt"}, "warn_no": 1}]}]}

@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}],
-"warnings":[{"warn_data": {"at_line": 296, "warn_str": "Trying to use a global variable without locking.", "at": "f->pixelformat = rvin_formats[f->index].fourcc;", "inst_trace": [{"instr_func": "rvin_enum_fmt_vid_cap", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}], "at_file": "drivers/media/platform/rcar-vin/rcar-v4l2.c", "by": "GlobalVariableRaceDetector says:", "at_func": "rvin_enum_fmt_vid_cap"}, "warn_no": 1}]}]}

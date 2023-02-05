@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca %struct.file*, align 8"}],
-"warnings":[{"warn_data": {"at_line": 3244, "warn_str": "Trying to use a global variable without locking.", "at": "iwl_rates[lq_sta->last_txrate_idx].ieee >> 1);", "inst_trace": [{"instr_func": "rs_sta_dbgfs_rate_scale_data_read", "instr_loc": -1, "instr": "  %5 = alloca %struct.file*, align 8"}], "at_file": "drivers/net/wireless/intel/iwlwifi/dvm/rs.c", "by": "GlobalVariableRaceDetector says:", "at_func": "rs_sta_dbgfs_rate_scale_data_read"}, "warn_no": 1}]}]}

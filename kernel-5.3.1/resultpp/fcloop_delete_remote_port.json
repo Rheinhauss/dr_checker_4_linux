@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca %struct.spinlock*, align 8"}],
-"warnings":[{"warn_data": {"at_line": 1178, "warn_str": "Trying to use a global variable without locking.", "at": "spin_lock_irqsave(&fcloop_lock, flags);", "inst_trace": [{"instr_func": "fcloop_delete_remote_port", "instr_loc": -1, "instr": "  %5 = alloca %struct.spinlock*, align 8"}], "at_file": "drivers/nvme/target/fcloop.c", "by": "GlobalVariableRaceDetector says:", "at_func": "fcloop_delete_remote_port"}, "warn_no": 1}]}]}

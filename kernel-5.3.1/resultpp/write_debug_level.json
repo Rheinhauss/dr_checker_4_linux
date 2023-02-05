@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}],
-"warnings":[{"warn_data": {"at_line": 258, "warn_str": "Trying to use a global variable without locking.", "at": "ieee80211_debug_level = val;", "inst_trace": [{"instr_func": "write_debug_level", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}], "at_file": "drivers/staging/rtl8192u/ieee80211/ieee80211_module.c", "by": "GlobalVariableRaceDetector says:", "at_func": "write_debug_level"}, "warn_no": 1}]}]}

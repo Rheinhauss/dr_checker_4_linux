@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}],
-"warnings":[{"warn_data": {"at_line": 1180, "warn_str": "Trying to use a global variable without locking.", "at": "IVTV_DEBUG_INFO(\"Switching standard to %llx.\\n\",", "inst_trace": [{"instr_func": "ivtv_s_std", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}], "at_file": "drivers/media/pci/ivtv/ivtv-ioctl.c", "by": "GlobalVariableRaceDetector says:", "at_func": "ivtv_s_std"}, "warn_no": 1}]}]}

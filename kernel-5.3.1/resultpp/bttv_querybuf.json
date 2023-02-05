@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %4 = alloca %struct.file*, align 8"}, {"lineno": 2672, "file": "drivers/media/pci/bt8xx/bttv-driver.c", "instr": "return videobuf_querybuf(bttv_queue(fh), b);"}],
-"warnings":[{"warn_data": {"at_line": 514, "warn_str": "Trying to use a global variable without locking.", "at": "dprintk(1, \"querybuf: buffer is null.\\n\");", "inst_trace": [{"instr_func": "bttv_querybuf", "instr_loc": -1, "instr": "  %4 = alloca %struct.file*, align 8"}, {"instr_func": "bttv_querybuf", "instr_loc": 2672, "instr_file": "drivers/media/pci/bt8xx/bttv-driver.c", "instr": "return videobuf_querybuf(bttv_queue(fh), b);"}], "at_file": "drivers/media/v4l2-core/videobuf-core.c", "by": "GlobalVariableRaceDetector says:", "at_func": "videobuf_querybuf"}, "warn_no": 1}]}]}

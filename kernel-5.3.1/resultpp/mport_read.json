@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}],
-"warnings":[{"warn_data": {"at_line": 2279, "warn_str": "Loop is bounded by a tainted value.", "at": "while (ret < count) {", "inst_trace": [{"instr_func": "mport_read", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}, {"instr_func": "mport_read", "instr_loc": 2259, "instr_file": "drivers/rapidio/devices/rio_mport_cdev.c", "instr": "{"}, {"instr_func": "mport_read", "instr_loc": 2279, "instr_file": "drivers/rapidio/devices/rio_mport_cdev.c", "instr": "while (ret < count) {"}, {"instr_func": "mport_read", "instr_loc": 2279, "instr_file": "drivers/rapidio/devices/rio_mport_cdev.c", "instr": "while (ret < count) {"}], "at_file": "drivers/rapidio/devices/rio_mport_cdev.c", "by": "TaintedLoopBoundDetector says:", "at_func": "mport_read"}, "warn_no": 1}]}]}

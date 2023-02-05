@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}, {"lineno": 631, "file": "drivers/staging/media/ipu3/ipu3-v4l2.c", "instr": "return enum_fmts(f, VID_OUTPUT);"}],
-"warnings":[{"warn_data": {"at_line": 601, "warn_str": "Trying to use a global variable without locking.", "at": "if (formats[i].type == type) {", "inst_trace": [{"instr_func": "vidioc_enum_fmt_vid_out", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}, {"instr_func": "vidioc_enum_fmt_vid_out", "instr_loc": 631, "instr_file": "drivers/staging/media/ipu3/ipu3-v4l2.c", "instr": "return enum_fmts(f, VID_OUTPUT);"}], "at_file": "drivers/staging/media/ipu3/ipu3-v4l2.c", "by": "GlobalVariableRaceDetector says:", "at_func": "enum_fmts"}, "warn_no": 1}]}]}

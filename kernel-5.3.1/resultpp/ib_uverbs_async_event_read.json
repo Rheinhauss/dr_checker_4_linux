@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca %struct.file*, align 8"}, {"lineno": 284, "file": "drivers/infiniband/core/uverbs_main.c", "instr": "return ib_uverbs_event_read(&file->ev_queue, file->uverbs_file, filp,"}],
-"warnings":[{"warn_data": {"at_line": 268, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_to_user(buf, event, eventsz))", "inst_trace": [], "at_file": "drivers/infiniband/core/uverbs_main.c", "by": "TaintedSizeDetector says:", "at_func": "ib_uverbs_event_read"}, "warn_no": 1}]}]}

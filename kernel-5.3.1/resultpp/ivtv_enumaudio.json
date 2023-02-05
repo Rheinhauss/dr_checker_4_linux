@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %4 = alloca %struct.file*, align 8"}, {"lineno": 749, "file": "drivers/media/pci/ivtv/ivtv-ioctl.c", "instr": "return ivtv_get_audio_input(itv, vin->index, vin);"}],
-"warnings":[{"warn_data": {"at_line": 1344, "warn_str": "Trying to use a global variable without locking.", "at": "strscpy(audio->name, input_strs[aud_input->audio_type - 1],", "inst_trace": [{"instr_func": "ivtv_enumaudio", "instr_loc": -1, "instr": "  %4 = alloca %struct.file*, align 8"}, {"instr_func": "ivtv_enumaudio", "instr_loc": 749, "instr_file": "drivers/media/pci/ivtv/ivtv-ioctl.c", "instr": "return ivtv_get_audio_input(itv, vin->index, vin);"}], "at_file": "drivers/media/pci/ivtv/ivtv-cards.c", "by": "GlobalVariableRaceDetector says:", "at_func": "ivtv_get_audio_input"}, "warn_no": 1}]}]}

@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %6 = alloca i32, align 4"}],
-"warnings":[{"warn_data": {"at_line": 297, "warn_str": "Trying to use a global variable without locking.", "at": "hyst = jc42_hysteresis[(data->config & JC42_CFG_HYST_MASK)", "inst_trace": [{"instr_func": "jc42_read", "instr_loc": -1, "instr": "  %6 = alloca i32, align 4"}], "at_file": "drivers/hwmon/jc42.c", "by": "GlobalVariableRaceDetector says:", "at_func": "jc42_read"}, "warn_no": 1}]}]}

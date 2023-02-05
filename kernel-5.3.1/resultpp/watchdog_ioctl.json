@@ -1,5 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 2,
-"context":[{"lineno": -1, "instr": "  %4 = alloca i8*, align 8"}],
-"warnings":[{"warn_data": {"at_line": 894, "warn_str": "Trying to use a global variable without locking.", "at": "if (!nowayout)", "inst_trace": [{"instr_func": "watchdog_ioctl", "instr_loc": -1, "instr": "  %4 = alloca i8*, align 8"}], "at_file": "drivers/hwmon/fschmd.c", "by": "GlobalVariableRaceDetector says:", "at_func": "watchdog_ioctl"}, "warn_no": 1},
-{"warn_data": {"at_line": 896, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_to_user((void __user *)arg, &ident, sizeof(ident)))", "inst_trace": [], "at_file": "drivers/hwmon/fschmd.c", "by": "TaintedSizeDetector says:", "at_func": "watchdog_ioctl"}, "warn_no": 2}]}]}

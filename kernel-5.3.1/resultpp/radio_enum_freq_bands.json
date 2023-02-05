@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %4 = alloca i32, align 4"}, {"lineno": 3271, "file": "drivers/media/pci/bt8xx/bttv-driver.c", "instr": "return snd_tea575x_enum_freq_bands(&btv->tea, band);"}],
-"warnings":[{"warn_data": {"at_line": 257, "warn_str": "Trying to use a global variable without locking.", "at": "*band = bands[index];", "inst_trace": [{"instr_func": "radio_enum_freq_bands", "instr_loc": -1, "instr": "  %4 = alloca i32, align 4"}, {"instr_func": "radio_enum_freq_bands", "instr_loc": 3271, "instr_file": "drivers/media/pci/bt8xx/bttv-driver.c", "instr": "return snd_tea575x_enum_freq_bands(&btv->tea, band);"}], "at_file": "drivers/media/radio/tea575x.c", "by": "GlobalVariableRaceDetector says:", "at_func": "snd_tea575x_enum_freq_bands"}, "warn_no": 1}]}]}

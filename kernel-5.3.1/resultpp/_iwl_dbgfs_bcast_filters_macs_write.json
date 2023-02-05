@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i8*, align 8"}],
-"warnings":[{"warn_data": {"at_line": 1908, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "MVM_DEBUGFS_READ_WRITE_FILE_OPS(bcast_filters_macs, 256);", "inst_trace": [], "at_file": "drivers/net/wireless/intel/iwlwifi/mvm/debugfs.c", "by": "TaintedSizeDetector says:", "at_func": "_iwl_dbgfs_bcast_filters_macs_write"}, "warn_no": 1}]}]}

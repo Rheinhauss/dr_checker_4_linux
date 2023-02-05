@@ -1,6 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 3,
-"context":[{"lineno": -1, "instr": "  %5 = alloca %struct.file*, align 8"}, {"lineno": 340, "file": "drivers/firewire/nosy.c", "instr": "return packet_buffer_get(client, buffer, count);"}],
-"warnings":[{"warn_data": {"at_line": 165, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_to_user(data + split, buffer->data, length - split))", "inst_trace": [], "at_file": "drivers/firewire/nosy.c", "by": "TaintedSizeDetector says:", "at_func": "packet_buffer_get"}, "warn_no": 1},
-{"warn_data": {"at_line": 161, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "size_t split = end - buffer->head->data;", "inst_trace": [], "at_file": "drivers/firewire/nosy.c", "by": "TaintedSizeDetector says:", "at_func": "packet_buffer_get"}, "warn_no": 2},
-{"warn_data": {"at_line": 157, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_to_user(data, buffer->head->data, length))", "inst_trace": [], "at_file": "drivers/firewire/nosy.c", "by": "TaintedSizeDetector says:", "at_func": "packet_buffer_get"}, "warn_no": 3}]}]}

@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i64, align 8"}, {"lineno": 466, "file": "drivers/leds/leds-ss4200.c", "instr": "nasgpio_led_set_attr(led, GPO_BLINK, blink_state);"}],
-"warnings":[{"warn_data": {"at_line": 195, "warn_str": "Trying to use a global variable without locking.", "at": "{", "inst_trace": [{"instr_func": "nas_led_blink_store", "instr_loc": -1, "instr": "  %5 = alloca i64, align 8"}, {"instr_func": "nas_led_blink_store", "instr_loc": 466, "instr_file": "drivers/leds/leds-ss4200.c", "instr": "nasgpio_led_set_attr(led, GPO_BLINK, blink_state);"}], "at_file": "drivers/leds/leds-ss4200.c", "by": "GlobalVariableRaceDetector says:", "at_func": "nasgpio_led_set_attr"}, "warn_no": 1}]}]}

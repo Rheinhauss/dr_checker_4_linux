@@ -1,5 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 2,
-"context":[{"lineno": -1, "instr": "  %4 = alloca %struct.spinlock*, align 8"}],
-"warnings":[{"warn_data": {"at_line": 2512, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (!copy_to_user((pool_levels __user *) arg, &pl, sizeof(pl)))", "inst_trace": [], "at_file": "drivers/atm/nicstar.c", "by": "TaintedSizeDetector says:", "at_func": "ns_ioctl"}, "warn_no": 1},
-{"warn_data": {"at_line": 2520, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_from_user(&pl, (pool_levels __user *) arg, sizeof(pl)))", "inst_trace": [], "at_file": "drivers/atm/nicstar.c", "by": "TaintedSizeDetector says:", "at_func": "ns_ioctl"}, "warn_no": 2}]}]}

@@ -1,4 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 1,
-"context":[{"lineno": -1, "instr": "  %4 = alloca %struct.file*, align 8"}],
-"warnings":[{"warn_data": {"at_line": 174, "warn_str": "Trying to use a global variable without locking.", "at": "vpu_debug(4, \"f->type = %d\\n\", f->type);", "inst_trace": [{"instr_func": "vidioc_g_fmt_out_mplane", "instr_loc": -1, "instr": "  %4 = alloca %struct.file*, align 8"}], "at_file": "drivers/staging/media/hantro/hantro_v4l2.c", "by": "GlobalVariableRaceDetector says:", "at_func": "vidioc_g_fmt_out_mplane"}, "warn_no": 1}]}]}

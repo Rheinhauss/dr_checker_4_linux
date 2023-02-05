@@ -1,5 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 2,
-"context":[{"lineno": -1, "instr": "  %5 = alloca i8*, align 8"}],
-"warnings":[{"warn_data": {"at_line": 2713, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "memset(proc_essid, 0, 33);", "inst_trace": [], "at_file": "drivers/net/wireless/ray_cs.c", "by": "TaintedSizeDetector says:", "at_func": "ray_cs_essid_proc_write"}, "warn_no": 1},
-{"warn_data": {"at_line": 2716, "warn_str": "Trying to use a global variable without locking.", "at": "essid = proc_essid;", "inst_trace": [{"instr_func": "ray_cs_essid_proc_write", "instr_loc": -1, "instr": "  %5 = alloca i8*, align 8"}], "at_file": "drivers/net/wireless/ray_cs.c", "by": "GlobalVariableRaceDetector says:", "at_func": "ray_cs_essid_proc_write"}, "warn_no": 2}]}]}

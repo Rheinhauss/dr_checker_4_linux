@@ -1,7 +1,0 @@
-{"all_contexts":[
-{"num_warnings": 4,
-"context":[{"lineno": -1, "instr": "  %4 = alloca i1, align 1"}],
-"warnings":[{"warn_data": {"at_line": 517, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_to_user((char __user *)data,", "inst_trace": [], "at_file": "drivers/misc/mei/main.c", "by": "TaintedSizeDetector says:", "at_func": "mei_ioctl"}, "warn_no": 1},
-{"warn_data": {"at_line": 501, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_from_user(&notify_req,", "inst_trace": [], "at_file": "drivers/misc/mei/main.c", "by": "TaintedSizeDetector says:", "at_func": "mei_ioctl"}, "warn_no": 2},
-{"warn_data": {"at_line": 478, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_from_user(&connect_data, (char __user *)data,", "inst_trace": [], "at_file": "drivers/misc/mei/main.c", "by": "TaintedSizeDetector says:", "at_func": "mei_ioctl"}, "warn_no": 3},
-{"warn_data": {"at_line": 490, "warn_str": "Non-constant size used in copy_to(or from)_user function.", "at": "if (copy_to_user((char __user *)data, &connect_data,", "inst_trace": [], "at_file": "drivers/misc/mei/main.c", "by": "TaintedSizeDetector says:", "at_func": "mei_ioctl"}, "warn_no": 4}]}]}
