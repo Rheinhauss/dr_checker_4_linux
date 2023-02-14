@@ -1292,6 +1292,7 @@ static const char *samsung_driver_folders[] = {"drivers/acpi/video_detect.c",
                                               NULL};
 
 static const char *linux_driver_folders[] = {"drivers/"};
+static const char *hello_chr_locked_folders[] = {"drivers/hello_chr_locked/hello_chr_locked.c"};
 
 
 void print_err(char *prog_name) {
@@ -1351,8 +1352,13 @@ int is_interesting_folder(char *curr_folder, unsigned long arch_no) {
 	    inter_folders = linux_driver_folders;
             array_size = SIZEOF_ARRAY(linux_driver_folders);
             break;
+    case 6:
+        inter_folders = hello_chr_locked_folders;
+        array_size = SIZEOF_ARRAY(hello_chr_locked_folders);
+        break;        
+    
         default:
-            std::cerr << "Invalid arch number, Valid arch numbers are: 1(mediatek)|2(qualcomm)|3(huawei)|4(samsung)|5(linux)\n";
+            std::cerr << "Invalid arch number, Valid arch numbers are: 1(mediatek)|2(qualcomm)|3(huawei)|4(samsung)|5(linux)|6(test)\n";
             exit(-2);
     }
 
