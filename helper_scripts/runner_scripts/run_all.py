@@ -79,7 +79,7 @@ def main():
     arg_dict['dr_link_bin'] = os.path.join(ana_helpers, "Dr_linker/dr_linker")
     arg_dict['chipset_num'] = parsed_args.chipset_num
     arg_dict['makeout'] = parsed_args.makeout
-    arg_dict['clangbin'] = get_bin_path('clang')
+    arg_dict['clangbin'] = get_bin_path('clang-10')
     arg_dict['compiler_name'] = parsed_args.compiler_name
     arg_dict['arch_num'] = parsed_args.arch_num
     arg_dict['out'] = parsed_args.out
