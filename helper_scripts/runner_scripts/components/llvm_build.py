@@ -88,7 +88,7 @@ DISABLE_WARNINGS = ['-Wno-return-type', '-w']
 ARM_32 = 1
 ARM_64 = 2
 # path to the clang binary
-CLANG_PATH = 'clang'
+CLANG_PATH = 'clang-10'
 EMIT_LLVM_FLAG = '-emit-llvm'
 
 
