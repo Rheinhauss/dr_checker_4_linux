@@ -90,7 +90,7 @@ class ParseHeaders(Component):
         return False
 
 
-gcc_bins = ['clang', 'arm-eabi-gcc']
+gcc_bins = ['clang-10', 'arm-eabi-gcc']
 
 
 def _handle_compile_command(comp_str, dst_includes):
